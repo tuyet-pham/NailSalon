@@ -1,0 +1,173 @@
+:root {
+    --purple-theme: #918fb6;
+    --black-theme: #131313;
+    --black-theme-fade: #474747;
+    --white-theme: #eeeeee6b;
+    --white-med: #dadada;
+}
+
+/*********About Area**************/
+
+
+.about-box {
+    margin-top: 2%;
+    width: 100%;
+    font: inherit;
+    height: 10%;
+}
+
+/*********Service Page**************/
+
+.service-page{
+    background-color: #242424;
+    width: 100%;
+    height: 100%;
+    font: inherit;
+    color: var(--white-med);
+}
+
+
+.header-s {
+    padding: 40px;
+}
+
+.header-s2 {
+    margin-top: 20px;
+    font-family: cursive;
+    text-align: left;
+}
+
+.service-box{
+    width: 80%;
+    height: 75vh;
+    margin-bottom: 5rem;
+    padding: 15px;
+    border: 1px solid rgb(255, 255, 255);
+    display: inline-flex;
+    justify-content: space-evenly;
+}
+
+.service-box p {
+    display: inline-flex;
+    text-align: center;
+    font: inherit;
+}
+
+.service-sub-box {
+    display: inline-flex;
+    padding: 20px;
+    margin:5%;
+}
+
+
+/*********Contact Page**************/
+
+.contact-page{
+    width: 100%;
+    font: inherit;
+    display: inline-flex;
+    justify-content: center;
+    margin-bottom: 15%; 
+    margin-top: 5%;
+}
+
+.contact-ui {
+    width: 25%;
+    height: 100%;
+    align-self: center;
+}
+
+.contact-ui textarea, .contact-ui input{
+    width: 100%;
+    margin: 3px;
+}
+
+.contact-button {
+    border: 0;
+    background: #252525;
+    padding: 10px;
+    border-radius: 30px;
+    color: var(--white-med);
+    transition-duration: .1s;
+}
+
+
+.contact-button:hover {
+    background: var(--black-theme-fade);
+}
+
+.header-s3{
+    margin-bottom: 6%;
+    font: inherit;
+    font-size: 20px;
+    color: var(--black-theme-fade);
+} 
+
+
+/*Time area*/
+.time-area {
+    margin-top: 5%;
+    margin-right: 6%;
+    height: 100%;
+    text-align: left;
+    align-self: center;
+    font:inherit;
+}
+
+.time-area p {
+    font: 15px small-caps Helvetica, sans-serif;
+}
+
+
+/*Map Area*/
+.map {
+    margin-top: 5%;
+    align-self: center;
+    height: 100%;
+}
+
+.map img {
+    width: 80%;
+    opacity: .9;
+    transition-duration: .2s;
+}
+
+.map img:hover{
+    opacity: 1;;
+}
+
+@media only screen and (max-width: 991px) {
+    .contact-page{
+        flex-direction: column;
+    }
+    .service-box{
+        width: 80%;
+    }
+    .service-box{
+        flex-direction: column;
+        height: 100%;
+    }
+    .contact-ui {
+        width: 80%;
+        margin-bottom: 2%;
+    }
+    .time-area {
+        margin-top: 5%;
+        text-align: center;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .service-box{
+        width: 90%;
+    }
+    .contact-ui {
+        margin-top: 5%;
+        width: 80%
+    }
+    .time-area {
+        text-align: center;
+    }
+}
+
+
