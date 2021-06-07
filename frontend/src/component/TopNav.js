@@ -14,7 +14,7 @@ function TopNav(){
         <div className="justify-content-center collapse navbar-collapse" id="collapsibleNavbar">
           <ul className="navbar-nav my-2">
             <NavLink className="navLink nav-item col" activeClassName="navLink-active" to="/home">Home</NavLink>
-            {/* <NavLink className="navLink nav-item col" activeClassName="navLink-active" to="/aboutus">About</NavLink> */}
+            {}
             <NavLink className="navLink nav-item col" activeClassName="navLink-active" to="/contact">Contact</NavLink>
             <NavLink className="navLink nav-item col" activeClassName="navLink-active" to="/services">Services</NavLink>
             <NavLink className="navLink nav-item col" activeClassName="navLink-active" to="/gallery">Gallery</NavLink>
