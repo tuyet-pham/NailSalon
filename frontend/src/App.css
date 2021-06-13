@@ -1,5 +1,12 @@
 :root {
   --font-main: 15px small-caps Helvetica, serif;
+  --black-theme-fade: #474747;
+  --white-theme: #eeeeeef8;
+  --white-med: #dadada;
+  --yellow-theme: #be8c00;
+  --black-theme: #131313;
+  --gray-theme: rgba(190, 190, 190, 0.575);
+  --font-main: 15px small-caps Helvetica;
 }
 
 .App {
@@ -7,23 +14,3 @@
   font: var(--font-main);
 }
 
-/* 
-/*Navigation and logo tagline added 5.7.20*/
-/*App nav a needed for the navigation bar at top of the webpage*/
-.App nav a {
-  color: black;
-  padding: 100px;
-  font-size: 1.5em;
-  text-decoration: none;
-}  */
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}

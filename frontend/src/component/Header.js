@@ -1,22 +1,12 @@
 import React from 'react';
-import './banner.css';
 import Background from './OverPage-0.svg';
-
-
-
-function About(){
-  return (
-    <div className="banner">
-      
-    </div>
-  );
-}
+import './banner.css';
 
 
 function Header(){
   return (
     <div>
-      <About/>
+      <div className="banner"></div>
       <img className="img-header" alt={"Loading failed"} src={Background}></img>
     </div>
   );

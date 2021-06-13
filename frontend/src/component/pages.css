@@ -1,20 +1,3 @@
-:root {
-    --purple-theme: #918fb6;
-    --black-theme: #131313;
-    --black-theme-fade: #474747;
-    --white-theme: #eeeeee6b;
-    --white-med: #dadada;
-}
-
-/*********About Area**************/
-
-
-.about-box {
-    margin-top: 2%;
-    width: 100%;
-    font: inherit;
-    height: 10%;
-}
 
 /*********Service Page**************/
 
@@ -26,15 +9,16 @@
     color: var(--white-med);
 }
 
-
 .header-s {
     padding: 40px;
+    letter-spacing: 5px;
+    text-decoration: none;
 }
 
-.header-s2 {
+.header-s2 { 
     margin-top: 20px;
     font-family: cursive;
-    text-align: left;
+    text-align: center;
 }
 
 .service-box{
@@ -64,17 +48,17 @@
 
 .contact-page{
     width: 100%;
+    height: 90vh;
     font: inherit;
+    background-color: var(--white-theme);
     display: inline-flex;
     justify-content: center;
-    margin-bottom: 15%; 
-    margin-top: 5%;
 }
 
 .contact-ui {
-    width: 25%;
-    height: 100%;
+    width: 30%;
     align-self: center;
+    margin: 2%;
 }
 
 .contact-ui textarea, .contact-ui input{
@@ -84,56 +68,56 @@
 
 .contact-button {
     border: 0;
-    background: #252525;
+    background: var(--black-theme);
     padding: 10px;
     border-radius: 30px;
     color: var(--white-med);
     transition-duration: .1s;
 }
 
-
 .contact-button:hover {
     background: var(--black-theme-fade);
 }
 
-.header-s3{
-    margin-bottom: 6%;
-    font: inherit;
+/*Time area*/
+.time-area {
+    margin: 2%;
+    align-self: center;
+    font: 15px small-caps Helvetica;;
+}
+
+.time-area h3{
+    text-transform: uppercase;
     font-size: 20px;
     color: var(--black-theme-fade);
+    margin-top: 8%;
+    letter-spacing: 3px;
 } 
 
 
-/*Time area*/
-.time-area {
-    margin-top: 5%;
-    margin-right: 6%;
-    height: 100%;
-    text-align: left;
-    align-self: center;
-    font:inherit;
-}
-
-.time-area p {
-    font: 15px small-caps Helvetica, sans-serif;
+.time-area li {
+    list-style-type: none;
 }
 
 
 /*Map Area*/
 .map {
-    margin-top: 5%;
+    margin: 2%;
+    height: 400px;
+    width: 30%;
     align-self: center;
-    height: 100%;
 }
 
-.map img {
-    width: 80%;
+.map iframe {
+    border: thin;
     opacity: .9;
+    width: 100%;
+    height: 100%;
     transition-duration: .2s;
 }
 
-.map img:hover{
-    opacity: 1;;
+.map iframe:hover{
+    opacity: 1;
 }
 
 @media only screen and (max-width: 991px) {
@@ -151,6 +135,9 @@
         width: 80%;
         margin-bottom: 2%;
     }
+    .map {
+        width: 80%;
+    }
     .time-area {
         margin-top: 5%;
         text-align: center;
@@ -165,9 +152,13 @@
         margin-top: 5%;
         width: 80%
     }
+    .map {
+        width: 80%;
+    }
     .time-area {
         text-align: center;
     }
 }
 
 
+/*********Gallery Page**************/

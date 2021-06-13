@@ -3,6 +3,8 @@ import {
   FaFacebook,
   FaInstagram
 } from "react-icons/fa";
+import './banner.css';
+
 
 function BottomNav(){
   return (
