@@ -38,7 +38,6 @@ function CustomCarousel(props){
                     <ul className="carousel-indicators">
                         <li data-target="#custom-carousel1" data-slide-to="0" className="active"></li>
                         <li data-target="#custom-carousel1" data-slide-to="1"></li>
-                        {/* <li data-target="#custom-carousel1" data-slide-to="2"></li> */}
                     </ul>
                     <div className="carousel-inner">
                         <div className="carousel-item active">

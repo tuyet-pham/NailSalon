@@ -1,32 +1,38 @@
 :root {
-    --purple-theme: #918fb6;
+    --yellow-theme: #be8c00;
     --black-theme: #131313;
     --black-theme-fade: #474747;
-    --white-theme: #eeeeee6b;
+    --gray-theme: rgba(190, 190, 190, 0.575);
+    --font-main: 15px small-caps Helvetica, sans-serif;
 }
-  
 
-.header {
-    width: 100%;
-    position: fixed;
-    position: sticky;
-    /* height: 400px; */
+hr {
+    width: 90%;
+    margin: 20px;
+    display: inline-block;
 }
 
 
 .img-header {
+    width: 30%;
+}
+
+.banner {
+    position: absolute;
+    background-color: var(--gray-theme);
     width: 100%;
-    height: 100%;
-    transition-duration: 2s;
+    height: 60%;
+    z-index: -1;
 }
 
 
 /********** TopNav area**************/
 
 
+
 .navLink{
     color: var(--black-theme);
-    font: 15px small-caps Helvetica, sans-serif;
+    font: var(--font-main);
     text-decoration: none  !important;
     outline: none !important;
     cursor: pointer;
@@ -39,7 +45,7 @@
 
 
 .navLink-active{
-    color: var(--purple-theme);
+    color: var(--yellow-theme);
     text-decoration: none;
 }
 
@@ -80,7 +86,7 @@
 .slide-font {
     font-size: 1em;
     color: var(--black-theme);
-    font: 15px small-caps Helvetica, sans-serif;
+    font: var(--font-main);
     margin-top: 10px; 
 }
 
@@ -117,24 +123,22 @@
 }
 
 .custom-button {
-    background-color: white;
     color: var(--black-theme);
-    border-bottom: 1px solid var(--black-theme); /* Green */
-    padding: 10px 24px;
+    background-color: var(--gray-theme);
+    border-radius: 20px;
+    padding: .5% 5%;
     text-decoration: none !important;
     text-align: center;
     transition-duration: 0.3s;
-    font: inherit;
-    margin: 10px;
+    font: var(--font-main);
     cursor: pointer;
-    outline: 0;
+    margin: auto;
 }
 
 
 .custom-button:hover {
-    color: var(--black-theme-fade);
-    opacity: .8;
-    border-bottom: 1px solid var(--black-theme-fade); 
+    background-color: var(--yellow-theme);
+    color: white;
 }
 
 
@@ -152,7 +156,8 @@
 
 .bottom-nav p{
     align-self: flex-end;
-    font: 13px small-caps Helvetica, sans-serif;
+    font: var(--font-main);
+    font-size: 13px;
 }
 
 .bottom-nav p a{
@@ -200,6 +205,7 @@
         /* font-size: 14px; */
         padding: 5px 15px;
     }
+    
 }
 
 @media only screen and (max-width: 400px) {
@@ -229,4 +235,5 @@
         margin: 5px auto;
         padding: 5px;
     }
+    
 }

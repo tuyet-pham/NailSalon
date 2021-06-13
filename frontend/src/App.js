@@ -72,23 +72,18 @@ function Services(){
 
 
 
-function About(){
-  return (
-    <div>
-      Hey
-    </div>
-  );
-}
-
 function Landing(){
   return (
     <div>
+      <hr/>
       <Header/>
-      <About />
+      <hr/>
       <CustomCarousel type="1"/>
       <CustomButton link="/gallery" message="Show Gallery"/>
+      <hr/>
       <CustomCarousel type="2"/>
       <CustomButton link="/services" message="All Services"/>
+      <hr/>
     </div>
     );
 }

@@ -14,9 +14,6 @@ function ContactForm(){
 
   return (
     <div className="contact-ui">
-      <label className="header-s3">
-          Contact Us
-      </label>
       <form onSubmit={handleSubmit}>
         <label>
           Contact us
@@ -75,11 +72,11 @@ function Time(){
   );
 }
 
-
+// Will require real map for google map function probably
 function Map(){
   return (
     <div className="map">
-       <img alt="unavailable" src={process.env.PUBLIC_URL + '/map.png'}/>
+       <img alt="unavailable" src={process.env.PUBLIC_URL + '/map.png'}/>  
     </div>
   );
 }
