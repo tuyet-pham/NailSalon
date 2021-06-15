@@ -1,7 +1,6 @@
 
 hr {
     width: 90%;
-    /* margin: 20px; */
     display: inline-block;
 }
 
@@ -11,7 +10,6 @@ hr {
 }
 
 .banner {
-    position: absolute;
     background-color: var(--gray-theme);
     width: 100%;
     height: 60%;
@@ -56,14 +54,30 @@ hr {
     opacity: .5;
 }
 
+.phone-pos {
+    position: absolute;
+    top: 15px;
+    right: 20px;
+}
+
+.salon-name {
+    position: absolute;
+    top: 15px;
+    left: 20px;
+    font-family: cursive;
+    font-size: 20px;
+}
+
 /*********Custom carousel**************/
 
 #custom-carousel {
+    /* background-color: darkblue; */
     width: 75%;
 }
 
 #custom-carousel1 {
     width: 100%;
+    /* background-color: darkgoldenrod; */
 }
 
 /*********Custom slides**************/
@@ -106,25 +120,30 @@ hr {
 }
 
 .carousel-control-next {
-  height: 20%;
-  margin: auto;
+    background-color: rgba(245, 245, 245, 0.541);
+    height: 20%;
+    margin: auto;
 }
 
 .carousel-control-prev {
-  height: 20%;
-  margin: auto;
+    background-color: rgba(245, 245, 245, 0.541);
+    height: 20%;
+    margin: auto;
 }
 
 /*********Buttons**************/
 
+.button-div {
+    margin: 2%;
+}
+
 .custom-button {
-    color: var(--black-theme);
-    background-color: var(--gray-theme);
+    color: var(--white-theme);
+    background-color: var(--gray-theme-footer);
     border-radius: 20px;
-    padding: .5% 5%;
+    padding: 10px 30px;
     text-decoration: none !important;
     text-align: center;
-    transition-duration: 0.3s;
     font: var(--font-main);
     cursor: pointer;
 }
@@ -194,14 +213,13 @@ hr {
         margin-top: 5px;
         margin-bottom: 5px;
     }
-    .custom-button{
-        /* font-size: 14px; */
-        padding: 5px 15px;
+    .img-header {
+        width: 50%;
     }
     
 }
 
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 700px) {
     .slide-card-item {
         width: 40%;
     }
@@ -212,13 +230,14 @@ hr {
         margin-top: 5px;
         margin-bottom: 5px;
     }
-    .custom-button{
-        font-size: 13px;
-        padding: 5px 15px;
+    .phone-pos {
+        position: relative;
+        top: unset;
+        right: unset;
     }
-    /* .img-slide {
-        display: none !important;
-    } */
+    .img-header{
+        width: 80%;
+    }
     .gallery-card {
         width: 50%;
         margin: 5px auto;

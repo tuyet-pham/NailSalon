@@ -5,8 +5,7 @@ import './banner.css';
 
 function Header(){
   return (
-    <div>
-      <div className="banner"></div>
+    <div className="banner">
       <img className="img-header" alt={"Loading failed"} src={Background}></img>
     </div>
   );

@@ -34,11 +34,7 @@ function CustomCarousel(props){
         props.type === "1" ? 
         (
             <div className="container pt-3 pb-1">
-                <div id="custom-carousel1" className="carousel slide mx-auto" data-ride="carousel" data-pause="hover">
-                    <ul className="carousel-indicators">
-                        <li data-target="#custom-carousel1" data-slide-to="0" className="active"></li>
-                        <li data-target="#custom-carousel1" data-slide-to="1"></li>
-                    </ul>
+                <div id="custom-carousel1" className="carousel slide carousel-fade" autoPlay="true" data-ride="carousel" interval="500" swipeable="true" data-pause="hover">
                     <div className="carousel-inner">
                         <div className="carousel-item active">
                             <span className="row">
@@ -57,23 +53,13 @@ function CustomCarousel(props){
                             </span>
                         </div>
                     </div>
-                    <a  className="carousel-control-prev float-left" href="#custom-carousel1" data-slide="prev">
-                        <span className="carousel-control-prev-icon"></span>
-                    </a>
-                    <a className="carousel-control-next" href="#custom-carousel1" data-slide="next">
-                        <span className="carousel-control-next-icon"></span>
-                    </a>
                 </div>
             </div>
         )
         : 
         (
             <div className="container pt-3 pb-1">
-                <div id="custom-carousel" className="carousel slide mx-auto" data-interval="false">
-                    <ul className="carousel-indicators">
-                        <li data-target="#custom-carousel" data-slide-to="0" className="active"></li>
-                        <li data-target="#custom-carousel" data-slide-to="1"></li>
-                    </ul>
+                <div id="custom-carousel" className="carousel slide mx-auto" data-ride="carousel" interval="2000" swipeable="true">
                     <div className="carousel-inner">
                         <div className="carousel-item active">
                             <span className="row">

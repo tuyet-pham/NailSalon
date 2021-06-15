@@ -5,12 +5,12 @@ import './pages.css';
 
 function ContactForm(){
   const [email, setEmail] = useState("");
-  const [subject, setSubject] = useState("");
+  const [name, setName] = useState("");
   const [message, setMessage] = useState("");
   
   const handleSubmit = (evt) => {
       evt.preventDefault();
-      alert(`Submitting ${email} : ${subject}`)
+      alert(`Submitting ${email} : from ${name}`)
   }
 
   return (
@@ -28,13 +28,13 @@ function ContactForm(){
         <br/>
         <input
           type="text"
-          placeholder="Subject" 
-          value={subject}
-          onChange={e => setSubject(e.target.value)}
+          placeholder="Name" 
+          value={name}
+          onChange={e => setName(e.target.value)}
         />
         <br/>
         <textarea 
-          rows="15"
+          rows="12"
           value={message}
           onChange={e => setMessage(e.target.value)}
         />

@@ -8,7 +8,7 @@ function CustomButton(props){
     const message = props.message;
 
     return (
-        <div>
+        <div className="button-div">
             <NavLink className="custom-button" to={link}>{message}</NavLink>
         </div>
     )

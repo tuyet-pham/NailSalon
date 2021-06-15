@@ -27,6 +27,7 @@ function Landing(){
       <CustomCarousel type="2"/>
       <CustomButton link="/services" message="All Services"/>
       <hr/>
+      <Contact/>
     </div>
     );
 }
@@ -41,7 +42,6 @@ function App() {
       <Router>
         <TopNav/>
         <PageTemplate path="/(home|)/" component={Landing} pageName="Landing"/>
-        <PageTemplate path="/contact" component={Contact} pageName="Contact"/>
         <PageTemplate path="/services" component={Services} pageName="Services"/>
         <PageTemplate path="/gallery" component={Gallery} pageName="Gallery"/>
       </Router>

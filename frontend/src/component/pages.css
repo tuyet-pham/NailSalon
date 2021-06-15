@@ -48,8 +48,8 @@
 
 .contact-page{
     width: 100%;
-    height: 90vh;
     font: inherit;
+    padding: 3%;
     background-color: var(--white-theme);
     display: inline-flex;
     justify-content: center;
@@ -63,20 +63,23 @@
 
 .contact-ui textarea, .contact-ui input{
     width: 100%;
-    margin: 3px;
+    margin: 5px;
+    border-style: dotted;
+    resize: none;
 }
 
-.contact-button {
+.contact-ui .contact-button {
     border: 0;
-    background: var(--black-theme);
+    background: var(--gray-theme-footer);
     padding: 10px;
     border-radius: 30px;
     color: var(--white-med);
     transition-duration: .1s;
+    margin-top: 10px;
 }
 
 .contact-button:hover {
-    background: var(--black-theme-fade);
+    background: rgb(190, 142, 20);
 }
 
 /*Time area*/
@@ -123,6 +126,7 @@
 @media only screen and (max-width: 991px) {
     .contact-page{
         flex-direction: column;
+        height: auto;
     }
     .service-box{
         width: 80%;
@@ -132,14 +136,16 @@
         height: 100%;
     }
     .contact-ui {
+        margin-top: 5%;
         width: 80%;
-        margin-bottom: 2%;
     }
     .map {
         width: 80%;
+        margin: 10%;
     }
     .time-area {
-        margin-top: 5%;
+        margin: 5%;
+        width: 80%;
         text-align: center;
     }
 }
@@ -148,15 +154,8 @@
     .service-box{
         width: 90%;
     }
-    .contact-ui {
-        margin-top: 5%;
-        width: 80%
-    }
     .map {
         width: 80%;
-    }
-    .time-area {
-        text-align: center;
     }
 }
 
