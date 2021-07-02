@@ -54,11 +54,6 @@ hr {
     opacity: .5;
 }
 
-.phone-pos {
-    position: absolute;
-    top: 15px;
-    right: 20px;
-}
 
 .salon-name {
     position: absolute;
@@ -67,6 +62,24 @@ hr {
     font-family: cursive;
     font-size: 20px;
 }
+
+
+.side-bar {
+    height: 13%; 
+    width: 50px;
+    position: fixed;
+    z-index: 100;
+    top: 50%;
+    right: 0;
+    background-color: var(--yellow-theme);
+    overflow-x: hidden;
+    padding: 5px;
+}
+
+.side-bar .btn {
+    color: var(--white-theme);
+}
+
 
 /*********Custom carousel**************/
 
@@ -135,6 +148,7 @@ hr {
 
 .button-div {
     margin: 2%;
+    width: 100%;
 }
 
 .custom-button {
@@ -243,5 +257,4 @@ hr {
         margin: 5px auto;
         padding: 5px;
     }
-    
 }

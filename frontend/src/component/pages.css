@@ -29,6 +29,7 @@
     border: 1px solid rgb(255, 255, 255);
     display: inline-flex;
     justify-content: space-evenly;
+    box-shadow: 5px 10px 18px #000000;
 }
 
 .service-box p {
@@ -66,6 +67,8 @@
     margin: 5px;
     border-style: dotted;
     resize: none;
+    box-shadow: 5px 10px 18px #c9c9c9;
+
 }
 
 .contact-ui .contact-button {
@@ -109,6 +112,7 @@
     height: 400px;
     width: 30%;
     align-self: center;
+    
 }
 
 .map iframe {
@@ -117,11 +121,30 @@
     width: 100%;
     height: 100%;
     transition-duration: .2s;
+    box-shadow: 5px 10px 18px #c9c9c9;
 }
 
 .map iframe:hover{
     opacity: 1;
 }
+
+
+/*********Gallery Page**************/
+
+.gallery-page-pic {
+    width: 300px;
+    height: 300px;
+    border-radius: 3px;;
+    margin: 10px;
+}
+
+.container-fluid {
+    margin-bottom: 10%;
+}
+
+
+/*********Media queries**************/
+
 
 @media only screen and (max-width: 991px) {
     .contact-page{
@@ -159,5 +182,3 @@
     }
 }
 
-
-/*********Gallery Page**************/

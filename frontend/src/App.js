@@ -13,6 +13,7 @@ import Contact from './component/Contact';
 import Services from './component/Services';
 import Gallery from './component/Gallery';
 import TopNav from './component/TopNav';
+import { FaInbox, FaPhone } from "react-icons/fa";
 
 
 function Landing(){
@@ -33,12 +34,19 @@ function Landing(){
 }
 
 
-
+function Sidebar(){
+  return (
+    <div className="side-bar">
+      <a className="btn" href="tel:5554280940"><FaPhone/></a>
+      <a className="btn" href="mailto:gns@gmail.com"><FaInbox/></a>
+    </div>
+  );
+}
 
 function App() {
-
   return (
     <div className="App">
+      <Sidebar/>
       <Router>
         <TopNav/>
         <PageTemplate path="/(home|)/" component={Landing} pageName="Landing"/>

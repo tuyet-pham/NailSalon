@@ -2,7 +2,6 @@ import React from 'react';
 import { NavLink } from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './banner.css';
-import { FaPhone } from "react-icons/fa";
 
 
 function TopNav(){
@@ -17,15 +16,11 @@ function TopNav(){
             <NavLink className="navLink nav-item col" activeClassName="navLink-active" to="/home">Home</NavLink>
             {}
             <NavLink className="navLink nav-item col" activeClassName="navLink-active" to="/services">Services</NavLink>
-            <NavLink className="navLink nav-item col" activeClassName="navLink-active" to="/gallery">Gallery</NavLink>
-            <div className="phone-pos">
-              <FaPhone style={{"margin-right":"2px"}}/> 972-318-0889
-            </div>
-          </ul>  
+            <NavLink className="navLink nav-item col" activeClassName="navLink-active" to="/gallery">Gallery</NavLink>          </ul>  
         </div>
       </div>
       <div className="salon-name">
-              Golden Nails & Spa
+          Golden Nails & Spa
       </div>
     </div>
     );
