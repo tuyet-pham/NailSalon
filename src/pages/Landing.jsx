@@ -1,5 +1,6 @@
 import React from 'react';
 import './pages.css'
+import img1 from '../images/img1.jpg'
 
 function Contact() {
     const Map = () => {
@@ -87,21 +88,22 @@ function AboutUs() {
                 <div id='contentv'>
                     <h2 style={{color:"#ab866f"}}>About us</h2>
                     
-                    At <strong>5 Star Nail Spa</strong> we believe that only by enriching the lives of those around us will we enrich our own.
-                    All of our professional technicians proudly carry 10+ years of various expertise and 
-                    are strongly <strong>committed</strong> to provide the best professional and 
-                    comfortable services from <strong style={{color:"#ab866f"}}>pedicures</strong>, <strong style={{color:"#ab866f"}}>manicures</strong>, <strong style={{color:"#ab866f"}}>waxing</strong>, and <strong style={{color:"#ab866f"}}>lash enhancements</strong>.
+                    At <strong>5 Star Nail Spa</strong> we believe only by enriching the lives of those around us will we enrich our own.
+                    All of our amazing professional technicians proudly carry 10+ years of various expertise. We are  
+                    are strongly <strong>committed</strong> to providing the best professional services 
+                    from <strong style={{color:"#ab866f"}}>pedicures</strong>, <strong style={{color:"#ab866f"}}>manicures</strong>, <strong style={{color:"#ab866f"}}>waxing</strong>, and <strong style={{color:"#ab866f"}}>lash enhancements</strong>
+                    in a comfortable and relaxing enviroment.
                     <br/>
                     <br/>
                 </div>
                 <div id='contenth'>
-                        Our clients are <i style={{margin:"unset" }}>vital</i> to the growth of our business, thus we take great pride in ensuring 100% satisfaction from beginning to end. We are not perfect, but we definitely try to be! 
-                        <br/>
-                        <br/>
-                        It is also important to us that our space welcomes all walks of life, and encourages the uniqueness in each one of our clients.
-                        We understand that life happens, and relaxation time can seem priceless. We want to prove to you that it isn't!
-                        <br/>
-                        <br/>
+                    Our clients are <i style={{margin:"unset" }}>vital</i> to the growth of our business, thus we take great pride in ensuring 100% satisfaction from beginning to end. We are not perfect, but we definitely try to be! 
+                    <br/>
+                    <br/>
+                    It is important to us that our space welcomes all, and encourages the uniqueness in each client. 
+                    We thank you for your business and we hope to see you soon!
+                    <br/>
+                    <br/>
                 </div>
                 <button onClick={setReadMore} id="readx" className='NS-btn'>read more . . .</button>
             </div>
@@ -116,29 +118,24 @@ function Services() {
             <h2 style={{color:"#ab866f"}} >Services</h2>
             <div className='services-body2' >
                 <div className='services-div'>
-                    <span >
+                    <span>
                         <h5>Manicure</h5>
-
                     </span>
                     <span>
                         <h5>Pedicure</h5>
-                        
+
                     </span>
                     <span>
                         <h5>Wax</h5>
-                        
                     </span>
                     <span>
                         <h5>Lash enhancement</h5>
-                        
                     </span>
                     <span>
                         <h5>Artificial nails</h5>
-                        
                     </span>
                     <span>
                         <h5>Eyebrow tinting</h5>
-                        
                     </span>
                     <br/>
                 </div>
@@ -148,13 +145,23 @@ function Services() {
     );
 }
 
+function Header () {
+    return (
+        <div>
+
+            <header>
+
+            </header>
+        </div>
+        
+    )
+}
+
 
 function Landing() {
     return (
         <div className="landing-body">
-            <header>
-                {/* Header */}
-            </header>
+            <Header />
             <AboutUs />
             <hr/>
             <Services />
