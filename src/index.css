@@ -8,13 +8,3 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 200;
   text-transform: uppercase;
 }
-
-hr {
-  border: none;
-  height: 1px;
-  /* Set the hr color */
-  color: rgb(182, 151, 141); /* old IE */
-  background-color: rgb(182, 151, 141); /* Modern Browsers */
-  opacity: .2;
-  width: 90%;
-}

@@ -1,24 +1,17 @@
 
 .landing-body{
-  font-size: calc(10px + 1vmin);
+  font-size: calc(10px + 1.1vmin);
   overflow: hidden;
-  background-color: var(--light-background);
+  background-color: var(--ddark-background);
 }
 
 /************ ABOUT US ************/
-a {
-    text-decoration: none;
-}
+
 
 .about-us-body{
-    padding:10px 40px;
-    margin: 10px;
-    background-color: var(--white);
+    padding: 30px;
+    background-color: white;
     color: var(--black);
-    /* font-size: 17px; */
-    display: flex;
-    border-radius: 7px;
-    flex-wrap: wrap;
 }
 
 .about-us{
@@ -37,75 +30,70 @@ a {
 /************ GALLERY ************/
 
 .gallery-body{
-    padding:10px 40px;
+    padding: 30px;
+    background-color: var(--ddark-background);
+    color: var(--white);
 }
-
-
-
 
 
 /************ SERVICES ************/
 
 .services-body1{
-    padding:10px 40px;
+    background-color: var(--light-background);
+    padding: 30px;
 }
 
 .services-body2 {
     display: flexbox;
     flex-wrap: wrap;
     flex-direction: column;
-    margin: auto;
     align-content: center;
     justify-content: center;
     text-align: center;
-    padding:10px 40px;
-    margin: 10px;
 }
 
 .services-div{
     display: flex;
     flex-wrap: wrap;
-    margin: auto;
     align-content: center;
     justify-content: center;
     text-align: center;
-    
 }
 
 .services-body2 span {
     width: 100%;
     max-width: 200px;
-    margin: 10px;
-    background-color: var(--white);
-    border-radius: 15px;
+    margin: 15px auto;
     box-shadow: 10px 10px var(--medium-background);
-    /* border-style: solid;
-    border-width: .5px; */
-    transform: rotate(2deg);
+    border-style: solid;
+    border-width: .5px;
     transition: .4s;
     cursor: pointer;
 }
 
 .services-body2 span:hover{
-    transform: rotate(-4deg);
+    border-color: rgb(110, 153, 118);
+    box-shadow: 0px 0px var(--medium-background);
 }
 
-/* width:110%;
-  top:-5%;
-  left:-5%;
-  transform:rotate(2deg); */
 
 /************ CONTACT AREA, FORM & DIVs ************/
 
 .contact {
-    margin: 10px;
-
+    background-color: var(--ddark-background);
     display: flex;
     flex-wrap: wrap;
     align-content: center;
     justify-content: center;
     text-align: center;
-    margin-bottom: 50px;
+    padding: 30px 0px;
+}
+
+
+@media screen and (max-width: 1024px) {
+    .contact{
+        margin: 20px;
+    }
 }
 
 .contact-form {
@@ -121,9 +109,9 @@ a {
 
 .EmailForm {
     background-color: var(--white);
-    opacity: .4;
-    width: auto;
-    padding: 40px;
+    opacity: .6;
+    /* width: 100%; */
+    padding: 30px;
 }
 
 
@@ -134,9 +122,8 @@ a {
     z-index: 10;
     align-self: center;
     color: var(--white);
-    background-color: var(--black);
+    background-color: var(--medium-background);
     border-radius: 77% 23% 82% 18% / 43% 44% 56% 57% ;
-    opacity: .85;
     
 }
 
@@ -157,11 +144,10 @@ a {
 }
 
 .contact-info-div-sm {
-    margin: 30px;
+    margin: 0px 30px;
     padding: 30px;
     width:auto;
 }
-
 
 
 .contact-p{
@@ -177,46 +163,6 @@ a {
 
 
 
-/**************** IGNORE!! NEWSLETTER **********/
-input, textarea {
-    text-decoration: none;
-    border: none;
-    border-radius: 7px;
-    margin-top: 10px;
-    background-color: white;
-    opacity: .7;
-}
-
-textarea {
-    width: 100%;
-    resize: none;
-    transition: .3s;
-    height: 100px;
-    padding: 10px;
-}
-
-input {
-    width: 100%;
-    padding: 10px;
-    transition: .3s;
-}
-
-input[type="submit"] {
-    color: var(--black);
-    background-color: var(--dark-background);
-}
-
-/* input[type="submit"]:hover {
-    color: rgb(255, 255, 255);
-    opacity: 1;
-}
-
-
-input:hover, textarea:hover {
-    opacity: 1;
-} */
-
-
 
 
 /**************** MAP AREA **********/
@@ -225,7 +171,6 @@ input:hover, textarea:hover {
 
 }
 
-
 .gmap_canvas {
     overflow: hidden;
     background: none!important;
@@ -233,8 +178,8 @@ input:hover, textarea:hover {
 
 #gmap_canvas {
     width: 400px;
-    /* min-width: 300px; */
-    height: 400px;
+    min-width: 300px;
+    height: 500px;
     border-radius: 7px ;
     margin: 20px;
 }
@@ -243,55 +188,27 @@ input:hover, textarea:hover {
 
 .my-footer{
     padding: 30px 0px 0px 30px;
-    /* text-align: center; */
+    text-align: center;
     height: 150px;
     background-color: var(--black);
-    color: var(--white);
+    color: rgba(255, 255, 255, 0.47);
 }
 
 
-.socialMedia-div i {
+.socialMedia-div i, .contact-info-div-sm i {
     font-size: 30px;
     padding-right: 3px;
     padding-bottom: 10px;
 }
 
-.socialMedia-div a {
+.socialMedia-div a, .contact-info-div-sm a {
     opacity: .7;
 }
 
-.socialMedia-div a:hover {
+.socialMedia-div a:hover, .contact-info-div-sm a:hover {
     opacity: 1;
 }
 
 
 
-/************* OTHERS ************/
 
-.NS-btn {
-    width: 100%;    
-    border: none;
-    padding: 10px 0px;
-    cursor: pointer;
-    transition: 0.3s;
-    background-color: var(--medium-background);
-    opacity: .6;
-    border-radius: 10px;
-
-}
-
-.NS-btn1{
-    border: none;
-    padding: 10px 0px;
-    cursor: pointer;
-    transition: 0.3s;
-    background-color: var(--medium-background);
-    opacity: .6;
-    margin-top:30px;
-    border-radius: 10px;
-}
-
-.NS-btn:hover, .active, .NS-btn1:hover {
-    opacity: .8;
-}
-   

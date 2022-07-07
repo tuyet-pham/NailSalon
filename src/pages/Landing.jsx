@@ -1,6 +1,6 @@
 import React from 'react';
 import './pages.css'
-import img1 from '../images/img1.jpg'
+import './components.css'
 
 function Contact() {
     const Map = () => {
@@ -21,7 +21,7 @@ function Contact() {
                     <p className='contact-p'>
                         <i className="fa-solid fa-square-phone"/><a href="tel:+6822557055">(682)255-7055</a>
                         <br/>
-                        <i className="fa-solid fa-at"></i> <a href="mailto:contact@5starnailspa-wc.com">contact@5starnailspa-wc.com</a>
+                        <i className="fa-solid fa-at"></i><a href="mailto:contact@5starnailspa-wc.com">contact@5starnailspa-wc.com</a>
                         <br/>
                         <i className="fa-solid fa-location-dot"></i>2730 Western Center Blvd Ste 420, Fort Worth, TX 76131
                     </p>
@@ -31,8 +31,10 @@ function Contact() {
                         <i className="fa-solid fa-clock"></i>Mon - Sat : 9:30am - 7:00pm
                         <br/>
                         <i className="fa-solid fa-clock"></i>Sun : 11:00am - 5:00pm
-
                     </p>
+                    <a href="https://www.facebook.com/5starnailsandspa.wc/"><i style={{color:"#2159ff"}} className="fa-brands fa-facebook-square"></i></a>
+                    <a href="https://www.instagram.com/fivestarnailandspa/"><i style={{color:"#9e868c"}} className="fa-brands fa-instagram-square"></i></a>
+                    <a href="https://goo.gl/maps/o3J95F1EDyTPjwJV9"><i style={{color:"#a1bcc7"}} className="fa-brands fa-google-plus-square"></i></a>
                 </div>
                 <Map />
             </div>
@@ -58,7 +60,7 @@ function Gallery() {
 
     return (
         <div className='gallery-body'>
-          <h2 style={{color:"#ab866f"}} >Gallery</h2>
+          <h2 style={{color:"#fff"}} >Gallery</h2>
           <div id='foo'>
             COMING SOON!
           </div>
@@ -86,6 +88,7 @@ function AboutUs() {
         <div className='about-us-body'>
             <div className='about-us'>
                 <div id='contentv'>
+
                     <h2 style={{color:"#ab866f"}}>About us</h2>
                     
                     At <strong>5 Star Nail Spa</strong> we believe only by enriching the lives of those around us will we enrich our own.
@@ -93,6 +96,7 @@ function AboutUs() {
                     are strongly <strong>committed</strong> to providing the best professional services 
                     from <strong style={{color:"#ab866f"}}>pedicures</strong>, <strong style={{color:"#ab866f"}}>manicures</strong>, <strong style={{color:"#ab866f"}}>waxing</strong>, and <strong style={{color:"#ab866f"}}>lash enhancements</strong>
                     in a comfortable and relaxing enviroment.
+                    
                     <br/>
                     <br/>
                 </div>
@@ -115,8 +119,12 @@ function AboutUs() {
 function Services() {
     return (
         <div className='services-body1'>
+            
+
             <h2 style={{color:"#ab866f"}} >Services</h2>
+
             <div className='services-body2' >
+
                 <div className='services-div'>
                     <span>
                         <h5>Manicure</h5>
@@ -139,7 +147,9 @@ function Services() {
                     </span>
                     <br/>
                 </div>
+
                 <button style={{width:"50%"}} className="NS-btn1"><a href="tel:+6822557055" >Call for more information!</a></button>
+            
             </div>
         </div>
     );
@@ -147,11 +157,11 @@ function Services() {
 
 function Header () {
     return (
-        <div>
-
+        <div className='NS-header'>
             <header>
 
             </header>
+            <hr/>
         </div>
         
     )
@@ -162,14 +172,12 @@ function Landing() {
     return (
         <div className="landing-body">
             <Header />
+
             <AboutUs />
-            <hr/>
+
             <Services />
-            <hr/>
             <Gallery />
-            <hr/>
             <Contact />
-            <hr/>
         </div>
     );
 }
