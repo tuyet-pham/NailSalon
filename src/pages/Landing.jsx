@@ -1,6 +1,8 @@
 import React from 'react';
-import './pages.css'
-import './components.css'
+import './pages.css';
+import './components.css';
+import img1 from '../images/14.jpeg'
+import ico from '../images/LOGO.svg'
 
 function Contact() {
     const Map = () => {
@@ -87,9 +89,9 @@ function AboutUs() {
     return (
         <div className='about-us-body'>
             <div className='about-us'>
+                <h2 style={{color:"#ab866f"}}>About us</h2>
                 <div id='contentv'>
 
-                    <h2 style={{color:"#ab866f"}}>About us</h2>
                     
                     At <strong>5 Star Nail Spa</strong> we believe only by enriching the lives of those around us will we enrich our own.
                     All of our amazing professional technicians proudly carry 10+ years of various expertise. We are  
@@ -108,7 +110,9 @@ function AboutUs() {
                     We thank you for your business and we hope to see you soon!
                     <br/>
                     <br/>
+                    <img className='ico' src={ico}/>
                 </div>
+                
                 <button onClick={setReadMore} id="readx" className='NS-btn'>read more . . .</button>
             </div>
         </div>
@@ -127,23 +131,35 @@ function Services() {
 
                 <div className='services-div'>
                     <span>
-                        <h5>Manicure</h5>
+                        <h4>Manicure</h4>
+                        <hr/>
+                        $20 ~ $36+
                     </span>
                     <span>
-                        <h5>Pedicure</h5>
-
+                        <h4>Pedicure</h4>
+                        <hr/>
+                        $30 ~ $65+
                     </span>
                     <span>
-                        <h5>Wax</h5>
+                        <h4>Wax</h4>
+                        <hr/>
+                        Please call for better estimates
                     </span>
                     <span>
-                        <h5>Lash enhancement</h5>
+                        <h4>Lash enhancement</h4>
+                        <hr/>
+                        Please call for better estimates
                     </span>
                     <span>
-                        <h5>Artificial nails</h5>
+                        <h4>Artificial nails</h4>
+                        <hr/>
+                        Dip, Acrylic, Gel, Chrome, Designs & More! 
+                        Please call for better estimates
                     </span>
                     <span>
-                        <h5>Eyebrow tinting</h5>
+                        <h4>Kids Mani & Pedicure</h4>
+                        <hr/>
+                        $10 ~ $35
                     </span>
                     <br/>
                 </div>
@@ -158,10 +174,7 @@ function Services() {
 function Header () {
     return (
         <div className='NS-header'>
-            <header>
-
-            </header>
-            <hr/>
+            <img className="header-img" src={img1}/>
         </div>
         
     )
@@ -172,10 +185,12 @@ function Landing() {
     return (
         <div className="landing-body">
             <Header />
-
+            <hr/>
             <AboutUs />
-
+            <hr/>
             <Services />
+            <hr/>
+
             <Gallery />
             <Contact />
         </div>

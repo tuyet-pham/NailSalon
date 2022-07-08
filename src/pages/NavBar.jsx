@@ -3,7 +3,7 @@ import { BrowserRouter, Route, Link } from "react-router-dom";
 
 function NavBar() {
   return (
-    <nav className="landing-nav">
+    <nav className="Nav-main">
       <ul>
         <li>
           <Link to="/">Home</Link>
@@ -14,6 +14,18 @@ function NavBar() {
         <li>
           <Link to="/order">Order</Link>
         </li>
+        {/* <li>
+          <Link to="/order">Order</Link>
+        </li>
+        <li>
+          <Link to="/order">Order</Link>
+        </li>
+        <li>
+          <Link to="/order">Order</Link>
+        </li>
+        <li>
+          <Link to="/order">Order</Link>
+        </li> */}
       </ul>
     </nav>
   );

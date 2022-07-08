@@ -1,17 +1,18 @@
 
 .landing-body{
-  font-size: calc(10px + 1.1vmin);
+  font-size: calc(10px + 1.0vmin);
   overflow: hidden;
-  background-color: var(--ddark-background);
+
 }
 
 /************ ABOUT US ************/
 
 
 .about-us-body{
-    padding: 30px;
+    padding: 20px 30px 40px 30px;
     background-color: white;
     color: var(--black);
+    
 }
 
 .about-us{
@@ -20,6 +21,9 @@
     flex-wrap: wrap;
 }
 
+#contentv, #contenth {
+    text-align: center;
+}
 
 #contenth{
     display: none;
@@ -62,18 +66,28 @@
 
 .services-body2 span {
     width: 100%;
-    max-width: 200px;
-    margin: 15px auto;
+    max-width: 230px;
+    margin: 15px 15px;
     box-shadow: 10px 10px var(--medium-background);
     border-style: solid;
     border-width: .5px;
     transition: .4s;
     cursor: pointer;
+    padding: 10px 5px;
+    font-size: 15px;
+    color: rgb(56, 56, 56)
 }
+
+.services-body2 span h4 {
+    margin: 1px;
+    font-size: large;
+}
+
 
 .services-body2 span:hover{
     border-color: rgb(110, 153, 118);
     box-shadow: 0px 0px var(--medium-background);
+    color: rgb(110, 153, 118);
 }
 
 
@@ -87,12 +101,13 @@
     justify-content: center;
     text-align: center;
     padding: 30px 0px;
+
 }
 
 
 @media screen and (max-width: 1024px) {
     .contact{
-        margin: 20px;
+        padding: 30px;
     }
 }
 
@@ -100,7 +115,6 @@
     border: none !important;
     display: grid;
     margin: 20px;
-    
 }
 
 .EmailForm, .info-float  {
@@ -110,7 +124,6 @@
 .EmailForm {
     background-color: var(--white);
     opacity: .6;
-    /* width: 100%; */
     padding: 30px;
 }
 
@@ -124,6 +137,7 @@
     color: var(--white);
     background-color: var(--medium-background);
     border-radius: 77% 23% 82% 18% / 43% 44% 56% 57% ;
+    box-shadow: 1px 2px 5px var(--ddark-background);
     
 }
 
@@ -141,6 +155,7 @@
     flex-direction: row;
     align-content: center;
     justify-content: center;
+    box-shadow: 1px 2px 5px var(--sdark-background);
 }
 
 .contact-info-div-sm {

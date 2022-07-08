@@ -32,6 +32,26 @@
 }
 
 
+/****************** HEADER *****************/
+.NS-header {
+    height: calc(10px + 70vmin) ;
+    background-color: unset;
+}
+
+.header-img {
+    width: 100%;
+    opacity: .5;
+    z-index: -100;
+    position: sticky;
+    position: -webkit-sticky;
+}
+
+.ico {
+    width: 50px;
+    margin: 5px;
+}
+
+
 
 /**************** IGNORE!! NEWSLETTER **********/
 input, textarea {
