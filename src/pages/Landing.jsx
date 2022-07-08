@@ -1,7 +1,7 @@
 import React from 'react';
 import './pages.css';
 import './components.css';
-import img1 from '../images/14.jpeg'
+import img1 from '../images/14.png'
 import ico from '../images/LOGO.svg'
 
 function Contact() {
