@@ -42,8 +42,7 @@
     width: 100%;
     opacity: .5;
     z-index: -100;
-    position: sticky;
-    position: -webkit-sticky;
+    position: fixed;
 }
 
 .ico {
@@ -91,3 +90,13 @@ input[type="submit"] {
 input:hover, textarea:hover {
     opacity: 1;
 } */
+
+
+/*************** NAV BAR ***************/
+
+.NS-nav-bar nav {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+
+}

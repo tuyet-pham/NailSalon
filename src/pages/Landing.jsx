@@ -21,7 +21,7 @@ function Contact() {
                     <h4>Contact info.</h4>
                     <hr/>
                     <p className='contact-p'>
-                        <i className="fa-solid fa-square-phone"/><a href="tel:+6822557055">(682)255-7055</a>
+                        <i className="fa-solid fa-square-phone"/><a href="tel:+16822557055">(682)255-7055</a>
                         <br/>
                         <i className="fa-solid fa-at"></i><a href="mailto:contact@5starnailspa-wc.com">contact@5starnailspa-wc.com</a>
                         <br/>
@@ -164,7 +164,7 @@ function Services() {
                     <br/>
                 </div>
 
-                <button style={{width:"50%"}} className="NS-btn1"><a href="tel:+6822557055" >Call for more information!</a></button>
+                <button style={{width:"50%"}} className="NS-btn1"><a href="tel:+16822557055" >Call for more information!</a></button>
             
             </div>
         </div>
