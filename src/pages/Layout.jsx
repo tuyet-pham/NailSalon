@@ -31,7 +31,7 @@ const Layout = () => {
 
   return (
     <div>
-      {/* <NavBar /> */}
+      <NavBar />
       <Outlet />
       <SalonFooter />
     </div>
