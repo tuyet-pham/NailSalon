@@ -3,11 +3,11 @@ import { Link } from "react-router-dom";
 import './css/pages.css';
 import './css/components.css';
 import img11 from '../images/11.png'
-import img8 from '../images/8.jpeg'
-import img6 from '../images/23.jpeg'
-import img15 from '../images/15.jpeg'
-import img9 from '../images/9.jpeg'
-import img10 from '../images/10.jpeg'
+import img8 from '../images/8.png'
+import img6 from '../images/23.png'
+import img15 from '../images/15.png'
+import img9 from '../images/9.png'
+import img10 from '../images/10.png'
 import ico from '../images/LOGO.svg'
 
 function Contact() {
