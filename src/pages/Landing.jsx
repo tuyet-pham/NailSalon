@@ -175,12 +175,12 @@ function Services() {
 function Header () {
     return (
         <div className='NS-header'>
-            <img className='header-img' src={img11} alt="image-1"/>
-            <img className='header-img' src={img8} alt="image-2"/>
-            <img className='header-img' src={img6} alt="image-3"/>
-            <img className='header-img' src={img15} alt="image-4"/>
-            <img className='header-img' src={img9} alt="image-5"/>
-            <img className='header-img' src={img4} alt="image-6"/>
+            <img className='header-img' src={img11} alt="i-1"/>
+            <img className='header-img' src={img8} alt="i-2"/>
+            <img className='header-img' src={img6} alt="i-3"/>
+            <img className='header-img' src={img15} alt="i-4"/>
+            <img className='header-img' src={img9} alt="i-5"/>
+            <img className='header-img' src={img4} alt="i-6"/>
         </div>
     )
 }
