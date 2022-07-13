@@ -7,7 +7,7 @@ import img8 from '../images/8.png'
 import img6 from '../images/23.png'
 import img15 from '../images/15.png'
 import img9 from '../images/9.png'
-import img10 from '../images/10.png'
+import img4 from '../images/4.png'
 import ico from '../images/LOGO.svg'
 
 function Contact() {
@@ -180,7 +180,7 @@ function Header () {
             <img className='header-img' src={img6} alt="image-3"/>
             <img className='header-img' src={img15} alt="image-4"/>
             <img className='header-img' src={img9} alt="image-5"/>
-            <img className='header-img' src={img10} alt="image-6"/>
+            <img className='header-img' src={img4} alt="image-6"/>
         </div>
     )
 }
