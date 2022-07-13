@@ -14,7 +14,7 @@
   text-align: center;
 }
 
-input, textarea {
+input, textarea, img {
   box-sizing:border-box;
   -moz-box-sizing:border-box;
 }

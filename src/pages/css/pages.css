@@ -1,0 +1,272 @@
+
+.landing-body{
+  font-size: calc(10px + 1.0vmin);
+  overflow: hidden;
+
+}
+
+
+/***********ABOUT US***********s*/
+
+.about-us-body{
+    color: var(--black);
+    width: 100%;
+    
+    font-size: calc(8px + 1.0vmin);
+    background-color: whitesmoke;
+    
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-us{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: white;
+}
+
+#contentv, #contenth {
+    text-align: center;
+}
+
+#contenth{
+    display: none;
+}
+
+
+
+/************ GALLERY ************/
+
+.gallery-body{
+    padding: 30px;
+    background-color: var(--ddark-background);
+    color: var(--white);
+}
+
+
+/************ SERVICES ************/
+
+.services-body1{
+    background-color: var(--light-background);
+    padding: 30px;
+}
+
+.services-body2 {
+    display: flexbox;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.services-div{
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.services-body2 span {
+    width: 100%;
+    max-width: 230px;
+    margin: 15px 15px;
+    box-shadow: 10px 10px var(--medium-background);
+    border-style: solid;
+    border-width: .5px;
+    transition: .4s;
+    cursor: pointer;
+    padding: 10px 5px;
+    font-size: 15px;
+    background-color: white;
+    border-radius: 10px;
+    color: rgb(56, 56, 56);
+    
+}
+
+.services-body2 span h4 {
+    margin: 1px;
+    font-size: large;
+}
+
+
+.services-body2 span:hover {
+    border-color: rgb(110, 153, 118);
+    box-shadow: 0px 0px var(--medium-background);
+    color: rgb(110, 153, 118);
+}
+
+.services-body2 span:hover hr {
+    background-color: rgb(110, 153, 118);
+}
+
+
+
+/************* SERVICE MENU *********************/
+.service-menu-body {
+    display: flex;
+    flex-direction: row;
+    justify-items: center;
+    background-color: whitesmoke;
+
+}
+
+.service-menu-body img {
+    width: 50%;
+    padding: 10px;
+    
+}
+
+
+
+
+/************ CONTACT AREA, FORM & DIVs ************/
+
+.contact {
+    background-color: var(--ddark-background);
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    text-align: center;
+    padding: 30px 0px;
+
+}
+
+
+@media screen and (max-width: 1024px) {
+    .contact{
+        padding: 30px;
+    }
+    .service-menu-body {
+        flex-direction: column;
+    }
+    .service-menu-body img {
+        width: 100%;
+    }
+}
+
+.contact-form {
+    border: none !important;
+    display: grid;
+    margin: 20px;
+}
+
+.EmailForm, .info-float  {
+    grid-area: 1 / 1 ;
+}
+
+.EmailForm {
+    background-color: var(--white);
+    opacity: .6;
+    padding: 30px;
+}
+
+
+.info-float {
+    margin: auto;
+    height: 200px;
+    width: 70%;
+    z-index: 10;
+    align-self: center;
+    color: var(--white);
+    background-color: var(--medium-background);
+    border-radius: 77% 23% 82% 18% / 43% 44% 56% 57% ;
+    box-shadow: 1px 2px 5px var(--ddark-background);
+    
+}
+
+.info-float h3 {
+    align-self: baseline;
+    padding-top: 40px;
+}
+
+
+.contact-info-div-bg {
+    border-radius: 7px;
+    background-color: var(--white);
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-content: center;
+    justify-content: center;
+    box-shadow: 1px 2px 5px var(--sdark-background);
+}
+
+.contact-info-div-sm {
+    margin: 0px 30px;
+    padding: 30px;
+    width:auto;
+}
+
+
+.contact-p{
+    font-size: 15px;
+    text-align: left;
+}
+
+/**************** ICONS **********/
+
+.contact-p i {
+    margin-right: 15px;
+}
+
+
+
+
+
+/**************** MAP AREA **********/
+.mapouter {
+    position:relative;
+
+}
+
+.gmap_canvas {
+    overflow: hidden;
+    background: none!important;
+}
+
+#gmap_canvas {
+    width: 400px;
+    min-width: 300px;
+    height: 500px;
+    border-radius: 7px ;
+    margin: 20px;
+}
+
+/******** FOOTER *********/
+
+.my-footer{
+    padding: 30px 0px 0px 30px;
+    text-align: center;
+    height: 150px;
+    background-color: var(--black);
+    color: rgba(255, 255, 255, 0.47);
+}
+
+
+.socialMedia-div i, .contact-info-div-sm i {
+    font-size: 30px;
+    padding-right: 3px;
+    padding-bottom: 10px;
+}
+
+.socialMedia-div a, .contact-info-div-sm a {
+    opacity: .7;
+}
+
+.socialMedia-div a:hover, .contact-info-div-sm a:hover {
+    opacity: 1;
+}
+
+
+
+

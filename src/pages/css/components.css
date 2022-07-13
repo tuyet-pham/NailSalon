@@ -1,0 +1,226 @@
+/************* BUTTONS ************/
+
+.NS-btn, .NS-btn1 {
+    padding: 10px;
+    font-size: 13px;
+    cursor: pointer;
+    transition: 0.3s;
+    opacity: .6;
+    border: none !important;
+    color:black;
+    border-radius: 30px;
+    margin: 5px;
+    width: 25%;
+}
+
+.NS-btn {
+    background-color: var(--light-background);
+}
+
+.NS-btn1{
+    background-color: var(--medium-background);
+
+}
+
+.NS-btn:hover, .NS-btn1:hover {
+    opacity: 1;
+}
+
+.NS-btn1:hover {
+    color:white;
+}
+
+
+/****************** HEADER *****************/
+
+
+.NS-header {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    background-color: whitesmoke;
+    justify-content: center;
+
+}
+
+.header-img {
+    width: 16.66%;
+    opacity: .8;
+    box-sizing: border-box;
+}
+
+
+
+/************* ICONS ****************/
+
+.ico {
+    width: 50px;
+    margin: 5px;
+}
+
+
+
+/**************** IGNORE!! NEWSLETTER **********/
+input, textarea {
+    text-decoration: none;
+    border: none;
+    border-radius: 7px;
+    margin-top: 10px;
+    background-color: white;
+    opacity: .7;
+}
+
+textarea {
+    width: 100%;
+    resize: none;
+    transition: .3s;
+    height: 100px;
+    padding: 10px;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    transition: .3s;
+}
+
+input[type="submit"] {
+    color: var(--black);
+    background-color: var(--dark-background);
+}
+
+/* input[type="submit"]:hover {
+    color: rgb(255, 255, 255);
+    opacity: 1;
+}
+
+
+input:hover, textarea:hover {
+    opacity: 1;
+} */
+
+
+/*************** NAV BAR ***************/
+
+
+.NS-nav {
+    position: sticky;
+    position: -webkit-sticky; /* Safari */
+    top: 0;
+    margin: 0;
+    z-index: 100;
+    width: 100%;
+    background-color: white;
+    align-items: center;
+    display:flex;
+    color: rgb(78, 39, 33);
+    box-shadow: 1px 1px 10px rgb(151, 151, 151);
+}
+
+
+.NS-nav ul {
+    width: 100%;
+    margin: unset;
+    list-style: none;
+}
+
+.nav-item {
+    transition: .3s;    
+}
+
+.nav-item:hover {
+    color: var(--dark-background);
+}
+
+
+.NS-nav-desktop ul{
+    display: flex;
+}
+
+.NS-nav-desktop .nav-item, span{
+    padding: 15px 20px;
+}
+
+
+.NS-nav-mobile{
+    display: flex;
+    flex-direction: column;
+}
+
+
+.NS-nav-mobile .nav-item {
+    padding: 15px 0px;
+}
+
+#hamburger  {
+    display: none;
+}
+
+
+.ham-button{
+    width: fit-content;
+    font-size: 40px;
+    text-align: left;
+    border: none !important;
+    transition: .3s;
+    background-color: white;
+    color: var(--dark-background);
+    padding-bottom: 5px;
+}
+
+
+.ham-button:hover {
+    color: rgb(78, 39, 33)
+}
+
+
+
+@media screen and (max-width: 1000px) {
+
+  .header-img{
+    width: 33.33%;
+    padding: 0px;
+  }
+  .NS-btn, .NS-btn1 {
+    width: 50%;
+  }
+
+}
+
+
+
+/************** SIDE CLIKER ***********/
+
+.side-click-body {
+    position: fixed;
+    bottom: 30%;
+    right: 0;
+    width: 40px;
+    height: 100px;
+    background-color: #ddd;
+    z-index: 150;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    box-shadow: 1px 1px 3px rgb(181, 181, 181);
+}
+
+.side-click-icon {
+    width: 100%;
+    height: auto;
+    margin: auto;
+    
+}
+
+.side-click-icon i {
+    color: var(--sdark-background);
+    font-size: large;
+}
+
+.side-click-icon i:hover {
+    color: var(--dark-background);
+}

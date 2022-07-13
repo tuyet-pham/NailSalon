@@ -1,7 +1,13 @@
 import React from 'react';
-import './pages.css';
-import './components.css';
-import img1 from '../images/14.png'
+import { Link } from "react-router-dom";
+import './css/pages.css';
+import './css/components.css';
+import img11 from '../images/11.jpeg'
+import img8 from '../images/8.jpeg'
+import img6 from '../images/23.jpeg'
+import img15 from '../images/15.jpeg'
+import img9 from '../images/9.jpeg'
+import img10 from '../images/10.jpeg'
 import ico from '../images/LOGO.svg'
 
 function Contact() {
@@ -58,8 +64,6 @@ function Contact() {
 }
 
 function Gallery() {
-    
-
     return (
         <div className='gallery-body'>
           <h2 style={{color:"#fff"}} >Gallery</h2>
@@ -110,9 +114,8 @@ function AboutUs() {
                     We thank you for your business and we hope to see you soon!
                     <br/>
                     <br/>
-                    <img className='ico' src={ico}/>
+                    <img className='ico' src={ico} alt="ico"/>
                 </div>
-                
                 <button onClick={setReadMore} id="readx" className='NS-btn'>read more . . .</button>
             </div>
         </div>
@@ -123,8 +126,6 @@ function AboutUs() {
 function Services() {
     return (
         <div className='services-body1'>
-            
-
             <h2 style={{color:"#ab866f"}} >Services</h2>
 
             <div className='services-body2' >
@@ -164,8 +165,8 @@ function Services() {
                     <br/>
                 </div>
 
-                <button style={{width:"50%"}} className="NS-btn1"><a href="tel:+16822557055" >Call for more information!</a></button>
-            
+                <button style={{marginTop:"20px"}} className="NS-btn1"><a href="tel:+16822557055" >Call for more information!</a></button>
+                <button  style={{backgroundColor:"#ab866f"}} className="NS-btn1"><Link to="/service-menu">Our Menu</Link></button>
             </div>
         </div>
     );
@@ -174,9 +175,13 @@ function Services() {
 function Header () {
     return (
         <div className='NS-header'>
-            <img className="header-img" src={img1}/>
+            <img className='header-img' src={img11} alt="header"/>
+            <img className='header-img' src={img8} alt="header"/>
+            <img className='header-img' src={img6} alt="header"/>
+            <img className='header-img' src={img15} alt="header"/>
+            <img className='header-img' src={img9} alt="header"/>
+            <img className='header-img' src={img10} alt="header"/>
         </div>
-        
     )
 }
 
@@ -185,12 +190,8 @@ function Landing() {
     return (
         <div className="landing-body">
             <Header />
-            <hr/>
-            <AboutUs />
-            <hr/>
+            <AboutUs />      
             <Services />
-            <hr/>
-
             <Gallery />
             <Contact />
         </div>
