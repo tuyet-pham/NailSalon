@@ -75,20 +75,20 @@ function Gallery() {
 }
 
 function AboutUs() {
-    function setReadMore(){
-        const content = document.getElementById("contenth");
-        const readx = document.getElementById("readx")
+    // function setReadMore(){
+    //     const content = document.getElementById("contenth");
+    //     const readx = document.getElementById("readx")
         
-        if (content.style.display === "none"){
-            content.style.display = "inline";
-            readx.innerText = "read less . . .";
-        }
-        else{
-            content.style.display = "none";
-            document.getElementById("readx").innerText = "read more . . .";
-        }
+    //     if (content.style.display === "none"){
+    //         content.style.display = "inline";
+    //         readx.innerText = "read less . . .";
+    //     }
+    //     else{
+    //         content.style.display = "none";
+    //         document.getElementById("readx").innerText = "read more . . .";
+    //     }
         
-    }
+    // }
 
     return (
         <div className='about-us-body'>
@@ -116,7 +116,7 @@ function AboutUs() {
                     <br/>
                     <img className='ico' src={ico} alt="ico"/>
                 </div>
-                <button onClick={setReadMore} id="readx" className='NS-btn'>read more . . .</button>
+                {/* <button onClick={setReadMore} id="readx" className='NS-btn'>read more . . .</button> */}
             </div>
         </div>
     );
