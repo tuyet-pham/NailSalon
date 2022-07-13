@@ -165,8 +165,8 @@ function Services() {
                     <br/>
                 </div>
 
-                <button style={{marginTop:"20px"}} className="NS-btn1"><a href="tel:+16822557055" >Call for more information!</a></button>
-                <button  style={{backgroundColor:"#ab866f"}} className="NS-btn1"><Link to="/service-menu">Our Menu</Link></button>
+                <a href="tel:+16822557055" ><button style={{marginTop:"20px"}} className="NS-btn1">Call for more information!</button></a>
+                <Link to="/service-menu"><button  style={{backgroundColor:"#ab866f"}} className="NS-btn1">Our Menu</button></Link>
             </div>
         </div>
     );
