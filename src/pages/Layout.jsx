@@ -10,7 +10,7 @@ const Sideclicker = () => {
     <div className="side-click-body">
         <a href="tel:+16822557055" className="side-click-icon"><i className="fa-solid fa-phone"/></a>
         <a href="mailto:contact@5starnailspa-wc.com" className="side-click-icon"><i className="fa-solid fa-at"/></a>
-        <a href="mailto:contact@5starnailspa-wc.com" className="side-click-icon"><i className="fa-solid fa-location-arrow"></i></a>
+        <a href="https://www.google.com/maps/dir/?api=1&destination=2730+western+center+blvd+ste+420+fort+worth" className="side-click-icon"><i className="fa-solid fa-location-arrow"/></a>
     </div>
   );
 }
