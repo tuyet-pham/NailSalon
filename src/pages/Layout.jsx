@@ -1,7 +1,20 @@
 import React from "react";
 import {Outlet} from "react-router-dom";
 import NavBar from "../pages/NavBar";
-import './pages.css'
+import './css/pages.css'
+import './css/components.css'
+
+
+const Sideclicker = () => {
+  return (
+    <div className="side-click-body">
+        <a href="tel:+16822557055" className="side-click-icon"><i className="fa-solid fa-phone"/></a>
+        <a href="mailto:contact@5starnailspa-wc.com" className="side-click-icon"><i className="fa-solid fa-at"/></a>
+        <a href="mailto:contact@5starnailspa-wc.com" className="side-click-icon"><i className="fa-solid fa-location-arrow"></i></a>
+    </div>
+  );
+}
+
 
 const SalonFooter = () => {
   return (
@@ -28,10 +41,10 @@ const SalonFooter = () => {
 
 const Layout = () => {
   
-
   return (
     <div>
-      {/* <NavBar /> */}
+      <NavBar />
+      <Sideclicker/>
       <Outlet />
       <SalonFooter />
     </div>

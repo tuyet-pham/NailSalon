@@ -6,6 +6,8 @@ import Landing from "./pages/Landing";
 import Order from "./pages/OrderPage";
 import Login from "./pages/Login";
 import NoPages from "./pages/NoPages";
+import ServiceMenu from "./pages/ServiceMenu";
+import Lashes from "./pages/Lashes";
 
 
 function App() {
@@ -15,7 +17,10 @@ function App() {
         <Route path="/" element={<Layout />}>
           <Route index element={<Landing />} />
           <Route path="login" element={<Login />} />
-          <Route path="order" element={<Order />} />
+          <Route path="service-menu" element={<ServiceMenu />} />
+          <Route path="lashes" element={<Lashes />} />
+          {/* <Route path="order" element={<Order />} />
+          <Route path="order" element={<Order />} /> */}
           <Route path="*" element={<NoPages />} />
         </Route>
       </Routes>

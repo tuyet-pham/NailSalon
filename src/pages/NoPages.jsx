@@ -2,7 +2,7 @@ import React from 'react';
 
 function NoPages() {
     return (
-        <h1>this is the homepage</h1>
+        <h1>404 No such link</h1>
     );
 }
 
