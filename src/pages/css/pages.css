@@ -32,13 +32,9 @@
     background-color: white;
 }
 
-#contentv, #contenth {
+#contentv {
     text-align: center;
 }
-/* 
-#contenth{
-    display: none;
-} */
 
 
 
@@ -53,18 +49,9 @@
 
 /************ SERVICES ************/
 
-.services-body1{
+.services-body{
     background-color: var(--light-background);
     padding: 30px;
-}
-
-.services-body2 {
-    display: flexbox;
-    flex-wrap: wrap;
-    flex-direction: column;
-    align-content: center;
-    justify-content: center;
-    text-align: center;
 }
 
 .services-div{
@@ -75,32 +62,33 @@
     text-align: center;
 }
 
+.services-body2 {
+    text-align: center;
+}
+
 .services-body2 span {
     width: 100%;
-    max-width: 230px;
-    margin: 15px 15px;
+    max-width: 220px;
+    margin: 15px;
     box-shadow: 10px 10px var(--medium-background);
-    border-style: solid;
-    border-width: .5px;
     transition: .4s;
     cursor: pointer;
-    padding: 10px 5px;
-    font-size: 15px;
+    padding: 10px;
+    font-size: 14px;
     background-color: white;
     border-radius: 10px;
     color: rgb(56, 56, 56);
-    
+
 }
 
 .services-body2 span h4 {
     margin: 1px;
-    font-size: large;
 }
 
 
 .services-body2 span:hover {
     border-color: rgb(110, 153, 118);
-    box-shadow: 0px 0px var(--medium-background);
+    box-shadow: none;
     color: rgb(110, 153, 118);
 }
 
@@ -153,7 +141,7 @@
         width: 100%;
     }
 }
-
+/* 
 .contact-form {
     border: none !important;
     display: grid;
@@ -188,7 +176,7 @@
     align-self: baseline;
     padding-top: 40px;
 }
-
+ */
 
 .contact-info-div-bg {
     border-radius: 7px;
@@ -219,10 +207,6 @@
     margin-right: 15px;
 }
 
-
-
-
-
 /**************** MAP AREA **********/
 .mapouter {
     position:relative;
@@ -245,11 +229,12 @@
 /******** FOOTER *********/
 
 .my-footer{
-    padding: 30px 0px 0px 30px;
+    padding-top: 30px;
     text-align: center;
     height: 150px;
     background-color: var(--black);
     color: rgba(255, 255, 255, 0.47);
+    font-size: 13px;
 }
 
 

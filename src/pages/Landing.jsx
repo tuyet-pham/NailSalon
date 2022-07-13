@@ -47,7 +47,7 @@ function Contact() {
                 <Map />
             </div>
            
-            <fieldset disabled="disable" className='contact-form'>
+            {/* <fieldset disabled="disable" className='contact-form'>
                 <div className="info-float">
                     <h3><u>Coming soon</u></h3>
                 </div>
@@ -58,7 +58,7 @@ function Contact() {
                     <input type="email" required placeholder='Email Address' />
                     <input type="submit" value="Send"/>
                 </form>
-            </fieldset>
+            </fieldset> */}
         </div>
     );
 }
@@ -75,38 +75,19 @@ function Gallery() {
 }
 
 function AboutUs() {
-    // function setReadMore(){
-    //     const content = document.getElementById("contenth");
-    //     const readx = document.getElementById("readx")
-        
-    //     if (content.style.display === "none"){
-    //         content.style.display = "inline";
-    //         readx.innerText = "read less . . .";
-    //     }
-    //     else{
-    //         content.style.display = "none";
-    //         document.getElementById("readx").innerText = "read more . . .";
-    //     }
-        
-    // }
 
     return (
         <div className='about-us-body'>
             <div className='about-us'>
                 <h2 style={{color:"#ab866f"}}>About us</h2>
                 <div id='contentv'>
-
-                    
                     At <strong>5 Star Nail Spa</strong> we believe only by enriching the lives of those around us will we enrich our own.
                     All of our amazing professional technicians proudly carry 10+ years of various expertise. We are  
                     are strongly <strong>committed</strong> to providing the best professional services 
                     from <strong style={{color:"#ab866f"}}>pedicures</strong>, <strong style={{color:"#ab866f"}}>manicures</strong>, <strong style={{color:"#ab866f"}}>waxing</strong>, and <strong style={{color:"#ab866f"}}>lash enhancements</strong>
                     in a comfortable and relaxing enviroment.
-                    
                     <br/>
                     <br/>
-                </div>
-                <div id='contenth'>
                     Our clients are <i style={{margin:"unset" }}>vital</i> to the growth of our business, thus we take great pride in ensuring 100% satisfaction from beginning to end. We are not perfect, but we definitely try to be! 
                     <br/>
                     <br/>
@@ -116,7 +97,6 @@ function AboutUs() {
                     <br/>
                     <img className='ico' src={ico} alt="ico"/>
                 </div>
-                {/* <button onClick={setReadMore} id="readx" className='NS-btn'>read more . . .</button> */}
             </div>
         </div>
     );
@@ -125,7 +105,7 @@ function AboutUs() {
 
 function Services() {
     return (
-        <div className='services-body1'>
+        <div className='services-body'>
             <h2 style={{color:"#ab866f"}} >Services</h2>
 
             <div className='services-body2' >
