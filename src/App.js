@@ -19,8 +19,6 @@ function App() {
           <Route path="login" element={<Login />} />
           <Route path="service-menu" element={<ServiceMenu />} />
           <Route path="lashes" element={<Lashes />} />
-          {/* <Route path="order" element={<Order />} />
-          <Route path="order" element={<Order />} /> */}
           <Route path="*" element={<NoPages />} />
         </Route>
       </Routes>

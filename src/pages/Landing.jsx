@@ -74,10 +74,6 @@ function Gallery() {
     );
 }
 
-function Reviews (){
-
-}
-
 function AboutUs() {
     function setReadMore(){
         const content = document.getElementById("contenth");
