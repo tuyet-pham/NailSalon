@@ -194,6 +194,7 @@ function Landing() {
             <Services />
             <Gallery />
             <Contact />
+            
         </div>
     );
 }
