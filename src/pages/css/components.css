@@ -187,8 +187,8 @@ input[type="submit"] {
     position: fixed;
     bottom: 30%;
     right: 0;
-    width: 40px;
-    height: 100px;
+    width: 50px;
+    height: 110px;
     background-color: #ddd;
     z-index: 150;
     display: flex;
@@ -203,13 +203,10 @@ input[type="submit"] {
     width: 100%;
     height: auto;
     margin: auto;
-    
-}
-
-.side-click-icon i {
     color: var(--sdark-background);
     font-size: large;
 }
+
 
 .side-click-icon i:hover {
     color: var(--dark-background);
