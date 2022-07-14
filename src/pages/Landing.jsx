@@ -1,14 +1,184 @@
-import React from 'react';
+import React, {useState, useEffect} from 'react';
 import { Link } from "react-router-dom";
 import './css/pages.css';
 import './css/components.css';
-import img11 from '../images/11.png'
-import img8 from '../images/8.png'
-import img6 from '../images/23.png'
-import img15 from '../images/15.png'
-import img9 from '../images/9.png'
+
+/* HEADER IMG */
+import himg11 from '../images/h-11.png'
+import himg8 from '../images/h-8.png'
+import himg23 from '../images/h-23.png'
+import himg15 from '../images/h-15.png'
+import himg9 from '../images/h-9.png'
+import himg4 from '../images/h-4.png'
+
+
+
+/* GALLERY IMG */
+import img1 from '../images/1.png'
+import img2 from '../images/2.png'
+import img3 from '../images/3.png'
 import img4 from '../images/4.png'
+import img5 from '../images/5.png'
+import img6 from '../images/6.png'
+import img7 from '../images/7.png'
+import img8 from '../images/8.png'
+import img9 from '../images/9.png'
+import img10 from '../images/10.png'
+import img11 from '../images/11.png'
+import img12 from '../images/12.png'
+import img13 from '../images/13.png'
+import img14 from '../images/14.png'
+import img15 from '../images/15.png'
+import img16 from '../images/16.png'
+import img17 from '../images/17.png'
+import img18 from '../images/18.png'
+import img19 from '../images/19.png'
+import img20 from '../images/20.png'
+import img21 from '../images/21.png'
+
+
+/* LOGO */
 import ico from '../images/LOGO.svg'
+
+function Gallery() {
+    const [width, setWidth] = useState(window.innerWidth);
+
+    function next() {
+        
+        const elem = document.getElementsByClassName('gallery-sec');
+
+        for ( var i = 0 ; i <= elem.length-1; ++i){
+            if(elem[i].classList.contains('active')) 
+            {   
+                if (elem[i].nextSibling === null){
+                    elem[0].classList.add("active")
+                    elem[i].classList.remove("active")
+                    break;
+                }
+                else {
+                    elem[i].nextSibling.classList.add("active")
+                    elem[i].classList.remove("active")
+                    break;
+                }
+                
+            }
+            
+        }
+    }
+
+    function prev() {
+        const elem = document.getElementsByClassName('gallery-sec');
+
+        for ( var i = 0 ; i <= elem.length-1; ++i){
+            if(elem[i].classList.contains('active')) 
+            {   
+                if (elem[i].previousSibling === null){
+                    elem[elem.length-1].classList.add("active")
+                    elem[i].classList.remove("active")
+                    break;
+                }
+                else {
+                    elem[i].previousSibling.classList.add("active")
+                    elem[i].classList.remove("active")
+                    break;
+                }
+                
+            }
+            
+        }
+    }
+
+    
+    useEffect(() => {
+      /*Listening to window changes*/
+      
+      window.addEventListener("resize", () => setWidth(window.innerWidth));
+  
+    });
+
+    const breakpoint = 450;
+
+    return width > breakpoint ? 
+    (
+        <div className='gallery-body'>
+          <h2 style={{color:"#fff"}} >Gallery</h2>
+          <div id='gallery'>
+            <img src={img1} alt="i-1"/>
+            <img src={img2} alt="i-2"/>
+            <img src={img3} alt="i-3"/>
+            <img src={img4} alt="i-4"/>
+            <img src={img5} alt="i-5"/>
+            <img src={img6} alt="i-6"/>
+            <img src={img7} alt="i-7"/>
+            <img src={img8} alt="i-8"/>
+            <img src={img9} alt="i-9"/>
+            <img src={img10} alt="i-10"/>
+            <img src={img11} alt="i-11"/>
+            <img src={img12} alt="i-12"/>
+            <img src={img13} alt="i-13"/>
+            <img src={img14} alt="i-14"/>
+            <img src={img15} alt="i-15"/>
+            <img src={img16} alt="i-16"/>
+            <img src={img17} alt="i-17"/>
+            <img src={img18} alt="i-18"/>
+            <img src={img19} alt="i-19"/>
+            <img src={img20} alt="i-20"/>
+            <img src={img21} alt="i-21"/>
+          </div>
+        </div>
+    )
+    :
+    (
+        <div className='gallery-body'>
+          <h2 style={{color:"#fff"}} >Gallery</h2>
+            <button onClick={prev} className='gallery-btn left'>{'<'}</button>
+            <button onClick={next} className='gallery-btn right'>{'>'}</button>
+          <div id='gallery'>
+            <span className='gallery-sec active'>
+                <img src={img1} alt="i-1"/>
+                <img src={img2} alt="i-2"/>
+                <img src={img3} alt="i-3"/>
+            </span>
+            <span className='gallery-sec' >
+                <img src={img4} alt="i-4"/>
+                <img src={img5} alt="i-5"/>
+                <img src={img6} alt="i-6"/>
+            </span>
+            <span className='gallery-sec'>
+                <img src={img7} alt="i-7"/>
+                <img src={img8} alt="i-8"/>
+                <img src={img9} alt="i-9"/>
+            </span>
+            <span className='gallery-sec'>
+                <img src={img10} alt="i-10"/>
+                <img src={img11} alt="i-11"/>
+                <img src={img12} alt="i-12"/>
+            </span>
+            <span className='gallery-sec'>
+                <img src={img13} alt="i-13"/>
+                <img src={img14} alt="i-14"/>
+                <img src={img15} alt="i-15"/>
+            </span>
+            <span className='gallery-sec'>
+                <img src={img16} alt="i-16"/>
+                <img src={img17} alt="i-17"/>
+                <img src={img18} alt="i-18"/>
+            </span>
+            <span className='gallery-sec'>
+                <img src={img19} alt="i-19"/>
+                <img src={img20} alt="i-20"/>
+                <img src={img21} alt="i-21"/>
+            </span>
+          </div>
+          
+
+        </div>
+    )
+}
+
+
+
+
 
 function Contact() {
     const Map = () => {
@@ -22,6 +192,7 @@ function Contact() {
     };
     return (
         <div className='contact'>
+            
             <div className='contact-info-div-bg'>
                 <div className='contact-info-div-sm'>
                     <h4>Contact info.</h4>
@@ -47,29 +218,6 @@ function Contact() {
                 <Map />
             </div>
            
-            {/* <fieldset disabled="disable" className='contact-form'>
-                <div className="info-float">
-                    <h3><u>Coming soon</u></h3>
-                </div>
-                
-                <form className="EmailForm" action="mailto:contact@5starnailspa-wc.com" encType="multipart/form-data">
-                    <h4>Sign up for our news letter!</h4>
-                    <input type="text" required placeholder='Name' />
-                    <input type="email" required placeholder='Email Address' />
-                    <input type="submit" value="Send"/>
-                </form>
-            </fieldset> */}
-        </div>
-    );
-}
-
-function Gallery() {
-    return (
-        <div className='gallery-body'>
-          <h2 style={{color:"#fff"}} >Gallery</h2>
-          <div id='foo'>
-            COMING SOON!
-          </div>
         </div>
     );
 }
@@ -155,12 +303,12 @@ function Services() {
 function Header () {
     return (
         <div className='NS-header'>
-            <img className='header-img' src={img11} alt="i-1"/>
-            <img className='header-img' src={img8} alt="i-2"/>
-            <img className='header-img' src={img6} alt="i-3"/>
-            <img className='header-img' src={img15} alt="i-4"/>
-            <img className='header-img' src={img9} alt="i-5"/>
-            <img className='header-img' src={img4} alt="i-6"/>
+            <img className='header-img' src={himg11} alt="i-11"/>
+            <img className='header-img' src={himg8} alt="i-8"/>
+            <img className='header-img' src={himg23} alt="i-23"/>
+            <img className='header-img' src={himg15} alt="i-15"/>
+            <img className='header-img' src={himg9} alt="i-9"/>
+            <img className='header-img' src={himg4} alt="i-4"/>
         </div>
     )
 }
@@ -173,8 +321,7 @@ function Landing() {
             <AboutUs />      
             <Services />
             <Gallery />
-            <Contact />
-            
+            <Contact />     
         </div>
     );
 }

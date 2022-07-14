@@ -41,17 +41,62 @@
 /************ GALLERY ************/
 
 .gallery-body{
-    padding: 30px;
+    padding: 40px;
+    position: relative;
     background-color: var(--ddark-background);
     color: var(--white);
 }
 
+#gallery {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+#gallery img {
+    margin: 4px;
+    width: 250px;
+    height: 250px;
+}
+
+
+.gallery-btn {
+    position: absolute;
+    width: 40px;
+    height: 30px;
+    text-decoration: none !important;
+    border: none;
+    opacity: .7;
+    top: calc(50% - 0.5em);
+    font-size: 17px;
+}
+
+.left {
+    left: 0;
+    float: left;
+}
+
+.right {
+    right: 0;
+    float: right;
+}
+
+.gallery-sec {
+    display: none;
+}
+
+.active {
+    display: block;
+}
 
 /************ SERVICES ************/
 
 .services-body{
     background-color: var(--light-background);
-    padding: 30px;
+    padding: 40px;
 }
 
 .services-div{
@@ -126,7 +171,6 @@
     justify-content: center;
     text-align: center;
     padding: 30px 0px;
-
 }
 
 
@@ -226,6 +270,15 @@
     margin: 20px;
 }
 
+/************* LASHES ************/
+
+.lashes-body {
+    padding: 30px;
+    height: 70vh;
+    text-align: center;
+}
+
+
 /******** FOOTER *********/
 
 .my-footer{
@@ -251,7 +304,4 @@
 .socialMedia-div a:hover, .contact-info-div-sm a:hover {
     opacity: 1;
 }
-
-
-
 
