@@ -97,7 +97,6 @@ input[type="submit"] {
 
 .NS-nav {
     position: sticky;
-    /* position: -webkit-sticky; Safari */
     top: 0;
     margin: 0;
     z-index: 100;
@@ -107,6 +106,7 @@ input[type="submit"] {
     display:flex;
     color: rgb(78, 39, 33);
     box-shadow: 1px 1px 10px rgb(151, 151, 151);
+    opacity: .97;
 }
 
 

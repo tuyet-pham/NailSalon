@@ -35,6 +35,13 @@ import img18 from '../images/18.png'
 import img19 from '../images/19.png'
 import img20 from '../images/20.png'
 import img21 from '../images/21.png'
+import img22 from '../images/22.png'
+import img23 from '../images/23.png'
+import img24 from '../images/24.png'
+import img25 from '../images/25.png'
+import img26 from '../images/26.png'
+import img27 from '../images/27.png'
+
 
 
 /* LOGO */
@@ -124,6 +131,12 @@ function Gallery() {
             <img src={img19} alt="i-19"/>
             <img src={img20} alt="i-20"/>
             <img src={img21} alt="i-21"/>
+            <img src={img22} alt="i-22"/>
+            <img src={img23} alt="i-23"/>
+            <img src={img24} alt="i-24"/>
+            <img src={img25} alt="i-25"/>
+            <img src={img26} alt="i-25"/>
+            <img src={img27} alt="i-25"/>
           </div>
         </div>
     )
@@ -131,8 +144,8 @@ function Gallery() {
     (
         <div className='gallery-body'>
           <h2 style={{color:"#fff"}} >Gallery</h2>
-            <button onClick={prev} className='gallery-btn left'>{'<'}</button>
-            <button onClick={next} className='gallery-btn right'>{'>'}</button>
+            <button onClick={prev} className='gallery-btn left'><i class="fa-solid fa-angles-left"></i></button>
+            <button onClick={next} className='gallery-btn right'><i class="fa-solid fa-angles-right"></i></button>
           <div id='gallery'>
             <span className='gallery-sec active'>
                 <img src={img1} alt="i-1"/>
@@ -169,6 +182,16 @@ function Gallery() {
                 <img src={img20} alt="i-20"/>
                 <img src={img21} alt="i-21"/>
             </span>
+            <span className='gallery-sec'>
+                <img src={img22} alt="i-22"/>
+                <img src={img23} alt="i-23"/>
+                <img src={img24} alt="i-24"/>
+            </span>
+            <span className='gallery-sec'>
+                <img src={img25} alt="i-25"/>
+                <img src={img26} alt="i-26"/>
+                <img src={img27} alt="i-27"/>
+            </span>
           </div>
           
 
@@ -195,25 +218,28 @@ function Contact() {
             
             <div className='contact-info-div-bg'>
                 <div className='contact-info-div-sm'>
-                    <h4>Contact info.</h4>
+                    <h3>Contact info.</h3>
                     <hr/>
                     <p className='contact-p'>
-                        <i className="fa-solid fa-square-phone"/><a href="tel:+16822557055">(682)255-7055</a>
+                        <i className="fa-solid fa-phone"/><a href="tel:+16822557055">(682)255-7055</a>
                         <br/>
                         <i className="fa-solid fa-at"></i><a href="mailto:contact@5starnailspa-wc.com">contact@5starnailspa-wc.com</a>
                         <br/>
                         <i className="fa-solid fa-location-dot"></i>2730 Western Center Blvd Ste 420, Fort Worth, TX 76131
                     </p>
-                    <h4>Hours</h4>
+                    <h3>Hours</h3>
                     <hr/>
                     <p className="contact-p">
                         <i className="fa-solid fa-clock"></i>Mon - Sat : 9:30am - 7:00pm
                         <br/>
                         <i className="fa-solid fa-clock"></i>Sun : 11:00am - 5:00pm
                     </p>
-                    <a href="https://www.facebook.com/5starnailsandspa.wc/"><i style={{color:"#2159ff"}} className="fa-brands fa-facebook-square"></i></a>
-                    <a href="https://www.instagram.com/fivestarnailandspa/"><i style={{color:"#9e868c"}} className="fa-brands fa-instagram-square"></i></a>
-                    <a href="https://goo.gl/maps/o3J95F1EDyTPjwJV9"><i style={{color:"#a1bcc7"}} className="fa-brands fa-google-plus-square"></i></a>
+                    <p style={{fontSize:"30px"}}>
+                        <a href="https://www.facebook.com/5starnailsandspa.wc/"><i style={{color:"#2159ff"}} className="fa-brands fa-facebook-square"></i></a>
+                        <a href="https://www.instagram.com/fivestarnailandspa/"><i style={{color:"#9e868c"}} className="fa-brands fa-instagram-square"></i></a>
+                        <a href="https://goo.gl/maps/o3J95F1EDyTPjwJV9"><i style={{color:"#a1bcc7"}} className="fa-brands fa-google-plus-square"></i></a>
+                    </p>
+                    
                 </div>
                 <Map />
             </div>

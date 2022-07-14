@@ -69,9 +69,18 @@
     height: 30px;
     text-decoration: none !important;
     border: none;
-    opacity: .7;
     top: calc(50% - 0.5em);
-    font-size: 17px;
+    font-size: 30px;
+
+    background-color: transparent;
+    outline: none;
+    color: white;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.gallery-btn:hover{
+    color: rgb(158, 187, 234);
 }
 
 .left {
@@ -117,7 +126,6 @@
     margin: 15px;
     box-shadow: 10px 10px var(--medium-background);
     transition: .4s;
-    cursor: pointer;
     padding: 10px;
     font-size: 14px;
     background-color: white;
@@ -171,56 +179,9 @@
     justify-content: center;
     text-align: center;
     padding: 30px 0px;
-}
+    font-size: 17px;
 
-
-@media screen and (max-width: 1024px) {
-    .contact{
-        padding: 30px;
-    }
-    .service-menu-body {
-        flex-direction: column;
-    }
-    .service-menu-body img {
-        width: 100%;
-    }
 }
-/* 
-.contact-form {
-    border: none !important;
-    display: grid;
-    margin: 20px;
-}
-
-.EmailForm, .info-float  {
-    grid-area: 1 / 1 ;
-}
-
-.EmailForm {
-    background-color: var(--white);
-    opacity: .6;
-    padding: 30px;
-}
-
-
-.info-float {
-    margin: auto;
-    height: 200px;
-    width: 70%;
-    z-index: 10;
-    align-self: center;
-    color: var(--white);
-    background-color: var(--medium-background);
-    border-radius: 77% 23% 82% 18% / 43% 44% 56% 57% ;
-    box-shadow: 1px 2px 5px var(--ddark-background);
-    
-}
-
-.info-float h3 {
-    align-self: baseline;
-    padding-top: 40px;
-}
- */
 
 .contact-info-div-bg {
     border-radius: 7px;
@@ -241,7 +202,6 @@
 
 
 .contact-p{
-    font-size: 15px;
     text-align: left;
 }
 
@@ -292,9 +252,12 @@
 
 
 .socialMedia-div i, .contact-info-div-sm i {
-    font-size: 30px;
     padding-right: 3px;
     padding-bottom: 10px;
+}
+
+.socialMedia-div i {
+    font-size: 30px;
 }
 
 .socialMedia-div a, .contact-info-div-sm a {
@@ -305,3 +268,16 @@
     opacity: 1;
 }
 
+
+
+@media screen and (max-width: 1024px) {
+    .contact{
+        padding: 30px;
+    }
+    .service-menu-body {
+        flex-direction: column;
+    }
+    .service-menu-body img {
+        width: 100%;
+    }
+}
