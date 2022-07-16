@@ -259,7 +259,7 @@ function AboutUs() {
                     All of our amazing professional technicians proudly carry 10+ years of various expertise. We are  
                     are strongly <strong>committed</strong> to providing the best professional services 
                     from <strong style={{color:"#ab866f"}}>pedicures</strong>, <strong style={{color:"#ab866f"}}>manicures</strong>, <strong style={{color:"#ab866f"}}>waxing</strong>, and <strong style={{color:"#ab866f"}}>lash enhancements</strong>
-                    in a comfortable and relaxing enviroment.
+                    in a comfortable and relaxing enviroment. 
                     <br/>
                     <br/>
                     Our clients are <i style={{margin:"unset" }}>vital</i> to the growth of our business, thus we take great pride in ensuring 100% satisfaction from beginning to end. We are not perfect, but we definitely try to be! 
