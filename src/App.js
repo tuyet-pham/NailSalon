@@ -7,7 +7,7 @@ import Login from "./pages/Login";
 import NoPages from "./pages/NoPages";
 import ServiceMenu from "./pages/ServiceMenu";
 import Lashes from "./pages/Lashes";
-
+import Recovery from "./pages/Recovery"
 
 function App() {
   return (
@@ -19,6 +19,8 @@ function App() {
           <Route path="lashes" element={<Lashes />} />
 
           <Route path="login" element={<Login />} />
+          <Route path="recovery" element={<Recovery />} />
+
           <Route path="*" element={<NoPages />} />
         </Route>
       </Routes>
