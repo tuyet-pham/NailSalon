@@ -1,0 +1,27 @@
+
+/************* SERVICE MENU *********************/
+.service-menu-body {
+    display: flex;
+    flex-direction: row;
+    justify-items: center;
+    background-color: whitesmoke;
+}
+
+.service-menu-body img {
+    width: 50%;
+    padding: 10px;
+}
+
+
+
+@media screen and (max-width: 1024px) {
+    .contact{
+        padding: 30px;
+    }
+    .service-menu-body {
+        flex-direction: column;
+    }
+    .service-menu-body img {
+        width: 100%;
+    }
+}

@@ -6,6 +6,7 @@ import Landing from "./pages/Landing";
 import Login from "./pages/Login";
 import NoPages from "./pages/NoPages";
 import ServiceMenu from "./pages/ServiceMenu";
+import LookBook from "./pages/LookBook";
 import Lashes from "./pages/Lashes";
 
 
@@ -16,6 +17,7 @@ function App() {
         <Route path="/" element={<Layout />}>
           <Route index element={<Landing />} />
           <Route path="service-menu" element={<ServiceMenu />} />
+          <Route path="look-book" element={<LookBook />} />
           <Route path="lashes" element={<Lashes />} />
 
           <Route path="login" element={<Login />} />

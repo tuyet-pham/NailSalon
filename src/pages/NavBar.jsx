@@ -1,8 +1,7 @@
-import React from "react";
-import { BrowserRouter, Route, Link } from "react-router-dom";
-import './css/components.css';
-import './css/pages.css';
-import { useEffect, useState } from "react";
+import React, { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
+import './css/navbar.css';
+
 import ico from '../images/LOGO.svg'
 
 
@@ -23,7 +22,6 @@ const NavBar = () => {
   useEffect(() => {
     /*Listening to window changes*/
     window.addEventListener("resize", () => setWidth(window.innerWidth));
-
   });
   
 
@@ -44,6 +42,9 @@ const NavBar = () => {
               <li className="nav-item">
                 <Link to="/lashes">Lashes By Holly</Link>
               </li>
+              <li className="nav-item">
+                <Link to="/look-book">Look Book</Link>
+              </li>
             </ul>
           </nav>
       </div>
@@ -63,6 +64,9 @@ const NavBar = () => {
               </li>
               <li className="nav-item">
                 <Link to="/lashes">Lashes By Holly</Link>
+              </li>
+              <li className="nav-item">
+                <Link to="/look-book">Look Book</Link>
               </li>
             </ul>
           </nav>

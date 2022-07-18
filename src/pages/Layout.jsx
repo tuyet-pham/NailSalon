@@ -1,7 +1,6 @@
 import React from "react";
 import {Outlet} from "react-router-dom";
 import NavBar from "../pages/NavBar";
-import './css/pages.css'
 import './css/components.css'
 
 
@@ -45,7 +44,7 @@ const Layout = () => {
     <div>
       <NavBar />
       <Sideclicker/>
-      <Outlet />
+      <Outlet /> 
       <SalonFooter />
     </div>
   );
