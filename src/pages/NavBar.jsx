@@ -1,9 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import './css/components.css';
-import './css/pages.css';
-import React, { useEffect, useState } from "react";
-import { Link } from "react-router-dom";
+import { useEffect, useState } from "react";
 import './css/navbar.css';
 
 import ico from '../images/LOGO.svg'
