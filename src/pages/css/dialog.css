@@ -1,0 +1,36 @@
+.overlay {
+    height: 100%;
+    width: 100%;
+    margin:0;
+    padding:0;
+    background-color: rgba(0, 0, 0, 0.401);
+    top:0;
+    z-index:250;
+    position: absolute;
+}
+
+.dialog {
+    border:none;
+    color: var(--sdark-background);
+    width: 50%;
+    height: fit-content;
+    top: 100px;
+    padding: 10px;
+}
+
+.btn {
+    padding: 10px 20px;
+    margin: 10px;
+    border: none !important;
+    float: right;
+}
+
+.alert {
+    color: white;
+    background-color: rgb(225, 113, 113);
+}
+
+.okay {
+    color: white;
+    background-color: rgb(195, 225, 195);
+}

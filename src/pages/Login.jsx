@@ -2,16 +2,19 @@ import React from 'react';
 import { Link } from "react-router-dom";
 
 
+
+
 function Login() {
+
     return (
-        <div>
-            <div>
-                <form>
+        <div className='login-body'>
+            <div className='login-div'>
+                <form className='login-form'>
                     <input type='text' id='username' name='username' placeholder='username'/>
                     <input id='password' name='password' type='password' placeholder='password'/>
-                    <input type='submit' formtarget="_blank" value='Login'/>
+                    <input type='submit' formTarget="_blank" value='Login'/>
                 </form>
-                <Link to="/recovery">Forgot Password</Link>
+                <Link style={{color:'rosybrown'}} to="/recovery">Forgot Password</Link>
             </div>
         </div>
     );

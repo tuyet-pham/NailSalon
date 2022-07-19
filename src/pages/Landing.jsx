@@ -144,8 +144,8 @@ function Gallery() {
     (
         <div className='gallery-body'>
           <h2 style={{color:"#fff"}} >Gallery</h2>
-            <button onClick={prev} className='gallery-btn left'><i class="fa-solid fa-angles-left"></i></button>
-            <button onClick={next} className='gallery-btn right'><i class="fa-solid fa-angles-right"></i></button>
+            <button onClick={prev} className='gallery-btn left'><i className="fa-solid fa-angles-left"></i></button>
+            <button onClick={next} className='gallery-btn right'><i className="fa-solid fa-angles-right"></i></button>
           <div id='gallery'>
             <span className='gallery-sec active'>
                 <img src={img1} alt="i-1"/>
