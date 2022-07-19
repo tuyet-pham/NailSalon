@@ -1,0 +1,71 @@
+/*************** NAV BAR ***************/
+
+.NS-nav {
+    position: sticky;
+    top: 0;
+    margin: 0;
+    z-index: 100;
+    width: 100%;
+    background-color: white;
+    align-items: center;
+    display:flex;
+    color: rgb(78, 39, 33);
+    box-shadow: 1px 1px 10px rgb(151, 151, 151);
+    opacity: .97;
+}
+
+
+.NS-nav ul {
+    width: 100%;
+    margin: unset;
+    list-style: none;
+}
+
+.nav-item {
+    transition: .3s;    
+}
+
+.nav-item:hover {
+    color: var(--dark-background);
+}
+
+
+.NS-nav-desktop ul{
+    display: flex;
+}
+
+.NS-nav-desktop .nav-item, span{
+    padding: 15px 20px;
+}
+
+
+.NS-nav-mobile{
+    display: flex;
+    flex-direction: column;
+}
+
+
+.NS-nav-mobile .nav-item {
+    padding: 15px 0px;
+}
+
+#hamburger  {
+    display: none;
+}
+
+
+.ham-button{
+    width: fit-content;
+    font-size: 40px;
+    text-align: left;
+    border: none !important;
+    transition: .3s;
+    background-color: white;
+    color: var(--dark-background);
+    padding-bottom: 5px;
+}
+
+
+.ham-button:hover {
+    color: rgb(78, 39, 33)
+}

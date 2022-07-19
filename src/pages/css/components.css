@@ -92,80 +92,6 @@ input[type="submit"] {
 }
 
 
-/*************** NAV BAR ***************/
-
-
-.NS-nav {
-    position: sticky;
-    top: 0;
-    margin: 0;
-    z-index: 100;
-    width: 100%;
-    background-color: white;
-    align-items: center;
-    display:flex;
-    color: rgb(78, 39, 33);
-    box-shadow: 1px 1px 10px rgb(151, 151, 151);
-    opacity: .97;
-}
-
-
-.NS-nav ul {
-    width: 100%;
-    margin: unset;
-    list-style: none;
-}
-
-.nav-item {
-    transition: .3s;    
-}
-
-.nav-item:hover {
-    color: var(--dark-background);
-}
-
-
-.NS-nav-desktop ul{
-    display: flex;
-}
-
-.NS-nav-desktop .nav-item, span{
-    padding: 15px 20px;
-}
-
-
-.NS-nav-mobile{
-    display: flex;
-    flex-direction: column;
-}
-
-
-.NS-nav-mobile .nav-item {
-    padding: 15px 0px;
-}
-
-#hamburger  {
-    display: none;
-}
-
-
-.ham-button{
-    width: fit-content;
-    font-size: 40px;
-    text-align: left;
-    border: none !important;
-    transition: .3s;
-    background-color: white;
-    color: var(--dark-background);
-    padding-bottom: 5px;
-}
-
-
-.ham-button:hover {
-    color: rgb(78, 39, 33)
-}
-
-
 
 @media screen and (max-width: 1000px) {
 
@@ -181,7 +107,7 @@ input[type="submit"] {
 
 
 
-/************** SIDE CLIKER ***********/
+/************** SIDE CLIKER layout.jsx***********/
 
 .side-click-body {
     position: fixed;
@@ -210,6 +136,43 @@ input[type="submit"] {
 
 .side-click-icon i:hover {
     color: var(--dark-background);
+}
+
+
+/**************** ICONS ********* /
+
+.contact-p i {
+    margin-right: 15px;
+}
+
+
+/******** FOOTER: layout.jsx*********/
+
+.my-footer{
+    padding-top: 30px;
+    text-align: center;
+    height: 150px;
+    background-color: var(--black);
+    color: rgba(255, 255, 255, 0.47);
+    font-size: 13px;
+}
+
+
+.socialMedia-div i, .contact-info-div-sm i {
+    padding-right: 3px;
+    padding-bottom: 10px;
+}
+
+.socialMedia-div i {
+    font-size: 30px;
+}
+
+.socialMedia-div a, .contact-info-div-sm a {
+    opacity: .7;
+}
+
+.socialMedia-div a:hover, .contact-info-div-sm a:hover {
+    opacity: 1;
 }
 
 

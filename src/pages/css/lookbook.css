@@ -1,0 +1,40 @@
+/************ LOOK BOOK ************/
+.lb {
+    background-color: var(--white);
+}
+
+.lb-body {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+
+.lb-main-gallery {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.lb-tech-gallery {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.lb-images {
+    margin: 10px;
+    width: 250px;
+    height: 250px;
+}
+
+.lb-header {
+    margin: 30px 0px;
+    font-size: 30px;
+    font-weight: 200;
+    text-transform: uppercase;
+    width: fit-content;
+    background-color: rosybrown;
+}

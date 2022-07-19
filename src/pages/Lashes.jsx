@@ -1,6 +1,5 @@
 import React from 'react';
-import './css/pages.css'
-import './css/components.css'
+import './css/lashes.css'
 
 
 function Lashes() {
