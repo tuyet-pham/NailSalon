@@ -2,8 +2,6 @@ import React from "react";
 import './css/dialog.css'
 
 function Dialog (props){
-    const style=props.style+ " btn";
-
 
     return props.show ?  (
         <div className="overlay">
@@ -14,8 +12,8 @@ function Dialog (props){
                     {props.description}
                 </div>
                 <div className="dialog_foot">
-                    <button className={style} onClick={props.confirm}>{props.confirmMessage}</button>
-                    <button className="okay btn" onClick={props.cancel}>{props.cancelMessage}</button>
+                    <button className={props.classTypeConfirm} onClick={props.confirm}>{props.confirmMessage}</button>
+                    <button className={props.classTypeCancel} onClick={props.cancel}>{props.cancelMessage}</button>
                 </div>
             </dialog>
         </div>

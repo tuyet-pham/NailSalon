@@ -1,4 +1,6 @@
-.login-body{
+
+
+.recovery-body {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -7,7 +9,7 @@
     height: 80vh;
 }
 
-.login-div{
+.recovery-div {
     float: left;
     width: 50%;
     height: 70%;
@@ -18,34 +20,24 @@
     box-shadow: 1px 1px 5px rgb(227, 227, 227)
 }
 
-.login-input {
-    margin: 10px 0;
-    background-color: rgb(244, 244, 244)
-}
-
-.login-input:hover {
-    background-color: rgb(255, 255, 255)
-}
-
-
-.login-form input[type="submit"] {
+.recovery-form input[type="submit"] {
     color: var(--black);
     background-color: var(--dark-background);
 }
 
-
-
-.forget-pass-link {
-    color: rgb(122, 91, 88);
-    transition: .4s;
+.recovery-input {
+    margin: 10px 0;
+    background-color: rgb(244, 244, 244)
 }
 
-.forget-pass-link:hover {
-    color: rgba(122, 91, 88, 0.537);
+.recovery-input:hover {
+    background-color: rgb(255, 255, 255);
 }
+
+
 
 @media only screen and (max-width: 600px) {
-    .login-div {
+    .recovery-div {
       width: 80%;
     }
 }

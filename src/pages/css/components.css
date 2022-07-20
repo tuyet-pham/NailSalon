@@ -63,7 +63,7 @@
 
 
 /**************** IGNORE!! NEWSLETTER **********/
-input, textarea {
+input {
     text-decoration: none;
     border: none;
     border-radius: 7px;
@@ -72,13 +72,6 @@ input, textarea {
     opacity: .7;
 }
 
-textarea {
-    width: 100%;
-    resize: none;
-    transition: .3s;
-    height: 100px;
-    padding: 10px;
-}
 
 input {
     width: 100%;
@@ -86,10 +79,6 @@ input {
     transition: .3s;
 }
 
-input[type="submit"] {
-    color: var(--black);
-    background-color: var(--dark-background);
-}
 
 
 

@@ -28,17 +28,17 @@ const NavBar = () => {
 
   return width > breakpoint ? 
       <div className="NS-nav">
-          <img style={{width:"40px",marginLeft:"20px"}} src={ico} alt=""/> 
-          <span>
+          <img style={{width:"40px",marginLeft:"10px"}} src={ico} alt="logo"/> 
+          <>
             5 Star Nail Spa
-          </span>
+          </>
           <nav className="NS-nav-desktop">
             <ul>
               <li className="nav-item">
                 <Link to="/">Home</Link>
               </li>
               <li className="nav-item">
-                <Link to="/service-menu">Service Menu</Link>
+                <Link to="/service-menu">Service</Link>
               </li>
               <li className="nav-item">
                 <Link to="/lashes">Lashes By Holly</Link>
