@@ -80,8 +80,8 @@ function LookBook (props) {
         {id: 2, src: require('../images/4.png')},
     ]
 
-    const vivian = [
-        {id: 1, src: require('../images/8.png')} ,
+    const mimi = [
+        // {id: 1, src: require('../images/8.png')} ,
     ]
 
     const judy = [
@@ -90,7 +90,7 @@ function LookBook (props) {
 
     const list = [
         {id: 1, techname: 'Silva', images: silva},
-        {id: 2, techname: 'Vivian', images: vivian},
+        {id: 2, techname: 'Mimi', images: mimi},
         {id: 3, techname: 'Judy', images: judy},
     ];
     
@@ -98,10 +98,10 @@ function LookBook (props) {
 
         <div className="lb">
             <div className="lb-body">
-                {list.map((list) => <Techsection key={list.id} techname={list.techname} images={list.images}/>)}
+                {/* {list.map((list) => <Techsection key={list.id} techname={list.techname} images={list.images}/>)}
                 <span className="lb-header">
                     Our Look Book & Gallery
-                </span>
+                </span> */}
                 <div className="lb-main-gallery">
                     {gallery.map((image) => <LBImages key={image.id} src={image.src}/>)}
                 </div>

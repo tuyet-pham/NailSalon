@@ -1,78 +1,84 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import { useEffect, useState } from "react";
 import './css/navbar.css';
 
-import ico from '../images/LOGO.svg'
 
+import { NavLink } from "react-router-dom";
+import './css/navbar.css'
 
 
 const NavBar = () => {
+    const [width, setWidth] = useState(window.innerWidth);
+    const breakpoint = 620;
+    const [show, setShow] = useState(false);
+    
 
-  const [width, setWidth] = useState(window.innerWidth);
-  const [show, setShow] = useState(false);
-  const breakpoint = 620;
+    useEffect(() => {
+      
 
-  const showNav = () => {
-    const ham = document.getElementById("hamburger");
-    setShow(!show);
-    show ? ham.style.display = "inline" : ham.style.display = "none";
-  }
+      window.addEventListener("resize", () => setWidth(window.innerWidth))
+    });
 
-
-  useEffect(() => {
-    /*Listening to window changes*/
-    window.addEventListener("resize", () => setWidth(window.innerWidth));
-  });
-  
-
-  return width > breakpoint ? 
-      <div className="NS-nav">
-          <img style={{width:"40px",marginLeft:"10px"}} src={ico} alt="logo"/> 
-          <>
-            5 Star Nail Spa
-          </>
-          <nav className="NS-nav-desktop">
-            <ul>
-              <li className="nav-item">
-                <Link to="/">Home</Link>
-              </li>
-              <li className="nav-item">
-                <Link to="/service-menu">Service</Link>
-              </li>
-              <li className="nav-item">
-                <Link to="/lashes">Lashes By Holly</Link>
-              </li>
-              <li className="nav-item">
-                <Link to="/look-book">Look Book</Link>
-              </li>
+    return width > breakpoint ? (
+        <div className="nav-body">
+        <nav>
+            <ul className="nav">
+            <NavLink
+                      to="/"
+                      className="nav-item">
+                      Home
+              </NavLink>
+             
+              <NavLink 
+                      to="/service-menu" 
+                      className="nav-item">
+                      Service Menu
+              </NavLink>
+              <NavLink 
+                      to="/look-book" 
+                      className="nav-item">
+                      Look Book
+              </NavLink>
+              <NavLink 
+                      to="/lashes" 
+                      className="nav-item">
+                      Lashes By Holly
+              </NavLink>
             </ul>
           </nav>
-      </div>
+        </div>
+    )
     :
-      <div className="NS-nav" id="navy">
-          <nav className="NS-nav-mobile">
-            <button  onClick={()=> showNav()} className="ham-button" htmlFor="#hamburger" >&#9776;</button>
-
-            <ul id="hamburger">
-              <img style={{width:"40px",marginLeft:"",}} src={ico} alt=""/> 
-
-              <li className="nav-item">
-                <Link to="/">Home</Link>
-              </li>
-              <li className="nav-item">
-                <Link to="/service-menu">Service Menu</Link>
-              </li>
-              <li className="nav-item">
-                <Link to="/lashes">Lashes By Holly</Link>
-              </li>
-              <li className="nav-item">
-                <Link to="/look-book">Look Book</Link>
-              </li>
+    (
+      <div className="nav-body">
+        <nav>
+            <button onClick={()=> setShow(!show)} id="ham-button" className="ham-btn">&#9776;</button>
+            <ul id="hamburger" className="nav" style={{maxHeight: show ? "500px" : "0px" }}>
+              <NavLink
+                      to="/"
+                      className="nav-item">
+                      Home
+              </NavLink>
+             
+              <NavLink 
+                      to="/service-menu" 
+                      className="nav-item">
+                      Service Menu
+              </NavLink>
+              <NavLink 
+                      to="/look-book" 
+                      className="nav-item">
+                      Look Book
+              </NavLink>
+              <NavLink 
+                      to="/lashes" 
+                      className="nav-item ">
+                      Lashes By Holly
+              </NavLink>
             </ul>
           </nav>
-      </div>
-    ;
+        </div>
+    );
 }
 
 export default NavBar;

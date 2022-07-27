@@ -4,6 +4,7 @@
 }
 
 .lb-body {
+    padding-top: 30px;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -25,7 +26,7 @@
 }
 
 .lb-images {
-    margin: 10px;
+    margin: 18px;
     width: 250px;
     height: 250px;
 }

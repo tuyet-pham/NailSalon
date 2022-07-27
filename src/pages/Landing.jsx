@@ -188,7 +188,7 @@ function Gallery() {
   
     });
 
-    const breakpoint = 450;
+    const breakpoint = 600;
 
     return width > breakpoint ? 
     (
@@ -198,7 +198,7 @@ function Gallery() {
             <div id='gallery'>
                 {galleryList.map((image) => <Images key={image.id} classname="gallery-img" src={image.src}/>)}
             </div>
-            <Link to="/look-book/"><button className="NS-btn">View more on our Look Book!</button></Link>
+            <Link to="/look-book/"><button style={{marginTop:"20px"}} className="NS-btn">View more on our Look Book!</button></Link>
           </div>
           
         </div>
@@ -233,7 +233,7 @@ function Gallery() {
                     <Images classname="gallery-img" src={require('../images/12.png')}/>
                 </span>
             </div>
-            <Link to="/look-book/"><button className="NS-btn">View more on our Look Book!</button></Link>
+            <Link to="/look-book/"><button className="NS-btn" style={{marginTop:"20px"}}>View more on our Look Book!</button></Link>
 
           </div>
         </div>
