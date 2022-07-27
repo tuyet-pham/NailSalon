@@ -23,27 +23,28 @@ const NavBar = () => {
         <div className="nav-body">
         <nav>
             <ul className="nav">
-            <NavLink
-                      to="/"
-                      className="nav-item">
-                      Home
-              </NavLink>
-             
-              <NavLink 
-                      to="/service-menu" 
-                      className="nav-item">
-                      Service Menu
-              </NavLink>
-              <NavLink 
-                      to="/look-book" 
-                      className="nav-item">
-                      Look Book
-              </NavLink>
-              <NavLink 
-                      to="/lashes" 
-                      className="nav-item">
-                      Lashes By Holly
-              </NavLink>
+                <img className="logo left" src={require('../images/LOGO.svg')} alt=""/>
+                <NavLink
+                        to="/"
+                        className="nav-item">
+                        Home
+                </NavLink>
+                
+                <NavLink 
+                        to="/service-menu" 
+                        className="nav-item">
+                        Service Menu
+                </NavLink>
+                <NavLink 
+                        to="/look-book" 
+                        className="nav-item">
+                        Look Book
+                </NavLink>
+                <NavLink 
+                        to="/lashes" 
+                        className="nav-item">
+                        Lashes By Holly
+                </NavLink>
             </ul>
           </nav>
         </div>
@@ -53,28 +54,29 @@ const NavBar = () => {
       <div className="nav-body">
         <nav>
             <button onClick={()=> setShow(!show)} id="ham-button" className="ham-btn">&#9776;</button>
+            <img className="logo right" src={require('../images/LOGO.svg')} alt=""/>
             <ul id="hamburger" className="nav" style={{maxHeight: show ? "500px" : "0px" }}>
-              <NavLink
-                      to="/"
-                      className="nav-item">
-                      Home
-              </NavLink>
-             
-              <NavLink 
-                      to="/service-menu" 
-                      className="nav-item">
-                      Service Menu
-              </NavLink>
-              <NavLink 
-                      to="/look-book" 
-                      className="nav-item">
-                      Look Book
-              </NavLink>
-              <NavLink 
-                      to="/lashes" 
-                      className="nav-item ">
-                      Lashes By Holly
-              </NavLink>
+                <NavLink
+                        to="/"
+                        className="nav-item">
+                        Home
+                </NavLink>
+                
+                <NavLink 
+                        to="/service-menu" 
+                        className="nav-item">
+                        Service Menu
+                </NavLink>
+                <NavLink 
+                        to="/look-book" 
+                        className="nav-item">
+                        Look Book
+                </NavLink>
+                <NavLink 
+                        to="/lashes" 
+                        className="nav-item ">
+                        Lashes By Holly
+                </NavLink>
             </ul>
           </nav>
         </div>

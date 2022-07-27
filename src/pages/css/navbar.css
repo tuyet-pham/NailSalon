@@ -62,11 +62,19 @@
     transition: all 0.2s ease-in-out;
 }
 
-
+.logo {
+    height: 40px;
+    margin: 0 10px;
+    margin-top: 4px;
+}
 
 
 @media screen and (max-width: 620px) {
     .nav-item{
         width: 100%;
+    }
+    .logo{
+        top:0;
+        position: absolute;
     }
 }
