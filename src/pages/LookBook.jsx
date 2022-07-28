@@ -65,10 +65,17 @@ function LookBook (props) {
         {id: 28, src: require('../images/28.png')},
         {id: 29, src: require('../images/29.png')},
         {id: 30, src: require('../images/30.png')},
-        {id: 31, src: require('../images/38.png')},
+        {id: 31, src: require('../images/31.png')},
         {id: 32, src: require('../images/32.png')},
-        {id: 33, src: require('../images/34.png')},
-        {id: 34, src: require('../images/37.png')},
+        {id: 33, src: require('../images/33.png')},
+        {id: 34, src: require('../images/34.png')},
+        {id: 35, src: require('../images/35.png')},
+        {id: 36, src: require('../images/36.png')},
+        {id: 37, src: require('../images/37.png')},
+        {id: 38, src: require('../images/38.png')},
+        {id: 39, src: require('../images/39.png')},
+        {id: 40, src: require('../images/40.png')},
+
     ];
 
 
