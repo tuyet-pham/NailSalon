@@ -102,7 +102,7 @@
 
 .services-body{
     background-color: var(--light-background);
-    padding: 40px;
+    padding: 60px 40px;
 }
 
 .services-div{
@@ -116,37 +116,6 @@
 .services-body2 {
     text-align: center;
 }
-
-.services-body2 span {
-    width: 100%;
-    max-width: 220px;
-    margin: 15px;
-    box-shadow: 10px 10px var(--medium-background);
-    transition: .4s;
-    padding: 10px;
-    font-size: 14px;
-    background-color: white;
-    border-radius: 10px;
-    color: rgb(56, 56, 56);
-
-}
-
-.services-body2 span h4 {
-    margin: 1px;
-}
-
-
-.services-body2 span:hover {
-    border-color: rgb(110, 153, 118);
-    box-shadow: none;
-    color: rgb(110, 153, 118);
-}
-
-.services-body2 span:hover hr {
-    background-color: rgb(110, 153, 118);
-}
-
-
 
 
 /************ CONTACT AREA, FORM & DIVs ************/
@@ -200,9 +169,49 @@
 #gmap_canvas {
     width: 400px;
     min-width: 300px;
+    max-width: 400px;
     height: 500px;
     border-radius: 7px ;
     margin: 20px;
 }
 
 
+/********* CARDS **********/
+
+.card {
+    width: 230px;
+    min-width: 220px;
+    margin: 15px;
+    box-shadow: 1px 1px 10px var(--medium-background);
+    font-size: 13px;
+    background-color: rgba(255, 255, 255, 1);
+    color: rgb(56, 56, 56);
+    border-radius: 10px;
+    /* transition: .2s; */
+}
+
+.card-body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px
+}
+
+
+.card h4 {
+    font-size: 1.3em;
+    text-align: center;
+    margin: 5px;
+}
+
+
+.card-img {
+    border-radius: 10px;
+    padding: 5px;
+    overflow: hidden;
+    width: 100%;
+}
+
+.card:hover {
+    box-shadow: 2px 2px 20px var(--medium-background);
+}

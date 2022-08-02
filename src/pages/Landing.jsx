@@ -62,46 +62,41 @@ function AboutUs() {
 }
 
 
+const Card = (props) => {
+    return (
+        <div className='card'>
+            <img className={props.classname} src={props.imgSrc} alt="s-*"/>
+            <h4>{props.title}</h4>
+            <div className='card-body'>
+                {props.desc}
+                <br/>
+                {props.price}
+            </div>
+        </div>
+    )
+}
+
+
 function Services() {
+
+    const servicelist = [
+        {id: 1, title:"Manicure", desc:"", price:"$20 ~ $36+", imgSrc: require('../images/s-2.png') },
+        {id: 2, title:"Pedicure", desc:"", price:"$30 ~ $65+", imgSrc: require('../images/s-3.png')},
+        {id: 3, title:"Waxing", desc:"", price:"Call for better estimates", imgSrc: require('../images/s-4.png')},
+        {id: 4, title:"Lash Enchancements", desc:"", price:"Call for better estimates", imgSrc: require('../images/s-1.png')},
+        {id: 5, title:"Artificial nails", desc:"Dip, Acrylic, Gel, Chrome, Designs & More! ", price:"Call for better estimates", imgSrc: require('../images/s-5.png')},
+        {id: 6, title:"Little Humans", desc:"", price:"$10 ~ $35", imgSrc:require('../images/s-6.png')},
+    ];
+
     return (
         <div className='services-body'>
             <h2 style={{color:"#ab866f"}} >Services</h2>
 
-            <div className='services-body2' >
 
+            <div className='services-body2' >
+                
                 <div className='services-div'>
-                    <span>
-                        <h4>Manicure</h4>
-                        <hr/>
-                        $20 ~ $36+
-                    </span>
-                    <span>
-                        <h4>Pedicure</h4>
-                        <hr/>
-                        $30 ~ $65+
-                    </span>
-                    <span>
-                        <h4>Wax</h4>
-                        <hr/>
-                        Please call for better estimates
-                    </span>
-                    <span>
-                        <h4>Lash enhancement</h4>
-                        <hr/>
-                        Please call for better estimates
-                    </span>
-                    <span>
-                        <h4>Artificial nails</h4>
-                        <hr/>
-                        Dip, Acrylic, Gel, Chrome, Designs & More! 
-                        Please call for better estimates
-                    </span>
-                    <span>
-                        <h4>Kids Mani & Pedicure</h4>
-                        <hr/>
-                        $10 ~ $35
-                    </span>
-                    <br/>
+                    {servicelist.map((service) => <Card key={service.id} classname="card-img" title={service.title} desc={service.desc} price={service.price} imgSrc={service.imgSrc}/>)}
                 </div>
 
                 <a href="tel:+16822557055" ><button style={{marginTop:"20px"}} className="NS-btn1">Call for more information!</button></a>
