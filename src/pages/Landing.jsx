@@ -83,9 +83,9 @@ function Services() {
         {id: 1, title:"Manicure", desc:"", price:"$20 ~ $36+", imgSrc: require('../images/s-2.png') },
         {id: 2, title:"Pedicure", desc:"", price:"$30 ~ $65+", imgSrc: require('../images/s-3.png')},
         {id: 3, title:"Waxing", desc:"", price:"Call for better estimates", imgSrc: require('../images/s-4.png')},
-        {id: 4, title:"Lash Enchancements", desc:"", price:"Call for better estimates", imgSrc: require('../images/s-1.png')},
+        {id: 4, title:"Lash Enchancement", desc:"", price:"Call for better estimates", imgSrc: require('../images/s-1.png')},
         {id: 5, title:"Artificial nails", desc:"Dip, Acrylic, Gel, Chrome, Designs & More! ", price:"Call for better estimates", imgSrc: require('../images/s-5.png')},
-        {id: 6, title:"Little Humans", desc:"", price:"$10 ~ $35", imgSrc:require('../images/s-6.png')},
+        {id: 6, title:"Children", desc:"", price:"$10 ~ $35", imgSrc:require('../images/s-6.png')},
     ];
 
     return (
