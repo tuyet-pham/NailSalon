@@ -294,8 +294,8 @@ function Landing() {
       
     return (
         <div className="landing-body">
+            <AboutUs /> 
             <Header />
-            <AboutUs />      
             <Services />
             <Gallery />
             <Contact />     

@@ -41,9 +41,9 @@ hr {
   width: 50px;
   border-radius: 50%;
   background-color: #977c6b;
-  box-shadow: 1px 1px 5px var(--dark-background);
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.38);
   position: fixed;
-  bottom: 200px;
+  bottom: 150px;
   right: 5px;
   border: none;
   z-index: 30;

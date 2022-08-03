@@ -9,15 +9,15 @@
 .about-us-body{
     color: var(--black);
     width: 100%;
-    
     font-size: calc(8px + 1.0vmin);
-    background-color: whitesmoke;
-    
+    background-color: white;
+    height: 50vh;
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    
 }
 
 .about-us{
@@ -25,8 +25,8 @@
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    padding: 20px;
     border-radius: 10px;
+    padding:5%;
     background-color: white;
 }
 
