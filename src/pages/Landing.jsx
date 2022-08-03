@@ -47,7 +47,7 @@ function AboutUs() {
                     in a comfortable and relaxing enviroment. 
                     <br/>
                     <br/>
-                    Our clients are <i style={{margin:"unset" }}>vital</i> to the growth of our business, thus we take great pride in ensuring 100% satisfaction from beginning to end. We are not perfect, but we definitely try to be! 
+                    Our clients are <i style={{margin:"unset"}}>vital</i> to the growth of our business, thus we take great pride in ensuring 100% satisfaction from beginning to end. We are not perfect, but we definitely try to be! 
                     <br/>
                     <br/>
                     It is important to us that our space welcomes all, and encourages the uniqueness in each client. 
@@ -69,8 +69,11 @@ const Card = (props) => {
             <h4>{props.title}</h4>
             <div className='card-body'>
                 {props.desc}
-                <br/>
+            </div>
+            <div className='card-footer' style={{margin:"20px"}}>
                 {props.price}
+                BOOK TODAY
+                <a href="tel:+16822557055" ><button className='call-btn-card'><i className="fa-solid fa-phone-flip"></i></button></a>
             </div>
         </div>
     )
@@ -80,12 +83,12 @@ const Card = (props) => {
 function Services() {
 
     const servicelist = [
-        {id: 1, title:"Manicure", desc:"", price:"$20 ~ $36+", imgSrc: require('../images/s-2.png') },
-        {id: 2, title:"Pedicure", desc:"", price:"$30 ~ $65+", imgSrc: require('../images/s-3.png')},
-        {id: 3, title:"Waxing", desc:"", price:"Call for better estimates", imgSrc: require('../images/s-4.png')},
-        {id: 4, title:"Lash Enchancement", desc:"", price:"Call for better estimates", imgSrc: require('../images/s-1.png')},
-        {id: 5, title:"Artificial nails", desc:"Dip, Acrylic, Gel, Chrome, Designs & More! ", price:"Call for better estimates", imgSrc: require('../images/s-5.png')},
-        {id: 6, title:"Children", desc:"", price:"$10 ~ $35", imgSrc:require('../images/s-6.png')},
+        {id: 1, title:"Manicure", desc:"Invest in the health of your hands by showing it some love. Manicures includes nail shapping/trimming, cuticle grooming, exfoliation, lotioning and polish of your choice. ", price:"", imgSrc: require('../images/s-2.png') },
+        {id: 2, title:"Pedicure", desc:"Improve the natural texture and look of your legs. Pedicures includes nail shapping, cuticle grooming, exfoliation, and polish of your choice.", price:"", imgSrc: require('../images/s-3.png')},
+        {id: 3, title:"Waxing", desc:"Delay hair regrowth, prevent ingrown hairs, and help exfoliate the skin. Check out our Service Menu to see what we have available.", price:"", imgSrc: require('../images/s-4.png')},
+        {id: 4, title:"Lash Enchancement", desc:"Lash extension naturally define your eyes to make them look bolder, fuller and sexier without any . Call to book with Holly today! ", price:"", imgSrc: require('../images/s-1.png')},
+        {id: 5, title:"Artificial nails", desc:"Dip, Acrylic, Gel, Chrome, Designs & More! ", price:"", imgSrc: require('../images/s-5.png')},
+        {id: 6, title:"Children", desc:"Treat your little(s) with a fun and special spa day out.", price:"", imgSrc:require('../images/s-6.png')},
     ];
 
     return (
@@ -99,8 +102,8 @@ function Services() {
                     {servicelist.map((service) => <Card key={service.id} classname="card-img" title={service.title} desc={service.desc} price={service.price} imgSrc={service.imgSrc}/>)}
                 </div>
 
-                <a href="tel:+16822557055" ><button style={{marginTop:"20px"}} className="NS-btn1">Call for more information!</button></a>
-                <Link to="/service-menu"><button  style={{backgroundColor:"#ab866f"}} className="NS-btn1">Our Menu</button></Link>
+                <a href="tel:+16822557055" ><button style={{marginTop:"20px"}} className="NS-btn1">Call for better estimates</button></a>
+                <Link to="/service-menu"><button  style={{backgroundColor:"#ab866f"}} className="NS-btn1">Service Menu</button></Link>
             </div>
         </div>
     );
