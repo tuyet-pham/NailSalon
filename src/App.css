@@ -35,3 +35,22 @@ hr {
   opacity: .9;
   width: 95%;
 }
+
+.button-up {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  background-color: #977c6b;
+  box-shadow: 1px 1px 5px var(--dark-background);
+  position: fixed;
+  bottom: 200px;
+  right: 5px;
+  border: none;
+  z-index: 30;
+  color: var(--white);
+}
+
+.button-up:active {
+  background-color: #977c6bc2;
+}
+

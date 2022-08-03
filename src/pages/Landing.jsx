@@ -73,7 +73,7 @@ const Card = (props) => {
             <div className='card-footer' style={{margin:"20px"}}>
                 {props.price}
                 BOOK TODAY
-                <a href="tel:+16822557055" ><button className='call-btn-card'><i className="fa-solid fa-phone-flip"></i></button></a>
+                <a href="tel:+16822557055" ><button className='call-btn-card'><i className="fa-solid fa-phone-flip"/></button></a>
             </div>
         </div>
     )
@@ -205,8 +205,8 @@ function Gallery() {
     (
         <div className='gallery-body'>
           <h2 style={{color:"#fff"}} >Gallery</h2>
-            <button onClick={prev} className='gallery-btn left'><i class="fa-solid fa-angles-left"></i></button>
-            <button onClick={next} className='gallery-btn right'><i class="fa-solid fa-angles-right"></i></button>
+            <button onClick={prev} className='gallery-btn left'><i className="fa-solid fa-angles-left"></i></button>
+            <button onClick={next} className='gallery-btn right'><i className="fa-solid fa-angles-right"></i></button>
           <div style={{textAlign:"center"}}>
             <div id='gallery'>
                 

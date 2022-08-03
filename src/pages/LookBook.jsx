@@ -12,26 +12,11 @@ function LBImages (props) {
 }
 
 
-function Techsection (props) {
-
-    return (
-        <div className="lb-body">
-            <span className="lb-header">
-                Looks By {props.techname}
-            </span>
-            <div className="lb-tech-gallery">
-                {props.images.map((imagelist) => <LBImages key={imagelist.id} src={imagelist.src}/>)}
-            </div>
-            
-        </div>
-    );
-}
-
-
 
 function LookBook (props) {
     useEffect(() => {
         window.scrollTo(0, 0);
+        
     });
       
     const gallery = [
@@ -80,40 +65,18 @@ function LookBook (props) {
 
     ];
 
-
-    const silva = [
-        {id: 1, src: require('../images/33.png')} ,
-        {id: 2, src: require('../images/31.png')},
-        {id: 2, src: require('../images/2.png')},
-        {id: 2, src: require('../images/20.png')},
-        {id: 2, src: require('../images/4.png')},
-    ]
-
-    const mimi = [
-        // {id: 1, src: require('../images/8.png')} ,
-    ]
-
-    const judy = [
-        {id: 1, src: require('../images/17.png')} ,
-    ]
-
-    const list = [
-        {id: 1, techname: 'Silva', images: silva},
-        {id: 2, techname: 'Mimi', images: mimi},
-        {id: 3, techname: 'Judy', images: judy},
-    ];
     
     return (
 
         <div className="lb">
             <div className="lb-body">
-                {/* {list.map((list) => <Techsection key={list.id} techname={list.techname} images={list.images}/>)}
-                <span className="lb-header">
-                    Our Look Book & Gallery
-                </span> */}
                 <div className="lb-main-gallery">
                     {gallery.map((image) => <LBImages key={image.id} src={image.src}/>)}
                 </div>
+                <button className="button-up" onClick={()=>window.scrollTo({top: 0, left: 0, behavior: 'smooth'})}>
+                    <i className="fa-solid fa-caret-up"></i>
+                </button>
+                
             </div>
         </div>
     );

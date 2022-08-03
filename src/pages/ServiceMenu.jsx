@@ -2,10 +2,15 @@ import React from 'react';
 import sp1 from '../images/menu-1.png';
 import sp2 from '../images/menu-2.png';
 import './css/service-menu.css';
+import { useEffect } from 'react';
 
 
 
 function ServiceMenu() {
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    });
+
 
     return (
         <>
