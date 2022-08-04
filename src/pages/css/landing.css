@@ -9,7 +9,7 @@
 .about-us-body{
     color: white;
     width: 100%;
-    font-size: calc(8px + 1.0vmin);
+    font-size: calc(8px + 1.4vmin);
     min-height: 60vh;
     display: flex;
     flex-wrap: wrap;
