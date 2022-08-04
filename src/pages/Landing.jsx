@@ -39,11 +39,11 @@ function AboutUs() {
         <div className='about-us-body'>
             <div className='about-us'>
                 <div id="contentz">
-                    <h1>About us</h1>
+                    <h1>5 Star Nail Spa</h1>
                 </div>
                 
                 <div id='contentv'>
-                    At <strong>5 Star Nail Spa</strong> we believe only by enriching the lives of those around us will we enrich our own.
+                    We believe only by enriching the lives of those around us will we enrich our own.
                     All of our amazing professional technicians proudly carry 10+ years of various expertise. We are  
                     are strongly <strong>committed</strong> to providing the best professional services 
                     from <strong >pedicures</strong>, <strong >manicures</strong>, <strong>waxing</strong>, and <strong >lash enhancements</strong>

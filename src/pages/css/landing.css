@@ -10,7 +10,7 @@
     color: white;
     width: 100%;
     font-size: calc(8px + 1.0vmin);
-    min-height: 50vh;
+    min-height: 60vh;
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
@@ -22,22 +22,22 @@
     display: flex;
     flex-direction: row;
     align-items: center;
-    padding: 10px 40px;
+    padding: 40px 40px;
 }
 
 #contentv {
     width: 60%;
     text-align: left;
-    border-radius: 10px;
-    /* padding: 0 30px; */
     color: var(--black);
+    border-left: 1px solid var(--ddark-background);
+    padding-left: 10px;
 }
 
 
 #contentz{
     display: flex;
     color: var(--black);
-    width: 40%;
+    width: 35%;
     justify-content: center;
     align-items: center;
 }
@@ -249,8 +249,13 @@
     }
     #contentv{
         width: 100%;
+        border: none;
+        border-top: 1px solid var(--black);
+        padding: 0;
+        padding-top: 10px;
     }
     #contentz{
+        width: 100%;
         justify-content: left;
         align-items: center;
     }
