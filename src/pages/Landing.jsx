@@ -10,7 +10,7 @@ import ico from '../images/LOGO.svg'
 const Images = (props) => {
     return (
         <>
-         <img className={props.classname} src={props.src} alt="ig"/>
+         <img className={props.classname} src={props.src} alt="imgNS"/>
         </>
     );
 }
@@ -46,7 +46,7 @@ function AboutUs() {
                     At <strong>5 Star Nail Spa</strong> we believe only by enriching the lives of those around us will we enrich our own.
                     All of our amazing professional technicians proudly carry 10+ years of various expertise. We are  
                     are strongly <strong>committed</strong> to providing the best professional services 
-                    from <strong style={{color:"#ab866f"}}>pedicures</strong>, <strong style={{color:"#ab866f"}}>manicures</strong>, <strong style={{color:"#ab866f"}}>waxing</strong>, and <strong style={{color:"#ab866f"}}>lash enhancements</strong>
+                    from <strong >pedicures</strong>, <strong >manicures</strong>, <strong>waxing</strong>, and <strong >lash enhancements</strong>
                     in a comfortable and relaxing enviroment. 
                     <br/>
                     <br/>
