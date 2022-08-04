@@ -38,7 +38,10 @@ function AboutUs() {
     return (
         <div className='about-us-body'>
             <div className='about-us'>
-                <h2 style={{color:"#ab866f"}}>About us</h2>
+                <div id="contentz">
+                    <h1>About us</h1>
+                </div>
+                
                 <div id='contentv'>
                     At <strong>5 Star Nail Spa</strong> we believe only by enriching the lives of those around us will we enrich our own.
                     All of our amazing professional technicians proudly carry 10+ years of various expertise. We are  
@@ -54,7 +57,6 @@ function AboutUs() {
                     We thank you for your business and we hope to see you soon!
                     <br/>
                     <br/>
-                    <img className='ico' src={ico} alt="ico"/>
                 </div>
             </div>
         </div>
@@ -103,7 +105,7 @@ function Services() {
                 </div>
 
                 <a href="tel:+16822557055" ><button style={{marginTop:"20px"}} className="NS-btn1">Call for better estimates</button></a>
-                <Link to="/service-menu"><button  style={{backgroundColor:"#ab866f"}} className="NS-btn1">Service Menu</button></Link>
+                <Link to="/service-menu"><button  style={{backgroundColor:"#ab866f", color:"white"}} className="NS-btn1">Service Menu</button></Link>
             </div>
         </div>
     );
@@ -275,6 +277,8 @@ function Contact() {
                         <a href="https://www.instagram.com/fivestarnailandspa/"><i style={{color:"#9e868c"}} className="fa-brands fa-instagram-square"></i></a>
                         <a href="https://goo.gl/maps/o3J95F1EDyTPjwJV9"><i style={{color:"#a1bcc7"}} className="fa-brands fa-google-plus-square"></i></a>
                     </p>
+                    <img className='ico' src={ico} alt="ico"/>
+ 
                     
                 </div>
                 <Map />

@@ -7,32 +7,41 @@
 /***********ABOUT US************/
 
 .about-us-body{
-    color: var(--black);
+    color: white;
     width: 100%;
     font-size: calc(8px + 1.0vmin);
-    background-color: white;
-    height: 50vh;
+    min-height: 50vh;
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    
 }
 
 .about-us{
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    flex-direction: row;
     align-items: center;
-    border-radius: 10px;
-    padding:5%;
-    background-color: white;
+    padding: 10px 40px;
 }
 
 #contentv {
-    text-align: center;
+    width: 60%;
+    text-align: left;
+    border-radius: 10px;
+    /* padding: 0 30px; */
+    color: var(--black);
 }
+
+
+#contentz{
+    display: flex;
+    color: var(--black);
+    width: 40%;
+    justify-content: center;
+    align-items: center;
+}
+
 
 
 /************ GALLERY ************/
@@ -54,7 +63,7 @@
 }
 
 .gallery-img {
-    margin: 4px;
+    margin: 10px;
     width: 250px;
     height: 250px;
 }
@@ -72,21 +81,20 @@
     background-color: transparent;
     outline: none;
     color: white;
-    border-radius: 50%;
     cursor: pointer;
 }
 
-.gallery-btn:hover{
+.gallery-btn:active{
     color: rgb(158, 187, 234);
 }
 
 .left {
-    left: 0;
+    left: 5px;
     float: left;
 }
 
 .right {
-    right: 0;
+    right: 5px;
     float: right;
 }
 
@@ -121,7 +129,7 @@
 /************ CONTACT AREA, FORM & DIVs ************/
 
 .contact {
-    background-color: var(--ddark-background);
+    /* background-color: var(--ddark-background); */
     display: flex;
     flex-wrap: wrap;
     align-content: center;
@@ -129,24 +137,20 @@
     text-align: center;
     padding: 30px 0px;
     font-size: 17px;
-
 }
 
 .contact-info-div-bg {
     border-radius: 7px;
-    background-color: var(--white);
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
     align-content: center;
     justify-content: center;
-    box-shadow: 1px 2px 5px var(--sdark-background);
 }
 
 .contact-info-div-sm {
     margin: 0px 30px;
     padding: 30px;
-    width:auto;
 }
 
 
@@ -200,6 +204,7 @@
     font-size: 1.3em;
     text-align: center;
     margin: 5px;
+    color: var(--black);
 }
 
 
@@ -238,5 +243,15 @@
     }
     .card:active > .card-footer {
         height: 50px;
+    }
+    .about-us {
+        flex-wrap: wrap;
+    }
+    #contentv{
+        width: 100%;
+    }
+    #contentz{
+        justify-content: left;
+        align-items: center;
     }
 }

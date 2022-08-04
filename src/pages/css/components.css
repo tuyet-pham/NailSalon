@@ -5,9 +5,9 @@
     font-size: 13px;
     cursor: pointer;
     transition: 0.3s;
-    opacity: .6;
+    opacity: .8;
     border: none !important;
-    color:black;
+    color: var(--black);
     border-radius: 30px;
     margin: 5px;
     width: 25%;
@@ -25,11 +25,6 @@
 .NS-btn:hover, .NS-btn1:hover {
     opacity: 1;
 }
-
-.NS-btn1:hover {
-    color:white;
-}
-
 
 /****************** HEADER *****************/
 
@@ -106,32 +101,27 @@ input {
     height: 110px;
     background-color: #ddd;
     z-index: 150;
+    
     display: flex;
     flex-direction: column;
     text-align: center;
+
     border-top-left-radius: 5px;
     border-bottom-left-radius: 5px;
-    box-shadow: 1px 1px 3px rgb(181, 181, 181);
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.325);
 }
 
 .side-click-icon {
     width: 100%;
     height: auto;
     margin: auto;
-    color: var(--sdark-background);
+    color: var(--black);
     font-size: large;
 }
 
 
 .side-click-icon i:hover {
     color: var(--dark-background);
-}
-
-
-/**************** ICONS ********* /
-
-.contact-p i {
-    margin-right: 15px;
 }
 
 

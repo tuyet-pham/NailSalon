@@ -26,11 +26,7 @@ const SalonFooter = () => {
         <a href="https://goo.gl/maps/o3J95F1EDyTPjwJV9"><i style={{color:"#a1bcc7"}} className="fa-brands fa-google-plus-square"></i></a>
       </div>
       <div>
-        Powered by AWS
-        <br/>
-        Author : Tuyet Pham
-        <br/>
-        Deviit Inc. ™
+        Powered by <a style={{color:"white"}} target="_blank" rel="noopener noreferrer" href="https://www.deviit.com">Deviit Inc. ™</a>
       </div>
       
     </footer>
