@@ -44,7 +44,7 @@ function AboutUs() {
                 
                 <div id='contentv'>
                     We believe only by enriching the lives of those around us will we enrich our own.
-                    All of our amazing professional technicians proudly carry 10+ years of various expertise. We are  
+                    All of our amazing professional technicians proudly carry 10+ years of various expertise. We 
                     are strongly <strong>committed</strong> to providing the best professional services 
                     from <strong >pedicures</strong>, <strong >manicures</strong>, <strong>waxing</strong>, and <strong >lash enhancements</strong>
                     in a comfortable and relaxing enviroment. 
@@ -129,7 +129,6 @@ function Gallery() {
         {id: 10, src: require('../images/10.png')},
         {id: 11, src: require('../images/11.png')},
         {id: 12, src: require('../images/12.png')},
-
     ];
 
 
