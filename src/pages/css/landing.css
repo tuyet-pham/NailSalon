@@ -1,6 +1,7 @@
 
 .landing-body{
   font-size: calc(10px + 1.0vmin);
+  overflow: hidden;
 }
 
 /***********ABOUT US************/
