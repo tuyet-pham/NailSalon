@@ -1,7 +1,6 @@
-import React, {useState, useEffect} from 'react';
+import React, {useState, useEffect, useRef} from 'react';
 import { Link } from "react-router-dom";
 import './css/landing.css';
-
 
 /* LOGO */
 import ico from '../images/LOGO.svg'
@@ -13,23 +12,6 @@ const Images = (props) => {
          <img className={props.classname} src={props.src} alt="imgNS"/>
         </>
     );
-}
-
-function Header () {
-    const headerImageList = [
-        {id: 1, src: require('../images/h-1.png')},
-        {id: 2, src: require('../images/h-2.png')},
-        {id: 3, src: require('../images/h-3.png')},
-        {id: 4, src: require('../images/h-4.png')},
-        {id: 5, src: require('../images/h-5.png')},
-        {id: 6, src: require('../images/h-6.png')},
-    ];
-
-    return (
-        <div className='NS-header'>
-            {headerImageList.map((image) => <Images key={image.id} classname='header-img' src={image.src}/>)}
-        </div>
-    )
 }
 
 
@@ -62,6 +44,27 @@ function AboutUs() {
         </div>
     );
 }
+
+
+function Header () {
+    const headerImageList = [
+        {id: 1, src: require('../images/h-1.png')},
+        {id: 2, src: require('../images/h-2.png')},
+        {id: 3, src: require('../images/h-3.png')},
+        {id: 4, src: require('../images/h-4.png')},
+        {id: 5, src: require('../images/h-5.png')},
+        {id: 6, src: require('../images/h-6.png')},
+    ];
+
+    return (
+        <div>
+            <div className='NS-header'>
+                {headerImageList.map((image) => <Images key={image.id} classname='header-img' src={image.src}/>)}
+            </div>
+        </div>
+    )
+}
+
 
 
 const Card = (props) => {
@@ -288,17 +291,61 @@ function Contact() {
 }
 
 
+const Carousel = () => {
+    const host = useRef(null);
+    const drinks = useRef(null)
+    const myRef = useRef(null)
+
+
+   const scroll1 = () => myRef.current.scrollIntoView({ block: 'nearest',  behavior: 'smooth' })
+   const scroll2 = () => host.current.scrollIntoView({ block: 'nearest',  behavior: 'smooth' })   
+   const scroll3 = () => drinks.current.scrollIntoView({ block: 'nearest',  behavior: 'smooth' })   
+
+
+    return (
+        <div className='carousel'>
+            <div className='carousel-container'>
+                <div ref={myRef} className='carousel-item'>
+                    <img src={require('../images/l-school.svg')} alt="party" className="host-img"/>
+                    <img src={require('../images/l-school-square.svg')} alt="party" className="host-s-img"/>
+                </div>
+                <div ref={host} className='carousel-item'>
+                    <img src={require('../images/l-hosting.svg')} alt="party" className="host-img"/>
+                    <img src={require('../images/l-hosting-square.svg')} alt="party" className="host-s-img"/>
+                    <div  className='host-btn-container'>
+                        {/* <Link to="/hosting"><button className='host-btn'>Click here for more information</button></Link> */}
+                    </div>
+                </div>
+                <div ref={drinks} className='carousel-item'>
+                    <img src={require('../images/l-drinks.svg')} alt="party" className="host-img"/>
+                    <img src={require('../images/l-drinks-square.svg')} alt="party" className="host-s-img"/>
+                </div>          
+            
+            </div>
+            
+            <div className='dot-container'>
+                <div className='dot' id="dot-1" onClick={scroll1}/>
+                <div className='dot' id="dot-2" onClick={scroll2}/>
+                <div className='dot' id="dot-3" onClick={scroll3}/>
+            </div>
+        </div>
+    )
+}
+
+
 function Landing() {
     useEffect(() => {
         /*Listening to window changes*/
+        window.top.document.title = "5 Star Nail Spa"
         window.scrollTo(0, 0);
     
     });
       
     return (
         <div className="landing-body">
-            <AboutUs /> 
+            <AboutUs/>
             <Header />
+            <Carousel/>
             <Services />
             <Gallery />
             <Contact />     

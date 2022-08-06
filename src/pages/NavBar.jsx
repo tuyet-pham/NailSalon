@@ -45,6 +45,11 @@ const NavBar = () => {
                         className="nav-item">
                         Lashes By Holly
                 </NavLink>
+                {/* <NavLink 
+                        to="/hosting" 
+                        className="nav-item">
+                        Hosting
+                </NavLink> */}
             </ul>
           </nav>
         </div>
@@ -77,6 +82,11 @@ const NavBar = () => {
                         className="nav-item ">
                         Lashes By Holly
                 </NavLink>
+                {/* <NavLink 
+                        to="/hosting" 
+                        className="nav-item">
+                        Hosting
+                </NavLink> */}
             </ul>
           </nav>
         </div>

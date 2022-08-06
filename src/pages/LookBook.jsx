@@ -12,11 +12,10 @@ function LBImages (props) {
 }
 
 
-
 function LookBook (props) {
     useEffect(() => {
         window.scrollTo(0, 0);
-        
+        window.top.document.title = "5 Star Nail Spa | Look Book"
     });
       
     const gallery = [

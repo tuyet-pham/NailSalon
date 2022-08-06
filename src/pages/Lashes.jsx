@@ -1,8 +1,14 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import './css/lashes.css'
 
 
 function Lashes() {
+    useEffect(() => {
+        /*Listening to window changes*/
+        window.top.document.title = "5 Star Nail Spa | Lashes"
+        window.scrollTo(0, 0);
+    
+    });
     return (
         <div className='lashes-body'>
             <div>

@@ -9,6 +9,7 @@ import { useEffect } from 'react';
 function ServiceMenu() {
     useEffect(() => {
         window.scrollTo(0, 0);
+        window.top.document.title = "5 Star Nail Spa | Service Menu"
     });
 
 

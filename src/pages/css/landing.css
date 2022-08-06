@@ -1,7 +1,6 @@
 
 .landing-body{
   font-size: calc(10px + 1.0vmin);
-  overflow: hidden;
 }
 
 /***********ABOUT US************/
@@ -10,8 +9,8 @@
     color: white;
     width: 100%;
     font-size: calc(8px + 1.4vmin);
-    min-height: 60vh;
     display: flex;
+    height: 60vh;
     flex-wrap: wrap;
     flex-direction: column;
     justify-content: center;
@@ -237,7 +236,122 @@
     opacity: .7;
 }
 
+
+
+/*************** IMG ***************/
+
+.host-img{
+    padding:5%;
+    width: 100%;
+}
+
+.host-s-img{
+    width: 100%;
+    padding:5%;
+    display: none;
+}
+
+
+.host-btn-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    bottom: 15%;
+    left: 0;
+}
+
+.host-btn {
+    border-radius: 20px;
+    padding: 10px 20px;
+    border: none;
+    background-color: var(--black);
+    color: var(--white);
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.401);
+}
+
+.host-btn:hover{
+    opacity: .8;
+}
+
+.host-btn:active{
+    opacity: .9;
+}
+
+/********** CAROUSEL *************/
+
+
+.carousel {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+}
+
+
+.carousel-container {
+    display: flex;
+    overflow-x: scroll;
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+    width: 80%;
+}
+
+.carousel-container::-webkit-scrollbar {
+    display: none;
+}
+
+
+
+.carousel-item {
+    width: 100%;
+    flex: 0 0 auto;
+    position: relative;
+}
+
+
+.dot-container {
+    display: flex;
+    justify-content: center;
+}
+
+
+.dot {
+    width: 23px;
+    height: 23px;
+    background-color: rgb(237, 210, 196, .5);
+    border-radius: 50%;
+    display: inline-block;
+    margin: 0 10px 20px 10px;
+}
+
+.dot:active {
+    background-color: rgb(237, 210, 196);
+}
+
+.dot:hover {
+    background-color: rgb(237, 210, 196);
+}
+
+
+@media screen and (max-width: 810px) {
+    .host-img{
+        display: none;
+    }
+    
+    .host-s-img{
+        display: block;
+    }
+    .carousel-container {
+        width: 100%;
+    }
+}
+
+
 @media screen and (max-width: 620px) {
+
+
     .card:hover > .card-footer{
         height: 50px;
     }
