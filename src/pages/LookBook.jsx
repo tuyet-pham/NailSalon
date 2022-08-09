@@ -6,7 +6,7 @@ import '../pages/css/lookbook.css'
 function LBImages (props) {
     return (
         <>
-            <img className="lb-images" src={props.src} alt="s"/>
+            <img className="lb-images" src={props.src} alt="alt-book"/>
         </>
     );
 }
