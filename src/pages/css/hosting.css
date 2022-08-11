@@ -12,9 +12,12 @@
 }
 
 .hosting-body {
+    background-color: var(--white);
     box-sizing: border-box;
-    padding: 5%;
-    width: 100%;
+    padding: 2%;
+    width: 90%;
+    margin: 20px 0;
+    border-radius: 10px ;
 }
 
 .hosting-form {
@@ -41,6 +44,11 @@
 .h-s-img{
     width: 100%;
     display: none;
+}
+
+.hosting-form input[type="submit"]:hover, input[type="reset"]:hover{
+    background-color: rgba(165, 81, 45, 0.503);
+    color: white;
 }
 
 
