@@ -25,17 +25,79 @@
     justify-content: center;
 }
 
+
 .lb-images {
     margin: 18px;
     width: 250px;
     height: 250px;
+    cursor: pointer;
 }
 
-.lb-header {
-    margin: 30px 0px;
-    font-size: 30px;
-    font-weight: 200;
-    text-transform: uppercase;
+.lb-images:hover {
+    opacity: .8;
+}
+
+.lb-images:active {
+    opacity: .8;
+}
+
+.overlay {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    position: fixed;
+    top:0;
+    left:0;
+    z-index: 200;
+    overflow: hidden;
+}
+
+
+.lb-images-modal {
+    margin: 0 15px;
+    margin-top: 15px;
+    width: 500px;
+    height: 500px;
+}
+
+
+.img-modal {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap-reverse;
+    background-color: white;
     width: fit-content;
-    background-color: rosybrown;
+    position: fixed;
+    left:50%;
+    margin-left: -250px;
+    top: 50%;
+    margin-top: -300px;
+}
+
+.close {
+    width: 30px;
+    height: 30px;
+    border: none;
+    border-radius: 50%;
+    background-color: var(--active);
+    color: var(--white);
+    margin: 10px;
+    font-weight: 700;
+}
+
+.close:active{
+    opacity: .8;
+}
+
+
+
+@media screen and (max-width: 500px) {
+    .lb-images-modal {
+        width: 350px;
+        height: 350px;
+    }
+    .img-modal {
+        margin-left: -190px;
+    }
+
 }

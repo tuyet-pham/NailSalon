@@ -1,13 +1,23 @@
 import React, {useEffect} from "react";
+import { useState } from "react";
 import '../pages/css/lookbook.css'
 
-
-
 function LBImages (props) {
+    const [show, setShow] = useState(false);
+
     return (
-        <>
-            <img className="lb-images" src={props.src} alt="alt-book"/>
-        </>
+        <div>
+            <img className="lb-images" src={props.src} alt="alt-book" onClick={()=>setShow(!show)}/>            
+            
+            
+            {/* Modal Images */}
+            <div className="overlay" style={{display: show ? "inline-block" : "none"}}>
+                <div className="img-modal">
+                    <img className="lb-images-modal" src={props.src} alt="alt-book"/>
+                    <button className="close" onClick={()=>setShow(!show)}>X</button>
+                </div>
+            </div>
+        </div>
     );
 }
 
@@ -61,7 +71,8 @@ function LookBook (props) {
         {id: 40, src: require('../images/40.png')},
         {id: 41, src: require('../images/41.png')},
         {id: 42, src: require('../images/42.png')},
-
+        {id: 43, src: require('../images/43.png')},
+        {id: 44, src: require('../images/44.png')},
     ];
 
     
@@ -70,7 +81,7 @@ function LookBook (props) {
         <div className="lb">
             <div className="lb-body">
                 <div className="lb-main-gallery">
-                    {gallery.map((image) => <LBImages key={image.id} src={image.src}/>)}
+                    {gallery.map((image) => <LBImages key={image.id} src={image.src}/>)}               
                 </div>
                 <button className="button-up" onClick={()=>window.scrollTo({top: 0, left: 0, behavior: 'smooth'})}>
                     <i className="fa-solid fa-caret-up"></i>
