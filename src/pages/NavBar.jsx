@@ -59,7 +59,7 @@ const NavBar = () => {
       <div className="nav-body">
         <nav>
             <button onClick={()=> setShow(!show)} id="ham-button" className="ham-btn">&#9776;</button>
-            <img className="logo right" src={require('../images/LOGO.svg')} alt=""/>
+            <img className="logo" src={require('../images/LOGO.svg')} alt=""/>
             <ul id="hamburger" className="nav" style={{maxHeight: show ? "500px" : "0px" }}>
                 <NavLink
                         to="/"
