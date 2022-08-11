@@ -30,6 +30,7 @@
     margin: 18px;
     width: 250px;
     height: 250px;
+    border-radius: 10px;
     cursor: pointer;
 }
 
@@ -55,6 +56,7 @@
 
 .lb-images-modal {
     margin: 0 15px;
+    border-radius: 10px;
     margin-top: 15px;
     width: 500px;
     height: 500px;
@@ -65,28 +67,34 @@
     display: flex;
     flex-direction: column;
     flex-wrap: wrap-reverse;
-    background-color: white;
+    background-color: whitesmoke;
+    box-shadow: 1px 1px 20px rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
     width: fit-content;
     position: fixed;
     left:50%;
-    margin-left: -250px;
     top: 50%;
+    margin-left: -250px;
     margin-top: -300px;
 }
 
 .close {
-    width: 30px;
-    height: 30px;
     border: none;
-    border-radius: 50%;
+    padding: 10px;
+    width: fit-content;
+    border-radius: 10px;
     background-color: var(--active);
     color: var(--white);
-    margin: 10px;
+    margin: 15px;
     font-weight: 700;
 }
 
-.close:active{
+.close:hover {
     opacity: .8;
+}
+
+.close:active{
+    opacity: .6;
 }
 
 

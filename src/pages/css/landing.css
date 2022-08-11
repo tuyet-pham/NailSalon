@@ -66,22 +66,25 @@
     margin: 10px;
     width: 250px;
     height: 250px;
+    border-radius: 10px;
+    border: 1px solid var(--dark-background);
 }
 
 
 .gallery-btn {
     position: absolute;
     width: 40px;
-    height: 30px;
+    height: 200px;
+    margin-top: -100px;
     text-decoration: none !important;
     border: none;
     top: calc(50% - 0.5em);
-    font-size: 30px;
-    
-    background-color: transparent;
+    font-size: 25px;
+    background-color: rgba(255, 255, 255, 0.182);
     outline: none;
     color: white;
     cursor: pointer;
+    border-radius: 10px;
 }
 
 .gallery-btn:active{
@@ -89,12 +92,12 @@
 }
 
 .left {
-    left: 5px;
+    left: 20px;
     float: left;
 }
 
 .right {
-    right: 5px;
+    right: 20px;
     float: right;
 }
 
@@ -129,7 +132,6 @@
 /************ CONTACT AREA, FORM & DIVs ************/
 
 .contact {
-    /* background-color: var(--ddark-background); */
     display: flex;
     flex-wrap: wrap;
     align-content: center;
@@ -303,7 +305,6 @@
 .carousel-container::-webkit-scrollbar {
     display: none;
 }
-
 
 
 .carousel-item {

@@ -14,7 +14,9 @@ function LBImages (props) {
             <div className="overlay" style={{display: show ? "inline-block" : "none"}}>
                 <div className="img-modal">
                     <img className="lb-images-modal" src={props.src} alt="alt-book"/>
-                    <button className="close" onClick={()=>setShow(!show)}>X</button>
+                    <button className="close" onClick={()=>setShow(!show)}>
+                        close <i className="fa-solid fa-xmark"></i>
+                    </button>
                 </div>
             </div>
         </div>
