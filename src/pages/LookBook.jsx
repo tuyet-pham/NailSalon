@@ -7,7 +7,12 @@ function LBImages (props) {
 
     return (
         <div>
-            <img className="lb-images" src={props.src} alt="alt-book" onClick={()=>setShow(!show)}/>            
+            <img 
+                className="lb-images" 
+                src={props.src} 
+                alt="alt-book"
+                onClick={()=>setShow(!show)}
+            />            
             
             
             {/* Modal Images */}
@@ -82,7 +87,10 @@ function LookBook (props) {
 
         <div className="lb">
             <div className="lb-body">
+
                 <div className="lb-main-gallery">
+                    <p style={{width:"100%", textAlign:'center'}}>{'Click image to expand 👆🏻'}</p>
+
                     {gallery.map((image) => <LBImages key={image.id} src={image.src}/>)}               
                 </div>
                 <button className="button-up" onClick={()=>window.scrollTo({top: 0, left: 0, behavior: 'smooth'})}>
