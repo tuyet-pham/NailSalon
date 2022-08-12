@@ -348,7 +348,7 @@ function Landing() {
             <Carousel/>
             <Services />
             <Gallery />
-            <Contact />     
+            <Contact />
         </div>
     );
 }

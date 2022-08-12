@@ -48,6 +48,7 @@ hr {
   border: none;
   z-index: 30;
   color: var(--white);
+  transition: .4s;
 }
 
 .button-up:active {

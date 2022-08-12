@@ -5,6 +5,7 @@ import './css/components.css'
 
 
 const Sideclicker = () => {
+
   return (
     <div className="side-click-body">
         <a href="tel:+16822557055" className="side-click-icon"><i className="fa-solid fa-phone"/></a>
