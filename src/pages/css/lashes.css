@@ -1,8 +1,168 @@
 /************* LASHES ************/
 
-.lashes-body {
-    padding: 30px;
-    height: 70vh;
-    text-align: center;
-    background-color: #eae6e2;
+.lashes {
+    background-color: #e8ded7;
+    overflow:hidden;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.lash-header {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-top: 20px;
+}
+
+/********** CAROUSEL *************/
+
+.h-carsousel {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.carsousel-img {
+    width: 600px;
+}
+
+.carsousel-btn {
+    padding: 10px 20px;
+    border-radius: 20px;
+    border: 1px solid rgba(0, 0, 0, 0.281);
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.13);
+    background-color: transparent;
+    color: rgba(0, 0, 0, 0.3);
+    margin-top: -90px;
+
+}
+
+.carsousel-btn:hover{
+    opacity: .6;
+    border: 1px solid white;
+}
+
+.carsousel-btn:active{
+    opacity: 1;
+}
+
+
+.h-text {
+    width: 40%;
+    padding: 30px 30px;
+    background-color: whitesmoke;
+    border-radius: 10px;
+    margin: 20px;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.carsousel-lash {
+    display: none;
+}
+
+.active {
+    display: block;
+}
+
+
+/********** body *************/
+
+
+.lash-body {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: whitesmoke;
+    padding: 60px 0;    
+}
+
+.lash-image {
+    width: 300px;
+    margin: 10px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
+.lash-image-modal {
+    margin: 0 15px;
+    border-radius: 5px;
+    margin-top: 15px;
+    width: 500px;
+    height: 500px;
+}
+
+
+.lash-image:hover {
+    opacity: .8;
+}
+
+.lash-image:active {
+    opacity: .8;
+}
+
+.lash-btn {
+    font-size: 13px;
+    display:flex;
+    padding-left: 15px;
+    align-items: center;
+    color: var(--black);
+    border-radius: 30px;
+    height: 50px;
+    width: fit-content;
+    margin-top: 20px;
+    border: 1px solid rgb(186, 151, 142);
+}
+
+
+
+@media screen and (max-width: 1200px) {
+    .h-text {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .carsousel-img {
+        width: 500px;
+    }
+    .h-text {
+        width: 100%;
+    }
+    .carsousel-btn {
+        margin: 40px;
+        margin-top: -90px;
+    }
+}
+
+
+@media screen and (max-width: 400px) {
+    .carsousel-img {
+        width: 400px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .lash-image-modal {
+        width: 370px;
+        height: 370px;
+    }
+    .img-modal {
+        margin-left: -200px;
+    }
 }

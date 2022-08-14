@@ -233,6 +233,7 @@
     background-color: var(--dark-background);
     transition: .2s;
     color: white;
+    
 }
 
 .call-btn-card:hover {

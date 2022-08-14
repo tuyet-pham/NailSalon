@@ -42,6 +42,19 @@
     opacity: .8;
 }
 
+/**************** MODAL ***********************/
+
+.artist {
+    margin: 15px;
+    letter-spacing: 2px;
+    font-size: 13px;
+}
+
+.bottom {
+    width: 100%;
+}
+
+
 .overlay {
     width: 100%;
     height: 100%;
