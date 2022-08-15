@@ -87,13 +87,15 @@ function LookBook (props) {
         {id: 35, src: require('../images/35.png'), artist:''},
         {id: 36, src: require('../images/36.png'), artist:''},
         {id: 37, src: require('../images/37.png'), artist:''},
-        {id: 38, src: require('../images/38.png'), artist:''},
+        {id: 38, src: require('../images/38.png'), artist:'Amy'},
         {id: 39, src: require('../images/39.png'), artist:''},
         {id: 40, src: require('../images/40.png'), artist:''},
         {id: 41, src: require('../images/41.png'), artist:'Vivian'},
         {id: 42, src: require('../images/42.png'), artist:''},
         {id: 43, src: require('../images/43.png'), artist:''},
         {id: 44, src: require('../images/44.png'), artist:'Tony'},
+        {id: 45, src: require('../images/45.png'), artist:'Holly'},
+
     ];
 
     
