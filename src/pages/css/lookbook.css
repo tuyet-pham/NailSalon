@@ -76,7 +76,7 @@
 }
 
 
-.img-modal {
+.img-modal-lb {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap-reverse;
@@ -117,7 +117,7 @@
         width: 350px;
         height: 350px;
     }
-    .img-modal {
+    .img-modal-lb {
         margin-left: -190px;
     }
 

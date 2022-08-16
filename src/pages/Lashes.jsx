@@ -1,6 +1,5 @@
 import React, {useEffect, useState} from 'react';
 import './css/lashes.css'
-import './css/lookbook.css'
 
 
 function LSImage (props) {

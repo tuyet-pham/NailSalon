@@ -17,7 +17,7 @@ function LBImages (props) {
             
             {/* Modal Images */}
             <div className="overlay" style={{display: show ? "inline-block" : "none"}}>
-                <div className="img-modal">
+                <div className="img-modal-lb">
                     <img className="lb-images-modal" src={props.src} alt="alt-book"/>
                     
                     <div className="bottom">
@@ -89,7 +89,7 @@ function LookBook (props) {
         {id: 37, src: require('../images/37.png'), artist:''},
         {id: 38, src: require('../images/38.png'), artist:'Amy'},
         {id: 39, src: require('../images/39.png'), artist:''},
-        {id: 40, src: require('../images/40.png'), artist:''},
+        {id: 40, src: require('../images/40.png'), artist:'Holly'},
         {id: 41, src: require('../images/41.png'), artist:'Vivian'},
         {id: 42, src: require('../images/42.png'), artist:''},
         {id: 43, src: require('../images/43.png'), artist:''},
