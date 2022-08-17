@@ -58,7 +58,7 @@ function LookBook (props) {
         {id: 6, src: require('../images/6.png'), artist:'Holly'},
         {id: 7, src: require('../images/7.png'), artist:'Vivian'},
         {id: 8, src: require('../images/8.png'), artist:''},
-        {id: 9, src: require('../images/9.png'), artist:'Judy'},
+        {id: 9, src: require('../images/9.png'), artist:'Vivian'},
         {id: 10, src: require('../images/10.png'), artist:''},
         {id: 11, src: require('../images/11.png'), artist:''},
         {id: 12, src: require('../images/12.png'), artist:''},
