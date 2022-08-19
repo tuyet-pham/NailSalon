@@ -1,0 +1,72 @@
+.loading {
+    background-color: var(--medium-background);
+    position: fixed;
+    top:0;
+    left:0;
+    width: 100%;
+    height: 100%;
+    z-index: 200;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.layer1{
+    animation: mover 20s ease-in-out;
+    height: 900%;
+    width: 900%;
+    opacity: .5;
+}
+
+.loading i {
+    color: rgb(98, 94, 223);
+    font-size: 80px;
+    position: absolute;
+    animation: rotate 1.5s infinite;
+    top: 300px;
+}
+
+@keyframes rotate {
+    from {
+    transform: rotate(0deg);
+    color: rgb(98, 94, 223);     
+
+    }
+
+    to {
+    transform: rotate(360deg);
+    color: rgb(202, 223, 94);
+    }
+}
+
+
+
+@-moz-keyframes mover {
+    from {
+        transform: rotate(-40deg) translateY(0%) scale(2);      
+    }
+    
+    to {
+        transform: rotate(-40deg) translateY(100%) scale(2);
+    }
+}
+@-webkit-keyframes mover {
+    from {
+        transform: rotate(-40deg) translateY(0%) scale(2);      
+    }
+    
+    to {
+        transform: rotate(-40deg) translateY(100%) scale(2);
+    }
+}
+@keyframes mover {
+    from {
+    transform: rotate(-40deg) translateY(0%) scale(2);      
+
+    }
+
+    to {
+    transform: rotate(-40deg) translateY(100%) scale(2);
+    }
+}

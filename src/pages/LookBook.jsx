@@ -1,6 +1,7 @@
 import React, {useEffect} from "react";
 import { useState } from "react";
 import '../pages/css/lookbook.css'
+import Loading from "./Loading";
 
 function LBImages (props) {
     const [show, setShow] = useState(false);
@@ -40,9 +41,10 @@ function LBImages (props) {
 
 function LookBook (props) {
     const [showheight, setShowHeight] = useState(0);
+    const [loading, setLoading] = useState(true)
 
     useEffect(() => {
-        window.addEventListener("load", () => { window.scrollTo(0, 0)});
+        setTimeout(() => setLoading(false), 2500)
         window.top.document.title = "5 Star Nail Spa | Look Book"
         window.addEventListener("scroll", () => {
             const winheight = window.scrollY;
@@ -101,7 +103,8 @@ function LookBook (props) {
 
     
     return (
-        <div className="lb">
+        loading === false ? (
+        <div onLoad={()=>{window.scrollTo(0, 0)}} className="lb">
             <div className="lb-body">
 
                 <div className="lb-main-gallery">
@@ -115,7 +118,11 @@ function LookBook (props) {
                 
             </div>
         </div>
-    );
+        ) 
+        : 
+        (
+            <Loading/>
+        ))
 }
 
 export default LookBook;
