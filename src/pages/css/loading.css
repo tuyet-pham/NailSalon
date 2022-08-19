@@ -13,10 +13,10 @@
 }
 
 .layer1{
-    animation: mover 10s ease-in-out;
-    height: 300%;
-    width: 300%;
-    opacity: .5;
+    animation: mover 20s ease-in-out;
+    height: 900%;
+    width: 900%;
+    opacity: 1;
 }
 
 .loading i {
@@ -30,13 +30,13 @@
 @keyframes rotate {
     from {
     transform: rotate(0deg);
-    color: rgb(98, 94, 223);     
+    color: rgb(47, 41, 218);     
 
     }
 
     to {
     transform: rotate(360deg);
-    color: rgb(202, 223, 94);
+    color: rgb(194, 215, 92);
     }
 }
 
