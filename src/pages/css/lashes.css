@@ -130,6 +130,23 @@
 }
 
 
+.img-modal {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap-reverse;
+    background-color: white;
+    box-shadow: 1px 1px 20px rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+    width: fit-content;
+    position: fixed;
+    left:50%;
+    top: 50%;
+    margin-left: -250px;
+    margin-top: -300px;
+}
+
+
+
 
 @media screen and (max-width: 1200px) {
     .h-text {
