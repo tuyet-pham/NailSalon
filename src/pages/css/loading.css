@@ -13,9 +13,9 @@
 }
 
 .layer1{
-    animation: mover 20s ease-in-out;
-    height: 900%;
-    width: 900%;
+    animation: mover 10s ease-in-out;
+    height: 300%;
+    width: 300%;
     opacity: .5;
 }
 
@@ -44,29 +44,29 @@
 
 @-moz-keyframes mover {
     from {
-        transform: rotate(-40deg) translateY(0%) scale(2);      
+        transform: rotate(-40deg) translateY(0%) scale(1.5);      
     }
     
     to {
-        transform: rotate(-40deg) translateY(100%) scale(2);
+        transform: rotate(-40deg) translateY(100%) scale(1.5);
     }
 }
 @-webkit-keyframes mover {
     from {
-        transform: rotate(-40deg) translateY(0%) scale(2);      
+        transform: rotate(-40deg) translateY(0%) scale(1.5);      
     }
     
     to {
-        transform: rotate(-40deg) translateY(100%) scale(2);
+        transform: rotate(-40deg) translateY(100%) scale(1.5);
     }
 }
 @keyframes mover {
     from {
-    transform: rotate(-40deg) translateY(0%) scale(2);      
+    transform: rotate(-40deg) translateY(0%) scale(1.5);      
 
     }
 
     to {
-    transform: rotate(-40deg) translateY(100%) scale(2);
+    transform: rotate(-40deg) translateY(100%) scale(1.5);
     }
 }
