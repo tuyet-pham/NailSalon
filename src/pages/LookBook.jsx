@@ -42,6 +42,7 @@ function LookBook (props) {
     const [showheight, setShowHeight] = useState(0);
 
     useEffect(() => {
+        window.addEventListener("load", () => { window.scrollTo(0, 0)});
         window.top.document.title = "5 Star Nail Spa | Look Book"
         window.addEventListener("scroll", () => {
             const winheight = window.scrollY;
@@ -100,8 +101,7 @@ function LookBook (props) {
 
     
     return (
-
-        <div onLoad={()=>{window.scrollTo(0, 0)}} className="lb">
+        <div className="lb">
             <div className="lb-body">
 
                 <div className="lb-main-gallery">
