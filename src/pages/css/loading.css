@@ -44,29 +44,29 @@
 
 @-moz-keyframes mover {
     from {
-        transform: rotate(-40deg) translateY(0%) scale(1.5);      
+        transform: rotate(-40deg) translateY(0%) scale(2);      
     }
     
     to {
-        transform: rotate(-40deg) translateY(100%) scale(1.5);
+        transform: rotate(-40deg) translateY(100%) scale(2);
     }
 }
 @-webkit-keyframes mover {
     from {
-        transform: rotate(-40deg) translateY(0%) scale(1.5);      
+        transform: rotate(-40deg) translateY(0%) scale(2);      
     }
     
     to {
-        transform: rotate(-40deg) translateY(100%) scale(1.5);
+        transform: rotate(-40deg) translateY(100%) scale(2);
     }
 }
 @keyframes mover {
     from {
-    transform: rotate(-40deg) translateY(0%) scale(1.5);      
+    transform: rotate(-40deg) translateY(0%) scale(2);      
 
     }
 
     to {
-    transform: rotate(-40deg) translateY(100%) scale(1.5);
+    transform: rotate(-40deg) translateY(100%) scale(2);
     }
 }
