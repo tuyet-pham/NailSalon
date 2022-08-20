@@ -297,9 +297,9 @@ const Carousel = () => {
     const myRef = useRef(null)
 
 
-   const scroll1 = () => myRef.current.scrollIntoView({ block:'start',  behavior: 'smooth' })
-   const scroll2 = () => host.current.scrollIntoView({ block: 'start',  behavior: 'smooth' })   
-   const scroll3 = () => drinks.current.scrollIntoView({ block: 'start',  behavior: 'smooth' })   
+   const scroll1 = () => myRef.current.scrollIntoView({ block:'center',  behavior: 'smooth' })
+   const scroll2 = () => host.current.scrollIntoView({ block: 'center',  behavior: 'smooth' })   
+   const scroll3 = () => drinks.current.scrollIntoView({ block: 'center',  behavior: 'smooth' })   
 
 
     return (

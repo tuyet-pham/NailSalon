@@ -108,7 +108,11 @@ function LookBook (props) {
             <div className="lb-body">
 
                 <div className="lb-main-gallery">
-                    <p style={{width:"100%", textAlign:'center'}}>{'Click image to expand 👆🏻'}</p>
+                    <p style={{width:"100%", textAlign:'center'}}>
+                        {'✨ Click image to expand & for artist name 💅🏼 ✨'}
+                        <br/>
+                        
+                    </p>
                     {gallery.map((image) => <LBImages key={image.id} src={image.src} artist={image.artist}/>)}               
                 </div>
 
