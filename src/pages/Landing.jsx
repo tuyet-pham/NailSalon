@@ -295,31 +295,44 @@ const Carousel = () => {
     const host = useRef(null);
     const drinks = useRef(null)
     const myRef = useRef(null)
-
+    const vol = useRef(null)
+    const col = useRef(null)
 
    const scroll1 = () => myRef.current.scrollIntoView({ block:'center',  behavior: 'smooth' })
-   const scroll2 = () => host.current.scrollIntoView({ block: 'center',  behavior: 'smooth' })   
-   const scroll3 = () => drinks.current.scrollIntoView({ block: 'center',  behavior: 'smooth' })   
+   const scroll2 = () => vol.current.scrollIntoView({ block: 'center',  behavior: 'smooth' })   
+   const scroll3 = () => col.current.scrollIntoView({ block: 'center',  behavior: 'smooth' })   
+   const scroll4 = () => drinks.current.scrollIntoView({ block: 'center',  behavior: 'smooth' })   
+   const scroll5 = () => host.current.scrollIntoView({ block: 'center',  behavior: 'smooth' })   
 
 
     return (
         <div className='carousel'>
             <div className='carousel-container'>
                 <div ref={myRef} className='carousel-item'>
-                    <img src={require('../images/l-school.svg')} alt="party" className="host-img"/>
-                    <img src={require('../images/l-school-square.svg')} alt="party" className="host-s-img"/>
+                    <img src={require('../images/l-school.svg')} alt="carousel" className="host-img"/>
+                    <img src={require('../images/l-school-square.svg')} alt="carousel" className="host-s-img"/>
                 </div>
-                <div ref={host} className='carousel-item'>
-                    <img src={require('../images/l-hosting.svg')} alt="party" className="host-img"/>
-                    <img src={require('../images/l-hosting-square.svg')} alt="party" className="host-s-img"/>
-                    <div  className='host-btn-container'>
-                        {/* <Link to="/hosting"><button className='host-btn'>Click here for more information</button></Link> */}
-                    </div>
+                <div ref={vol} className='carousel-item'>
+                    <img src={require('../images/l-volcano.svg')} alt="carousel" className="host-img"/>
+                    <img src={require('../images/l-volcano-square.svg')} alt="carousel" className="host-s-img"/>
+                </div>
+                <div ref={col} className='carousel-item'>
+                    <img src={require('../images/l-collagen.svg')} alt="carousel" className="host-img"/>
+                    <img src={require('../images/l-collagen-square.svg')} alt="carousel" className="host-s-img"/>
                 </div>
                 <div ref={drinks} className='carousel-item'>
-                    <img src={require('../images/l-drinks.svg')} alt="party" className="host-img"/>
-                    <img src={require('../images/l-drinks-square.svg')} alt="party" className="host-s-img"/>
-                </div>          
+                    <img src={require('../images/l-drinks.svg')} alt="carousel" className="host-img"/>
+                    <img src={require('../images/l-drinks-square.svg')} alt="carousel" className="host-s-img"/>
+                </div>
+                <div ref={host} className='carousel-item'>
+                    <img src={require('../images/l-hosting.svg')} alt="carousel" className="host-img"/>
+                    <img src={require('../images/l-hosting-square.svg')} alt="carousel" className="host-s-img"/>
+                    {/* <div  className='host-btn-container'>
+                        <Link to="/hosting"><button className='host-btn'>Click here for more information</button></Link>
+                    </div> */}
+                </div>
+                
+                       
             
             </div>
             
@@ -327,6 +340,8 @@ const Carousel = () => {
                 <div className='dot' id="dot-1" onClick={scroll1}/>
                 <div className='dot' id="dot-2" onClick={scroll2}/>
                 <div className='dot' id="dot-3" onClick={scroll3}/>
+                <div className='dot' id="dot-4" onClick={scroll4}/>
+                <div className='dot' id="dot-5" onClick={scroll5}/>
             </div>
         </div>
     )
