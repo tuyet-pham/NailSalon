@@ -47,6 +47,7 @@ function Lashes() {
         {id: 4, src: require('../images/holly-2.png'), caption:''},
         {id: 5, src: require('../images/holly-5.png'), caption:''},
         {id: 6, src: require('../images/holly-6.png'), caption:''},
+        {id: 7, src: require('../images/holly-7.png'), caption:''},
     ]
 
     function next() {
