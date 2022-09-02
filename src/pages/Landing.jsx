@@ -1,6 +1,8 @@
 import React, {useState, useEffect, useRef} from 'react';
 import { Link } from "react-router-dom";
 import './css/landing.css';
+import lookbookJson from './json/lookbook.json'
+
 
 /* LOGO */
 import ico from '../images/LOGO.svg'
@@ -48,12 +50,12 @@ function AboutUs() {
 
 function Header () {
     const headerImageList = [
-        {id: 1, src: require('../images/h-1.png')},
-        {id: 2, src: require('../images/h-2.png')},
-        {id: 3, src: require('../images/h-3.png')},
-        {id: 4, src: require('../images/h-4.png')},
-        {id: 5, src: require('../images/h-5.png')},
-        {id: 6, src: require('../images/h-6.png')},
+        {id: 1, src: '/images/h-1.png'},
+        {id: 2, src: '/images/h-2.png'},
+        {id: 3, src: '/images/h-3.png'},
+        {id: 4, src: '/images/h-4.png'},
+        {id: 5, src: '/images/h-5.png'},
+        {id: 6, src: '/images/h-6.png'},
     ];
 
     return (
@@ -88,12 +90,12 @@ const Card = (props) => {
 function Services() {
 
     const servicelist = [
-        {id: 1, title:"Manicure", desc:"Invest in the health of your hands by showing it some love. Manicures includes nail shapping/trimming, cuticle grooming, exfoliation, lotioning and polish of your choice. ", price:"", imgSrc: require('../images/s-2.png') },
-        {id: 2, title:"Pedicure", desc:"Improve the natural texture and look of your legs. Pedicures includes nail shapping, cuticle grooming, exfoliation, and polish of your choice.", price:"", imgSrc: require('../images/s-3.png')},
-        {id: 3, title:"Waxing", desc:"Delay hair regrowth, prevent ingrown hairs, and help exfoliate the skin. Check out our Service Menu to see what we have available.", price:"", imgSrc: require('../images/s-4.png')},
-        {id: 4, title:"Lash Enchancement", desc:"Lash extension naturally define your eyes to make them look bolder, fuller and sexier without any . Call to book with Holly today! ", price:"", imgSrc: require('../images/s-1.png')},
-        {id: 5, title:"Artificial nails", desc:"Dip, Acrylic, Gel, Chrome, Designs & More! ", price:"", imgSrc: require('../images/s-5.png')},
-        {id: 6, title:"Children", desc:"Treat your little(s) with a fun and special spa day out.", price:"", imgSrc:require('../images/s-6.png')},
+        {id: 1, title:"Manicure", desc:"Invest in the health of your hands by showing it some love. Manicures includes nail shapping/trimming, cuticle grooming, exfoliation, lotioning and polish of your choice. ", price:"", imgSrc:'/images/s-2.png' },
+        {id: 2, title:"Pedicure", desc:"Improve the natural texture and look of your legs. Pedicures includes nail shapping, cuticle grooming, exfoliation, and polish of your choice.", price:"", imgSrc: '/images/s-3.png'},
+        {id: 3, title:"Waxing", desc:"Delay hair regrowth, prevent ingrown hairs, and help exfoliate the skin. Check out our Service Menu to see what we have available.", price:"", imgSrc: '/images/s-4.png'},
+        {id: 4, title:"Lash Enchancement", desc:"Lash extension naturally define your eyes to make them look bolder, fuller and sexier without any . Call to book with Holly today! ", price:"", imgSrc: '/images/s-1.png'},
+        {id: 5, title:"Artificial nails", desc:"Dip, Acrylic, Gel, Chrome, Designs & More! ", price:"", imgSrc: '/images/s-5.png'},
+        {id: 6, title:"Children", desc:"Treat your little(s) with a fun and special spa day out.", price:"", imgSrc:'/images/s-6.png'},
     ];
 
     return (
@@ -116,26 +118,9 @@ function Services() {
 
 
 function Gallery() {
-
-    
-    /* GALLERY IMG */
-    const galleryList = [
-        {id: 1, src: require('../images/1.png')},
-        {id: 2, src: require('../images/2.png')},
-        {id: 3, src: require('../images/3.png')},
-        {id: 4, src: require('../images/4.png')},
-        {id: 5, src: require('../images/5.png')},
-        {id: 6, src: require('../images/6.png')},
-        {id: 7, src: require('../images/7.png')},
-        {id: 8, src: require('../images/8.png')},
-        {id: 9, src: require('../images/9.png')},
-        {id: 10, src: require('../images/10.png')},
-        {id: 11, src: require('../images/11.png')},
-        {id: 12, src: require('../images/12.png')},
-    ];
-
-
+    const galleryList = lookbookJson.slice(0,12);
     const [width, setWidth] = useState(window.innerWidth);
+
 
     function next() {
         
@@ -185,9 +170,7 @@ function Gallery() {
     
     useEffect(() => {
       /*Listening to window changes*/
-      
       window.addEventListener("resize", () => setWidth(window.innerWidth));
-  
     });
 
     const breakpoint = 600;
@@ -215,24 +198,24 @@ function Gallery() {
             <div id='gallery'>
                 
                 <span className='gallery-sec active'>
-                    <Images classname="gallery-img" src={require('../images/1.png')}/>
-                    <Images classname="gallery-img" src={require('../images/2.png')}/>
-                    <Images classname="gallery-img" src={require('../images/3.png')}/>
+                    <Images classname="gallery-img" src={'/images/1.png'}/>
+                    <Images classname="gallery-img" src={'/images/2.png'}/>
+                    <Images classname="gallery-img" src={'/images/3.png'}/>
                 </span>
                 <span className='gallery-sec' >
-                    <Images classname="gallery-img" src={require('../images/4.png')}/>
-                    <Images classname="gallery-img" src={require('../images/5.png')}/>
-                    <Images classname="gallery-img" src={require('../images/6.png')}/>
+                    <Images classname="gallery-img" src={'/images/4.png'}/>
+                    <Images classname="gallery-img" src={'/images/5.png'}/>
+                    <Images classname="gallery-img" src={'/images/6.png'}/>
                 </span>
                 <span className='gallery-sec'>
-                    <Images classname="gallery-img" src={require('../images/7.png')}/>
-                    <Images classname="gallery-img" src={require('../images/8.png')}/>
-                    <Images classname="gallery-img" src={require('../images/9.png')}/>
+                    <Images classname="gallery-img" src={'/images/7.png'}/>
+                    <Images classname="gallery-img" src={'/images/8.png'}/>
+                    <Images classname="gallery-img" src={'/images/9.png'}/>
                 </span>
                 <span className='gallery-sec'>
-                    <Images classname="gallery-img" src={require('../images/10.png')}/>
-                    <Images classname="gallery-img" src={require('../images/11.png')}/>
-                    <Images classname="gallery-img" src={require('../images/12.png')}/>
+                    <Images classname="gallery-img" src={'/images/10.png'}/>
+                    <Images classname="gallery-img" src={'/images/11.png'}/>
+                    <Images classname="gallery-img" src={'/images/12.png'}/>
                 </span>
             </div>
             <Link to="/look-book/"><button className="NS-btn" style={{marginTop:"20px"}}>View more on our Look Book!</button></Link>
@@ -309,24 +292,24 @@ const Carousel = () => {
         <div className='carousel'>
             <div className='carousel-container'>
                 <div ref={myRef} className='carousel-item'>
-                    <img src={require('../images/l-school.svg')} alt="carousel" className="host-img"/>
-                    <img src={require('../images/l-school-square.svg')} alt="carousel" className="host-s-img"/>
+                    <img src={'/images/l-school.svg'} alt="carousel" className="host-img"/>
+                    <img src={'/images/l-school-square.svg'} alt="carousel" className="host-s-img"/>
                 </div>
                 <div ref={vol} className='carousel-item'>
-                    <img src={require('../images/l-volcano.svg')} alt="carousel" className="host-img"/>
-                    <img src={require('../images/l-volcano-square.svg')} alt="carousel" className="host-s-img"/>
+                    <img src={'/images/l-volcano.svg'} alt="carousel" className="host-img"/>
+                    <img src={'/images/l-volcano-square.svg'} alt="carousel" className="host-s-img"/>
                 </div>
                 <div ref={col} className='carousel-item'>
-                    <img src={require('../images/l-collagen.svg')} alt="carousel" className="host-img"/>
-                    <img src={require('../images/l-collagen-square.svg')} alt="carousel" className="host-s-img"/>
+                    <img src={'/images/l-collagen.svg'} alt="carousel" className="host-img"/>
+                    <img src={'/images/l-collagen-square.svg'} alt="carousel" className="host-s-img"/>
                 </div>
                 <div ref={drinks} className='carousel-item'>
-                    <img src={require('../images/l-drinks.svg')} alt="carousel" className="host-img"/>
-                    <img src={require('../images/l-drinks-square.svg')} alt="carousel" className="host-s-img"/>
+                    <img src={'/images/l-drinks.svg'} alt="carousel" className="host-img"/>
+                    <img src={'/images/l-drinks-square.svg'} alt="carousel" className="host-s-img"/>
                 </div>
                 <div ref={host} className='carousel-item'>
-                    <img src={require('../images/l-hosting.svg')} alt="carousel" className="host-img"/>
-                    <img src={require('../images/l-hosting-square.svg')} alt="carousel" className="host-s-img"/>
+                    <img src={'/images/l-hosting.svg'} alt="carousel" className="host-img"/>
+                    <img src={'/images/l-hosting-square.svg'} alt="carousel" className="host-s-img"/>
                     {/* <div  className='host-btn-container'>
                         <Link to="/hosting"><button className='host-btn'>Click here for more information</button></Link>
                     </div> */}

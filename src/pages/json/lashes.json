@@ -1,0 +1,9 @@
+[
+    {"id": 1, "src": "/images/holly-1.png", "caption":"Cat Eye"} ,
+    {"id": 2, "src": "/images/holly-3.png", "caption":"Hybrid"},
+    {"id": 3, "src": "/images/holly-4.png", "caption":"Wispy"},
+    {"id": 4, "src": "/images/holly-2.png", "caption":"Cat Eye with Accent Color"},
+    {"id": 5, "src": "/images/holly-5.png", "caption":"Hybrid"},
+    {"id": 6, "src": "/images/holly-6.png", "caption":"Cat Eye"},
+    {"id": 7, "src": "/images/holly-7.png", "caption":"Volume"}
+]

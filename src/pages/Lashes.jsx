@@ -1,5 +1,7 @@
 import React, {useEffect, useState} from 'react';
 import './css/lashes.css'
+import lashesImg from './json/lashes.json'
+
 
 
 function LSImage (props) {
@@ -23,7 +25,7 @@ function LSImage (props) {
                     <div className="bottom">
                         
                        <span style={{display: props.caption === ''? 'none':'unset'}} className="artist">
-                            {props.caption}
+                            Style : {props.caption}
                         </span>
 
                        <button className="close right" onClick={()=>setShow(!show)}>
@@ -40,15 +42,7 @@ function LSImage (props) {
 
 function Lashes() {
 
-    const gallery = [
-        {id: 1, src: require('../images/holly-1.png'), caption:''} ,
-        {id: 2, src: require('../images/holly-3.png'), caption:''},
-        {id: 3, src: require('../images/holly-4.png'), caption:''},
-        {id: 4, src: require('../images/holly-2.png'), caption:''},
-        {id: 5, src: require('../images/holly-5.png'), caption:''},
-        {id: 6, src: require('../images/holly-6.png'), caption:''},
-        {id: 7, src: require('../images/holly-7.png'), caption:''},
-    ]
+    const gallery = lashesImg;
 
     function next() {
         
@@ -106,9 +100,9 @@ function Lashes() {
             <div className='lash-header'>
                 <div className='h-carsousel'>
                     <div className='carsousel-lash-container'>
-                        <img className="carsousel-lash active carsousel-img" src={require('../images/holly-logo.svg')} alt='holly'></img>
-                        <img className="carsousel-lash carsousel-img" src={require('../images/holly-1-1.svg')} alt='holly'></img>
-                        <img className="carsousel-lash carsousel-img" src={require('../images/holly-1-2.svg')} alt='holly'></img>
+                        <img className="carsousel-lash active carsousel-img" src='/images/holly-logo.svg' alt='holly'></img>
+                        <img className="carsousel-lash carsousel-img" src='/images/holly-1-1.svg' alt='holly'></img>
+                        <img className="carsousel-lash carsousel-img" src='/images/holly-1-2.svg' alt='holly'></img>
                     </div>
                         
                     <div style={{width:'70%'}}>
@@ -138,8 +132,8 @@ function Lashes() {
                     <h4>Why get them?</h4>
                     {`If you love the way mascara looks but find putting them on every other day/time tedious, 
                      eyelash extensions will be a game changer. Are they a bit pricier? Yes, but the time you save 
-                     very day is priceless. Lash extensions, done correctly, are also seemless and can offer a natural
-                     and customized look.  
+                     every day is priceless. Lash extensions, done correctly, are also seemless and can offer a natural
+                     and customized look.
                     `}
                     <br/>
                     <div className="lash-btn">
