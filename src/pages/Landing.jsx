@@ -4,9 +4,6 @@ import './css/landing.css';
 import lookbookJson from './json/lookbook.json'
 
 
-/* LOGO */
-import ico from '../images/LOGO.svg'
-
 
 const Images = (props) => {
     return (
@@ -255,7 +252,7 @@ function Contact() {
                         <a href="https://www.instagram.com/fivestarnailandspa/"><i style={{color:"#9e868c"}} className="fa-brands fa-instagram-square"></i></a>
                         <a href="https://goo.gl/maps/o3J95F1EDyTPjwJV9"><i style={{color:"#a1bcc7"}} className="fa-brands fa-google-plus-square"></i></a>
                     </p>
-                    <img className='ico' src={ico} alt="ico"/>
+                    <img className='ico' src="/images/LOGO.svg" alt="ico"/>
  
                     
                 </div>
