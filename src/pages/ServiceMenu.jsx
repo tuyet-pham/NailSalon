@@ -1,6 +1,6 @@
 import React from 'react';
-import sp1 from '../images/menu-1.png';
-import sp2 from '../images/menu-2.png';
+import sp1 from '/images/menu-1.png';
+import sp2 from '/images/menu-2.png';
 import './css/service-menu.css';
 import { useEffect } from 'react';
 
