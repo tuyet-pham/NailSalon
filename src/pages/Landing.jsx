@@ -11,7 +11,7 @@ import ico from '../images/LOGO.svg'
 const Images = (props) => {
     return (
         <>
-         <img className={props.classname} src={props.src} alt="imgNS"/>
+         <img className={props.classname} src={props.src} alt="5 Star Nail Spa"/>
         </>
     );
 }
@@ -198,24 +198,17 @@ function Gallery() {
             <div id='gallery'>
                 
                 <span className='gallery-sec active'>
-                    <Images classname="gallery-img" src={'/images/1.png'}/>
-                    <Images classname="gallery-img" src={'/images/2.png'}/>
-                    <Images classname="gallery-img" src={'/images/3.png'}/>
+                    {galleryList.slice(0,3).map((image) => <Images key={image.id} classname="gallery-img" src={image.src}/>)}
                 </span>
                 <span className='gallery-sec' >
-                    <Images classname="gallery-img" src={'/images/4.png'}/>
-                    <Images classname="gallery-img" src={'/images/5.png'}/>
-                    <Images classname="gallery-img" src={'/images/6.png'}/>
+                    {galleryList.slice(3,6).map((image) => <Images key={image.id} classname="gallery-img" src={image.src}/>)}
                 </span>
                 <span className='gallery-sec'>
-                    <Images classname="gallery-img" src={'/images/7.png'}/>
-                    <Images classname="gallery-img" src={'/images/8.png'}/>
-                    <Images classname="gallery-img" src={'/images/9.png'}/>
+                    {galleryList.slice(6,9).map((image) => <Images key={image.id} classname="gallery-img" src={image.src}/>)}
                 </span>
                 <span className='gallery-sec'>
-                    <Images classname="gallery-img" src={'/images/10.png'}/>
-                    <Images classname="gallery-img" src={'/images/11.png'}/>
-                    <Images classname="gallery-img" src={'/images/12.png'}/>
+                    {galleryList.slice(9,12).map((image) => <Images key={image.id} classname="gallery-img" src={image.src}/>)}
+
                 </span>
             </div>
             <Link to="/look-book/"><button className="NS-btn" style={{marginTop:"20px"}}>View more on our Look Book!</button></Link>
