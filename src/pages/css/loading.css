@@ -14,8 +14,8 @@
 
 .loading-icon {
     height: 200px;
-    animation: rotate 1s infinite;
-    top: 250px;
+    animation: rotate 1.4s infinite;
+    top: 300px;
     position: absolute;
     z-index: 201;
 }
@@ -32,3 +32,9 @@
     }
 }
 
+
+@media screen and (max-width: 400px) {
+    .loading-icon {
+        top: 250px;
+    }
+}
