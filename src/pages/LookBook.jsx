@@ -47,11 +47,9 @@ function LookBook (props) {
     const [jsonImg, setJsonImg] = useState([]);
 
     useEffect(() => {
-        
+        setJsonImg(lookbookJson);
         setTimeout(function(){
             setLoading(false);
-            setJsonImg(lookbookJson);
-
         }, 2500);
         window.top.document.title = "5 Star Nail Spa | Look Book"
         window.addEventListener("scroll", () => {
