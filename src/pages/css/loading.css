@@ -1,72 +1,33 @@
 .loading {
-    background-color: var(--medium-background);
+    background-color: var(--light-background);
     position: fixed;
     top:0;
     left:0;
     width: 100%;
-    height: 100%;
+    height: 100%; 
     z-index: 200;
     overflow: hidden;
     display: flex;
     align-items: center;
     justify-content: center;
-}
-
-.layer1{
-    animation: mover 20s ease-in-out;
-    height: 900%;
-    width: 900%;
     opacity: 1;
 }
 
-.loading i {
-    color: rgb(98, 94, 223);
-    font-size: 80px;
-    position: absolute;
+.loading-icon {
+    height: 200px;
     animation: rotate 1.5s infinite;
-    top: 300px;
+    z-index: 201;
 }
 
 @keyframes rotate {
-    from {
-    transform: rotate(0deg);
-    color: rgb(47, 41, 218);     
-
+    0% {
+        transform: translateY(0);
     }
-
-    to {
-    transform: rotate(360deg);
-    color: rgb(194, 215, 92);
+    50% {
+        transform: translateY(-20px);
     }
-}
-
-
-
-@-moz-keyframes mover {
-    from {
-        transform: rotate(-40deg) translateY(0%) scale(2);      
-    }
-    
-    to {
-        transform: rotate(-40deg) translateY(100%) scale(2);
+    100% {
+        transform: translateY(0px);
     }
 }
-@-webkit-keyframes mover {
-    from {
-        transform: rotate(-40deg) translateY(0%) scale(2);      
-    }
-    
-    to {
-        transform: rotate(-40deg) translateY(100%) scale(2);
-    }
-}
-@keyframes mover {
-    from {
-    transform: rotate(-40deg) translateY(0%) scale(2);      
 
-    }
-
-    to {
-    transform: rotate(-40deg) translateY(100%) scale(2);
-    }
-}

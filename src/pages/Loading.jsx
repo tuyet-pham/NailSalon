@@ -4,9 +4,9 @@ import './css/loading.css'
 
 function Loading() {
     return (
-        <div className='loading'>
-            <div className='layer1' style={{backgroundImage:"url(\"/images/load1.svg\")"}}/>
-            <i className="fa-solid fa-circle-notch"></i>        
+        <div className='loading'> 
+            <div className='layer1'/>
+            <img className="loading-icon" src="/images/loading.svg" alt="img"/>
         </div>
     );
 }
