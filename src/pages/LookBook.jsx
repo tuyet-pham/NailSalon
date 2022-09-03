@@ -46,21 +46,25 @@ function LookBook (props) {
     const [loading, setLoading] = useState(true)
     const [jsonImg, setJsonImg] = useState([]);
 
+
+
     useEffect(() => {
-        setTimeout(function(){
-            setJsonImg(lookbookJson);
-            setLoading(false);
+        setJsonImg(lookbookJson);
+
+        setTimeout(()=>{
+            setLoading(false)
         }, 2500);
+
         window.top.document.title = "5 Star Nail Spa | Look Book"
         window.addEventListener("scroll", () => {
             const winheight = window.scrollY;
             setShowHeight(winheight);
         });
-    });
+    },[]);
     
     return (
-        loading === false ? (
         <div onLoad={()=>{window.scrollTo(0, 0)}} className="lb">
+            <Loading show={loading}/>
             <div className="lb-body">
 
                 <div className="lb-main-gallery">
@@ -78,11 +82,7 @@ function LookBook (props) {
                 
             </div>
         </div>
-        ) 
-        : 
-        (
-            <Loading/>
-        ))
+    )
 }
 
 export default LookBook;
