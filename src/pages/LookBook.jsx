@@ -52,7 +52,7 @@ function LookBook (props) {
             setLoading(false);
             setJsonImg(lookbookJson);
 
-        }, 3500);
+        }, 2500);
         window.top.document.title = "5 Star Nail Spa | Look Book"
         window.addEventListener("scroll", () => {
             const winheight = window.scrollY;
