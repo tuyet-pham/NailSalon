@@ -19,7 +19,7 @@ function LBImages (props) {
             
             
             {/* Modal Images */}
-            <div className="overlay" style={{display: show ? "inline-block" : "none"}}>
+            <div className="overlay" onClick={()=>setShow(false)} style={{display: show ? "inline-block" : "none"}}>
                 <div className="img-modal-lb">
                     <img className="lb-images-modal" src={props.src} alt="5-star-nail-spa-nails-look"/>
                     
@@ -66,7 +66,6 @@ function LookBook (props) {
         <div onLoad={()=>{window.scrollTo(0, 0)}} className="lb">
             <Loading show={loading}/>
             <div className="lb-body">
-
                 <div className="lb-main-gallery">
                     <p style={{width:"100%", textAlign:'center'}}>
                         {'✨ Click image to expand & for artist name 💅🏼 ✨'}
