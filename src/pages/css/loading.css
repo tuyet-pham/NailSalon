@@ -14,7 +14,7 @@
 
 .loading-icon {
     height: 200px;
-    animation: rotate 1.5s infinite;
+    animation: rotate 1s infinite;
     top: 250px;
     position: absolute;
     z-index: 201;
