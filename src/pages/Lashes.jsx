@@ -101,8 +101,11 @@ function Lashes() {
                 <div className='h-carsousel'>
                     <div className='carsousel-lash-container'>
                         <img className="carsousel-lash active carsousel-img" src='/images/holly-logo.svg' alt='holly'></img>
-                        <img className="carsousel-lash carsousel-img" src='/images/holly-1-1.svg' alt='holly'></img>
                         <img className="carsousel-lash carsousel-img" src='/images/holly-1-2.svg' alt='holly'></img>
+                        <img className="carsousel-lash carsousel-img" src='/images/holly-1-1.svg' alt='holly'></img>
+                        <img className="carsousel-lash carsousel-img" src='/images/holly-1-3.png' alt='holly'></img>
+                        <img className="carsousel-lash carsousel-img" src='/images/holly-1-4.png' alt='holly'></img>
+
                     </div>
                         
                     <div style={{width:'70%'}}>
