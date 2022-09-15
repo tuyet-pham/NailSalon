@@ -7,7 +7,6 @@ import NoPages from "./pages/NoPages";
 import ServiceMenu from "./pages/ServiceMenu";
 import LookBook from "./pages/LookBook";
 import Lashes from "./pages/Lashes";
-import Hosting from './pages/Hosting';
 
 /** Main Routes */
 function App() {
@@ -19,7 +18,6 @@ function App() {
           <Route path="service-menu" element={<ServiceMenu />} />
           <Route path="look-book" element={<LookBook />} />
           <Route path="lashes" element={<Lashes />} />
-          <Route path="hosting" element={<Hosting />} />
           <Route path="*" element={<NoPages />} />
         </Route>
       </Routes>

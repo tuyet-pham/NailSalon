@@ -53,7 +53,7 @@ function LookBook (props) {
 
         setTimeout(()=>{
             setLoading(false)
-        }, 2700);
+        }, 3000);
 
         window.top.document.title = "5 Star Nail Spa | Look Book"
         window.addEventListener("scroll", () => {

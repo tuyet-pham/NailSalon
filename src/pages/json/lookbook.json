@@ -1,6 +1,6 @@
 [
-{"id": 1, "src": "/images/1.png", "caption":"Judy"} ,
-{"id": 2, "src": "/images/2.png", "caption":"Silva"},
+{"id": 1, "src": "/images/1.png", "caption":"Silva"} ,
+{"id": 2, "src": "/images/2.png", "caption":"Judy"},
 {"id": 3, "src": "/images/3.png", "caption":"Silva"},
 {"id": 4, "src": "/images/4.png", "caption":"Mimi"},
 {"id": 5, "src": "/images/5.png", "caption":"Anna"},
@@ -26,15 +26,15 @@
 {"id": 25, "src": "/images/25.png", "caption":"Mimi"},
 {"id": 26, "src": "/images/26.png", "caption":"Holly"},
 {"id": 27, "src": "/images/27.png", "caption":""},
-{"id": 28, "src": "/images/28.png", "caption":"Jenifer"},
-{"id": 29, "src": "/images/29.png", "caption":"Jenifer"},
+{"id": 28, "src": "/images/28.png", "caption":"Jennifer"},
+{"id": 29, "src": "/images/29.png", "caption":"Jennifer"},
 {"id": 30, "src": "/images/30.png", "caption":"Amy"},
 {"id": 31, "src": "/images/31.png", "caption":""},
 {"id": 32, "src": "/images/32.png", "caption":"Silva"},
 {"id": 33, "src": "/images/33.png", "caption":""},
 {"id": 34, "src": "/images/34.png", "caption":"Judy"},
 {"id": 35, "src": "/images/35.png", "caption":"Silva"},
-{"id": 36, "src": "/images/36.png", "caption":""},
+{"id": 36, "src": "/images/36.png", "caption":"Silva"},
 {"id": 37, "src": "/images/37.png", "caption":""},
 {"id": 38, "src": "/images/38.png", "caption":"Amy"},
 {"id": 39, "src": "/images/39.png", "caption":"Anna"},
@@ -45,6 +45,6 @@
 {"id": 44, "src": "/images/44.png", "caption":"Tony"},
 {"id": 45, "src": "/images/45.png", "caption":"Holly"},
 {"id": 46, "src": "/images/46.png", "caption":"Silva"},
-{"id": 47, "src": "/images/47.png", "caption":"Holly"},
-{"id": 48, "src": "/images/48.png", "caption":"Jenifer"}
+{"id": 47, "src": "/images/47.png", "caption":"Anna & Holly"},
+{"id": 48, "src": "/images/48.png", "caption":"Jennifer"}
 ]
