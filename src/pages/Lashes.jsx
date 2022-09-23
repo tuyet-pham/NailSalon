@@ -18,7 +18,7 @@ function LSImage (props) {
             
             
             {/* Modal Images */}
-            <div className="overlay" style={{display: show ? "inline-block" : "none"}}>
+            <div className="overlay" onClick={()=>setShow(false)} style={{display: show ? "inline-block" : "none"}}>
                 <div className="img-modal">
                     <img className="lash-image-modal" src={props.src} alt="alt-holly"/>
                     

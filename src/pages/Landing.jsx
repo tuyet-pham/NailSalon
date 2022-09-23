@@ -1,8 +1,8 @@
-import React, {useState, useEffect, useRef} from 'react';
+import React, {useState, useEffect} from 'react';
 import { Link } from "react-router-dom";
 import './css/landing.css';
 import lookbookJson from './json/lookbook.json'
-
+import Carousel from './Carousel.jsx'
 
 
 const Images = (props) => {
@@ -118,52 +118,6 @@ function Gallery() {
     const galleryList = lookbookJson.slice(0,12);
     const [width, setWidth] = useState(window.innerWidth);
 
-
-    function next() {
-        
-        const elem = document.getElementsByClassName('gallery-sec');
-
-        for ( var i = 0 ; i <= elem.length-1; ++i){
-            if(elem[i].classList.contains('active')) 
-            {   
-                if (elem[i].nextSibling === null){
-                    elem[0].classList.add("active")
-                    elem[i].classList.remove("active")
-                    break;
-                }
-                else {
-                    elem[i].nextSibling.classList.add("active")
-                    elem[i].classList.remove("active")
-                    break;
-                }
-                
-            }
-            
-        }
-    }
-
-    function prev() {
-        const elem = document.getElementsByClassName('gallery-sec');
-
-        for ( var i = 0 ; i <= elem.length-1; ++i){
-            if(elem[i].classList.contains('active')) 
-            {   
-                if (elem[i].previousSibling === null){
-                    elem[elem.length-1].classList.add("active")
-                    elem[i].classList.remove("active")
-                    break;
-                }
-                else {
-                    elem[i].previousSibling.classList.add("active")
-                    elem[i].classList.remove("active")
-                    break;
-                }
-                
-            }
-            
-        }
-    }
-
     
     useEffect(() => {
       /*Listening to window changes*/
@@ -188,29 +142,30 @@ function Gallery() {
     :
     (
         <div className='gallery-body'>
-          <h2 style={{color:"#fff"}} >Gallery</h2>
-            <button onClick={prev} className='gallery-btn left'><i className="fa-solid fa-angles-left"></i></button>
-            <button onClick={next} className='gallery-btn right'><i className="fa-solid fa-angles-right"></i></button>
-          <div style={{textAlign:"center"}}>
-            <div id='gallery'>
-                
-                <span className='gallery-sec active'>
-                    {galleryList.slice(0,3).map((image) => <Images key={image.id} classname="gallery-img" src={image.src}/>)}
-                </span>
-                <span className='gallery-sec' >
-                    {galleryList.slice(3,6).map((image) => <Images key={image.id} classname="gallery-img" src={image.src}/>)}
-                </span>
-                <span className='gallery-sec'>
-                    {galleryList.slice(6,9).map((image) => <Images key={image.id} classname="gallery-img" src={image.src}/>)}
-                </span>
-                <span className='gallery-sec'>
-                    {galleryList.slice(9,12).map((image) => <Images key={image.id} classname="gallery-img" src={image.src}/>)}
-
-                </span>
+            <h2 style={{color:"#fff"}} >Gallery</h2>
+            <Carousel>
+                    <div className='gallery-sec'>
+                        {galleryList.slice(0,2).map((image) => <Images key={image.id} classname="gallery-img" src={image.src}/>)}
+                    </div>
+                    <div className='gallery-sec' >
+                        {galleryList.slice(2,4).map((image) => <Images key={image.id} classname="gallery-img" src={image.src}/>)}
+                    </div>
+                    <div className='gallery-sec'>
+                        {galleryList.slice(4,6).map((image) => <Images key={image.id} classname="gallery-img" src={image.src}/>)}
+                    </div>
+                    <div className='gallery-sec'>
+                        {galleryList.slice(6,8).map((image) => <Images key={image.id} classname="gallery-img" src={image.src}/>)}
+                    </div>
+                    <div className='gallery-sec'>
+                        {galleryList.slice(8,10).map((image) => <Images key={image.id} classname="gallery-img" src={image.src}/>)}
+                    </div>
+                    <div className='gallery-sec'>
+                        {galleryList.slice(10,12).map((image) => <Images key={image.id} classname="gallery-img" src={image.src}/>)}
+                    </div>
+            </Carousel>
+            <div style={{width:"100%", textAlign:"center"}}>
+                <Link to="/look-book/"><button style={{marginTop:"20px"}} className="NS-btn">View more on our Look Book!</button></Link>
             </div>
-            <Link to="/look-book/"><button className="NS-btn" style={{marginTop:"20px"}}>View more on our Look Book!</button></Link>
-
-          </div>
         </div>
     )
 }
@@ -262,64 +217,7 @@ function Contact() {
         </div>
     );
 }
-
-
-const Carousel = () => {
-    const host = useRef(null);
-    const drinks = useRef(null)
-    const myRef = useRef(null)
-    const vol = useRef(null)
-    const col = useRef(null)
-
-   const scroll1 = () => myRef.current.scrollIntoView({ block:'center',  behavior: 'smooth' })
-   const scroll2 = () => vol.current.scrollIntoView({ block: 'center',  behavior: 'smooth' })   
-   const scroll3 = () => col.current.scrollIntoView({ block: 'center',  behavior: 'smooth' })   
-   const scroll4 = () => drinks.current.scrollIntoView({ block: 'center',  behavior: 'smooth' })   
-   const scroll5 = () => host.current.scrollIntoView({ block: 'center',  behavior: 'smooth' })   
-
-
-    return (
-        <div className='carousel'>
-            <div className='carousel-container'>
-                <div ref={myRef} className='carousel-item'>
-                    <img src={'/images/l-school.svg'} alt="carousel" className="host-img"/>
-                    <img src={'/images/l-school-square.svg'} alt="carousel" className="host-s-img"/>
-                </div>
-                <div ref={vol} className='carousel-item'>
-                    <img src={'/images/l-volcano.svg'} alt="carousel" className="host-img"/>
-                    <img src={'/images/l-volcano-square.svg'} alt="carousel" className="host-s-img"/>
-                </div>
-                <div ref={col} className='carousel-item'>
-                    <img src={'/images/l-collagen.svg'} alt="carousel" className="host-img"/>
-                    <img src={'/images/l-collagen-square.svg'} alt="carousel" className="host-s-img"/>
-                </div>
-                <div ref={drinks} className='carousel-item'>
-                    <img src={'/images/l-drinks.svg'} alt="carousel" className="host-img"/>
-                    <img src={'/images/l-drinks-square.svg'} alt="carousel" className="host-s-img"/>
-                </div>
-                <div ref={host} className='carousel-item'>
-                    <img src={'/images/l-hosting.svg'} alt="carousel" className="host-img"/>
-                    <img src={'/images/l-hosting-square.svg'} alt="carousel" className="host-s-img"/>
-                    {/* <div  className='host-btn-container'>
-                        <Link to="/hosting"><button className='host-btn'>Click here for more information</button></Link>
-                    </div> */}
-                </div>
-                
-                       
-            
-            </div>
-            
-            <div className='dot-container'>
-                <div className='dot' id="dot-1" onClick={scroll1}/>
-                <div className='dot' id="dot-2" onClick={scroll2}/>
-                <div className='dot' id="dot-3" onClick={scroll3}/>
-                <div className='dot' id="dot-4" onClick={scroll4}/>
-                <div className='dot' id="dot-5" onClick={scroll5}/>
-            </div>
-        </div>
-    )
-}
-
+     
 
 function Landing() {
     useEffect(() => {
@@ -333,7 +231,32 @@ function Landing() {
         <div className="landing-body">
             <AboutUs/>
             <Header />
-            <Carousel/>
+            <Carousel>
+                <div>
+                    <img src={'/images/l-fall.png'} alt="carousel" className="host-img"/>
+                    <img src={'/images/l-fall-square.png'} alt="carousel" className="host-s-img"/>
+                 </div>
+                <div>
+                    <img src={'/images/l-school.png'} alt="carousel" className="host-img"/>
+                    <img src={'/images/l-school-square.png'} alt="carousel" className="host-s-img"/>
+                 </div>
+                 <div>
+                    <img src={'/images/l-volcano.png'} alt="carousel" className="host-img"/>
+                    <img src={'/images/l-volcano-square.png'} alt="carousel" className="host-s-img"/>
+                 </div>
+                 <div>
+                    <img src={'/images/l-collagen.png'} alt="carousel" className="host-img"/>
+                    <img src={'/images/l-collagen-square.png'} alt="carousel" className="host-s-img"/>
+                 </div>
+                 <div>
+                    <img src={'/images/l-drinks.png'} alt="carousel" className="host-img"/>
+                    <img src={'/images/l-drinks-square.png'} alt="carousel" className="host-s-img"/>
+                 </div>
+                 <div>
+                    <img src={'/images/l-host.png'} alt="carousel" className="host-img"/>
+                    <img src={'/images/l-host-square.png'} alt="carousel" className="host-s-img"/>
+                 </div>
+            </Carousel>
             <Services />
             <Gallery />
             <Contact />

@@ -63,3 +63,13 @@ img {
   user-select: none; /* Standard */
 }
 
+
+.left {
+  left: 20px;
+  float: left;
+}
+
+.right {
+  right: 20px;
+  float: right;
+}
