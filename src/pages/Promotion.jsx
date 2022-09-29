@@ -31,7 +31,7 @@ function Promotion() {
 
     return (
         <div className='promo-body'>
-            No new promotions at this time
+            <h4>No new promotions at this time</h4>
             <hr/>
             {promoList.slice(0,2).map((promo) => <PromoImg key={promo.id} caption={promo.caption} src={promo.src} expired={promo.expired}/>)}
             
