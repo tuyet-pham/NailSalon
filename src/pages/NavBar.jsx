@@ -1,15 +1,12 @@
 import React from "react";
 import { useEffect, useState } from "react";
 import './css/navbar.css';
-
-
 import { NavLink } from "react-router-dom";
-import './css/navbar.css'
 
 
 const NavBar = () => {
     const [width, setWidth] = useState(window.innerWidth);
-    const breakpoint = 620;
+    const breakpoint = 700;
     const [show, setShow] = useState(false);
     
 
@@ -43,6 +40,11 @@ const NavBar = () => {
                         className="nav-item">
                         Lashes By Holly
                 </NavLink>
+                <NavLink 
+                        to="/promo" 
+                        className="nav-item">
+                        Promotions
+                </NavLink>
             </ul>
           </nav>
         </div>
@@ -74,6 +76,11 @@ const NavBar = () => {
                         to="/lashes" 
                         className="nav-item ">
                         Lashes By Holly
+                </NavLink>
+                <NavLink 
+                        to="/promo" 
+                        className="nav-item">
+                        Promotions
                 </NavLink>
             </ul>
           </nav>

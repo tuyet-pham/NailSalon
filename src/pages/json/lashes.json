@@ -7,6 +7,8 @@
     {"id": 6, "src": "/images/holly-6.png", "caption":"Cat Eye"},
     {"id": 7, "src": "/images/holly-7.png", "caption":"Volume"},
     {"id": 8, "src": "/images/holly-8.png", "caption":"Wispy"},
-    {"id": 9, "src": "/images/holly-9.png", "caption":"Classic"}
+    {"id": 9, "src": "/images/holly-9.png", "caption":"Classic"},
+    {"id": 10, "src": "/images/holly-10.png", "caption":"Classic"}
+
 
 ]

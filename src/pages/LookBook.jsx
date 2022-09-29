@@ -13,7 +13,7 @@ function LBImages (props) {
             <img 
                 className="lb-images" 
                 src={props.src} 
-                alt="5-star-nail-spa-nails-look"
+                alt="5 Star Nail Spa Nails Look"
                 onClick={()=>setShow(!show)}
             />            
             
@@ -21,7 +21,7 @@ function LBImages (props) {
             {/* Modal Images */}
             <div className="overlay" onClick={()=>setShow(false)} style={{display: show ? "inline-block" : "none"}}>
                 <div className="img-modal-lb">
-                    <img className="lb-images-modal" src={props.src} alt="5-star-nail-spa-nails-look"/>
+                    <img className="lb-images-modal" src={props.src} alt="5 Star Nail Spa Nails Look"/>
                     
                     <div className="bottom">
                         
@@ -41,7 +41,7 @@ function LBImages (props) {
 }
 
 
-function LookBook (props) {
+function LookBook () {
     const [showheight, setShowHeight] = useState(0);
     const [loading, setLoading] = useState(true)
     const [jsonImg, setJsonImg] = useState([]);
