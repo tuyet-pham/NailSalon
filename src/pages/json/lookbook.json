@@ -3,15 +3,15 @@
 {"id": 2, "src": "/images/2.png", "caption":"Judy"},
 {"id": 3, "src": "/images/3.png", "caption":"Silva"},
 {"id": 4, "src": "/images/4.png", "caption":"Mimi"},
-{"id": 5, "src": "/images/5.png", "caption":"Anna"},
+{"id": 5, "src": "/images/5.png", "caption":"Jennifer"},
 {"id": 6, "src": "/images/6.png", "caption":"Jennifer"},
 {"id": 7, "src": "/images/7.png", "caption":"Vivian"},
 {"id": 8, "src": "/images/8.png", "caption":"Silva"},
 {"id": 9, "src": "/images/9.png", "caption":"Silva"},
 {"id": 10, "src": "/images/10.png", "caption":"Vivian"},
 {"id": 11, "src": "/images/11.png", "caption":"Mimi"},
-{"id": 12, "src": "/images/12.png", "caption":"Mimi"},
-{"id": 13, "src": "/images/13.png", "caption":"Holly"},
+{"id": 12, "src": "/images/12.png", "caption":"Holly"},
+{"id": 13, "src": "/images/13.png", "caption":"Mimi"},
 {"id": 14, "src": "/images/14.png", "caption":"Vivian"},
 {"id": 15, "src": "/images/15.png", "caption":"Amy"},
 {"id": 16, "src": "/images/16.png", "caption":"Amy"},
@@ -35,7 +35,7 @@
 {"id": 34, "src": "/images/34.png", "caption":"Judy"},
 {"id": 35, "src": "/images/35.png", "caption":"Silva"},
 {"id": 36, "src": "/images/36.png", "caption":"Silva"},
-{"id": 37, "src": "/images/37.png", "caption":""},
+{"id": 37, "src": "/images/37.png", "caption":"Anna"},
 {"id": 38, "src": "/images/38.png", "caption":"Amy"},
 {"id": 39, "src": "/images/39.png", "caption":"Anna"},
 {"id": 40, "src": "/images/40.png", "caption":"Holly"},
@@ -48,5 +48,9 @@
 {"id": 47, "src": "/images/47.png", "caption":"Mimi"},
 {"id": 48, "src": "/images/48.png", "caption":"Silva"},
 {"id": 49, "src": "/images/49.png", "caption":""},
-{"id": 50, "src": "/images/50.png", "caption":"Holly"}
+{"id": 50, "src": "/images/50.png", "caption":"Jennifer"},
+{"id": 51, "src": "/images/51.png", "caption":"Holly"},
+{"id": 52, "src": "/images/52.png", "caption":"Anna"},
+{"id": 53, "src": "/images/53.png", "caption":"Judy"}
+
 ]
