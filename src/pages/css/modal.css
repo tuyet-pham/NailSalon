@@ -47,9 +47,9 @@
 
 @media screen and (max-width: 700px) {
     .modal-img {
-        width: 420px;
+        width: 400px;
     }
     .modal-container {
-        margin-left: -210px;
+        margin-left: -200px;
     }
 }
