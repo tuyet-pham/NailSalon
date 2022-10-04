@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import './css/landing.css';
 import lookbookJson from './json/lookbook.json'
 import Carousel from './Carousel.jsx'
-
+import Modal from './Modal.jsx'
 
 const Images = (props) => {
     return (
@@ -229,8 +229,10 @@ function Landing() {
       
     return (
         <div className="landing-body">
+            <Modal src={"/images/promo-2.png"}/>
+
             <AboutUs/>
-            <Header />
+            <Header/>
             <Carousel>
                 <div>
                     <img src={'/images/l-fall.png'} alt="carousel" className="host-img"/>
@@ -258,6 +260,7 @@ function Landing() {
                  </div>
             </Carousel>
             <Services />
+            <img src={'/images/promo-2.png'} alt="carousel" className="host-s-img"/>
             <Gallery />
             <Contact />
         </div>

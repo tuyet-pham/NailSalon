@@ -31,9 +31,9 @@ function Promotion() {
 
     return (
         <div className='promo-body'>
-            <h4>No new promotions at this time</h4>
+            {promoList.slice(1,2).map((promo) => <PromoImg key={promo.id} caption={promo.caption} src={promo.src} expired={promo.expired}/>)}
             <hr/>
-            {promoList.slice(0,2).map((promo) => <PromoImg key={promo.id} caption={promo.caption} src={promo.src} expired={promo.expired}/>)}
+            {promoList.slice(0,1).map((promo) => <PromoImg key={promo.id} caption={promo.caption} src={promo.src} expired={promo.expired}/>)}
             
         </div>
     );
