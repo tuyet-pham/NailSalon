@@ -235,12 +235,12 @@ function Landing() {
             <Header/>
             <Carousel>
                 <div>
+                    <img src={'/images/l-halloween.png'} alt="carousel" className="host-img"/>
+                    <img src={'/images/l-halloween-square.png'} alt="carousel" className="host-s-img"/>
+                 </div>
+                 <div>
                     <img src={'/images/l-fall.png'} alt="carousel" className="host-img"/>
                     <img src={'/images/l-fall-square.png'} alt="carousel" className="host-s-img"/>
-                 </div>
-                <div>
-                    <img src={'/images/l-school.png'} alt="carousel" className="host-img"/>
-                    <img src={'/images/l-school-square.png'} alt="carousel" className="host-s-img"/>
                  </div>
                  <div>
                     <img src={'/images/l-volcano.png'} alt="carousel" className="host-img"/>
