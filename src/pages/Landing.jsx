@@ -15,6 +15,7 @@ const Images = (props) => {
 
 
 function AboutUs() {
+    
 
     return (
         <div className='about-us-body'>
