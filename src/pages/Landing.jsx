@@ -183,16 +183,16 @@ function Contact() {
         );
     };
     return (
-        <div className='contact'>
+        <div className='contact' id="contact">
             
             <div className='contact-info-div-bg'>
                 <div className='contact-info-div-sm'>
                     <h3>Contact info.</h3>
                     <hr/>
                     <p className='contact-p'>
-                        <i className="fa-solid fa-phone"/><a href="tel:+16822557055">(682)255-7055</a>
+                        <i className="fa-solid fa-phone"/><a id="phone-number" href="tel:+16822557055">(682)255-7055</a>
                         <br/>
-                        <i className="fa-solid fa-at"></i><a href="mailto:contact@5starnailspa-wc.com">contact@5starnailspa-wc.com</a>
+                        <i className="fa-solid fa-at"></i><a id="email-link" href="mailto:contact@5starnailspa-wc.com">contact@5starnailspa-wc.com</a>
                         <br/>
                         <i className="fa-solid fa-location-dot"></i>2730 Western Center Blvd Ste 420, Fort Worth, TX 76131
                     </p>
@@ -204,8 +204,8 @@ function Contact() {
                         <i className="fa-solid fa-clock"></i>Sun : 11:00am - 5:00pm
                     </p>
                     <p style={{fontSize:"30px"}}>
-                        <a href="https://www.facebook.com/5starnailsandspa.wc/"><i style={{color:"#2159ff"}} className="fa-brands fa-facebook-square"></i></a>
-                        <a href="https://www.instagram.com/fivestarnailandspa/"><i style={{color:"#9e868c"}} className="fa-brands fa-instagram-square"></i></a>
+                        <a id="facebook-link" href="https://www.facebook.com/5starnailsandspa.wc/"><i style={{color:"#2159ff"}} className="fa-brands fa-facebook-square"></i></a>
+                        <a id="instagram-link" href="https://www.instagram.com/fivestarnailandspa/"><i style={{color:"#9e868c"}} className="fa-brands fa-instagram-square"></i></a>
                         <a href="https://goo.gl/maps/o3J95F1EDyTPjwJV9"><i style={{color:"#a1bcc7"}} className="fa-brands fa-google-plus-square"></i></a>
                     </p>
                     <img className='ico' src="/images/LOGO.svg" alt="ico"/>
