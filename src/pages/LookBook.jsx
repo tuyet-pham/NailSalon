@@ -35,7 +35,6 @@ function LBImages (props) {
                     </div>
                 </div>
             </div>
-            
         </div>
     );
 }

@@ -3,11 +3,11 @@
 {"id": 2, "src": "/images/2.png", "caption":"Silva"},
 {"id": 3, "src": "/images/3.png", "caption":"Vivian"},
 {"id": 4, "src": "/images/4.png", "caption":"Mimi"},
-{"id": 5, "src": "/images/5.png", "caption":"Jennifer"},
+{"id": 5, "src": "/images/5.png", "caption":"Silva"},
 {"id": 6, "src": "/images/6.png", "caption":"Holly"},
 {"id": 7, "src": "/images/7.png", "caption":"Vivian"},
 {"id": 8, "src": "/images/8.png", "caption":"Silva"},
-{"id": 9, "src": "/images/9.png", "caption":"Silva"},
+{"id": 9, "src": "/images/9.png", "caption":"Vivian"},
 {"id": 10, "src": "/images/10.png", "caption":"Judy"},
 {"id": 11, "src": "/images/11.png", "caption":"Tony"},
 {"id": 12, "src": "/images/12.png", "caption":"Holly"},
@@ -54,7 +54,9 @@
 {"id": 53, "src": "/images/53.png", "caption":"Holly"},
 {"id": 54, "src": "/images/54.png", "caption":"Vivian"},
 {"id": 55, "src": "/images/55.png", "caption":"Vivian"},
-{"id": 56, "src": "/images/56.png", "caption":"Holly"},
-{"id": 57, "src": "/images/57.png", "caption":"Amy"}
-
+{"id": 56, "src": "/images/56.png", "caption":"Silva"},
+{"id": 57, "src": "/images/57.png", "caption":"Amy"},
+{"id": 58, "src": "/images/58.png", "caption":"Vivian"},
+{"id": 59, "src": "/images/59.png", "caption":"Holly"},
+{"id": 60, "src": "/images/60.png", "caption":"Vivian"}
 ]
