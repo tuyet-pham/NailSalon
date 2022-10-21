@@ -10,8 +10,32 @@
     flex-direction: column;
 }
 
+
+.look-section {
+    display: flex;
+    flex-direction: column;
+    margin: 40px 0;
+}
+
+.lb-title {
+    background-size: cover ;
+    background-position: center;
+    text-align: center;
+    width: 80%;
+    font-size: 2em;
+    padding: 20px;
+    margin: 20px auto;
+
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-family: Impact, Haettenschweiler, 'Arial Bold', sans-serif;
+    color: white;
+    box-shadow: 1px 1px 10px rgb(0, 0, 0, .2);
+}
+
 .lb-main-gallery {
     display: flex;
+    flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
 }
@@ -66,7 +90,6 @@
     height: 500px;
 }
 
-
 .img-modal-lb {
     display: flex;
     flex-direction: column;
@@ -110,5 +133,7 @@
     .img-modal-lb {
         margin-left: -190px;
     }
-
+    .lb-title {
+        width: 80%;
+    }
 }

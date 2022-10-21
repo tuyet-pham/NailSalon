@@ -1,11 +1,13 @@
 import React, {useEffect, useState} from 'react';
 import './css/lashes.css'
 import lashesImg from './json/lashes.json'
+import Loading from './Loading';
 
 
 
 function LSImage (props) {
     const [show, setShow] = useState(false);
+
 
     return (
         <div>
@@ -41,8 +43,9 @@ function LSImage (props) {
 
 
 function Lashes() {
-
     const gallery = lashesImg;
+    const [loading, setLoading] = useState(true)
+
 
     function next() {
         
@@ -90,6 +93,10 @@ function Lashes() {
     }
 
     useEffect(() => {
+
+        setTimeout(()=>{
+            setLoading(false)
+        }, 3000);
         /*Listening to window changes*/
         window.top.document.title = "5 Star Nail Spa | Lashes"
         
@@ -97,6 +104,7 @@ function Lashes() {
 
     return (
         <div onLoad={()=>{window.scrollTo(0, 0)}} className='lashes'>
+            <Loading show={loading} src="/images/loading-holly.png"/>
             <div className='lash-header'>
                 <div className='h-carsousel'>
                     <div className='carsousel-lash-container'>

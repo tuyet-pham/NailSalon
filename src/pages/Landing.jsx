@@ -116,7 +116,7 @@ function Services() {
 
 
 function Gallery() {
-    const galleryList = lookbookJson.slice(0,12);
+    const galleryList = lookbookJson;
     const [width, setWidth] = useState(window.innerWidth);
 
     
@@ -133,7 +133,7 @@ function Gallery() {
           <h2 style={{color:"#fff"}} >Gallery</h2>
           <div style={{textAlign:"center"}}>
             <div id='gallery'>
-                {galleryList.map((image) => <Images key={image.id} classname="gallery-img" src={image.src}/>)}
+                {galleryList.slice(0,12).map((image) => <Images key={image.id} classname="gallery-img" src={image.src}/>)}
             </div>
             <Link to="/look-book/"><button style={{marginTop:"20px"}} className="NS-btn">View more on our Look Book!</button></Link>
           </div>
@@ -155,13 +155,13 @@ function Gallery() {
                         {galleryList.slice(4,6).map((image) => <Images key={image.id} classname="gallery-img" src={image.src}/>)}
                     </div>
                     <div className='gallery-sec'>
-                        {galleryList.slice(6,8).map((image) => <Images key={image.id} classname="gallery-img" src={image.src}/>)}
+                        {galleryList.slice(31,33).map((image) => <Images key={image.id} classname="gallery-img" src={image.src}/>)}
                     </div>
                     <div className='gallery-sec'>
-                        {galleryList.slice(8,10).map((image) => <Images key={image.id} classname="gallery-img" src={image.src}/>)}
+                        {galleryList.slice(9,11).map((image) => <Images key={image.id} classname="gallery-img" src={image.src}/>)}
                     </div>
                     <div className='gallery-sec'>
-                        {galleryList.slice(10,12).map((image) => <Images key={image.id} classname="gallery-img" src={image.src}/>)}
+                        {galleryList.slice(60,62).map((image) => <Images key={image.id} classname="gallery-img" src={image.src}/>)}
                     </div>
             </Carousel>
             <div style={{width:"100%", textAlign:"center"}}>

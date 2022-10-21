@@ -11,6 +11,11 @@ function PromoImg (props) {
         <div className='promo'>
             <img src={props.src} className="promo-img" alt="5 Star Nail Spa Promotion"/>
             {expired ? <h4 className='expired'>{caption}</h4> : <h4>{caption}</h4>}
+            <div className='terms'>
+                <u>Terms & Conditions</u>
+                <br/>
+                {props.terms}
+            </div>
         </div>
     )
 }
@@ -31,10 +36,9 @@ function Promotion() {
 
     return (
         <div className='promo-body'>
-            {promoList.slice(1,2).map((promo) => <PromoImg key={promo.id} caption={promo.caption} src={promo.src} expired={promo.expired}/>)}
+            {promoList.slice(1,2).map((promo) => <PromoImg key={promo.id} caption={promo.caption} src={promo.src} terms={promo.terms} expired={promo.expired}/>)}
             <hr/>
-            {promoList.slice(0,1).map((promo) => <PromoImg key={promo.id} caption={promo.caption} src={promo.src} expired={promo.expired}/>)}
-            
+            {promoList.slice(0,1).map((promo) => <PromoImg key={promo.id} caption={promo.caption} src={promo.src} terms={promo.terms} expired={promo.expired}/>)}
         </div>
     );
 }
