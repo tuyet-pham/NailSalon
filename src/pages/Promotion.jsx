@@ -21,9 +21,25 @@ function PromoImg (props) {
 }
 
 
+// const PromoForm = ()=> {
+//     return (
+//         <iframe 
+//             src="https://docs.google.com/forms/d/e/1FAIpQLSdS9MnGgwpnOszV1UbLC0gRJ190QbUzTWSAZEv2p5WrpPCD5Q/viewform?embedded=true" 
+//             width="640" 
+//             height="1076"
+//             title="i"
+//             frameborder="0" 
+//             marginheight="0" 
+//             marginwidth="0">
+//                 Loading…
+//         </iframe>
+//     )
+// }
+
+
 function Promotion() {
     const [promoList, setPromoList] = useState([]);
-    
+    const promoform="https://forms.gle/NAjYm93gygA4xKoq5";
     
     useEffect(() => {
 
@@ -37,8 +53,8 @@ function Promotion() {
     return (
         <div className='promo-body'>
             {promoList.slice(1,2).map((promo) => <PromoImg key={promo.id} caption={promo.caption} src={promo.src} terms={promo.terms} expired={promo.expired}/>)}
-            <hr/>
             {promoList.slice(0,1).map((promo) => <PromoImg key={promo.id} caption={promo.caption} src={promo.src} terms={promo.terms} expired={promo.expired}/>)}
+            {/* <a href={promoform}>Click</a> */}
         </div>
     );
 }

@@ -1,9 +1,8 @@
 import React, {useState, useEffect} from 'react';
 import { Link } from "react-router-dom";
 import './css/landing.css';
-import lookbookJson from './json/lookbook.json'
+import lookbookJson from './json/front.json'
 import Carousel from './Carousel.jsx'
-import Modal from './Modal.jsx'
 
 const Images = (props) => {
     return (
@@ -230,15 +229,9 @@ function Landing() {
       
     return (
         <div className="landing-body">
-            <Modal src={"/images/promo-2.png"}/>
-
             <AboutUs/>
             <Header/>
             <Carousel>
-                <div>
-                    <img src={'/images/l-halloween.png'} alt="carousel" className="host-img"/>
-                    <img src={'/images/l-halloween-square.png'} alt="carousel" className="host-s-img"/>
-                 </div>
                  <div>
                     <img src={'/images/l-fall.png'} alt="carousel" className="host-img"/>
                     <img src={'/images/l-fall-square.png'} alt="carousel" className="host-s-img"/>
@@ -261,7 +254,6 @@ function Landing() {
                  </div>
             </Carousel>
             <Services />
-            <img src={'/images/promo-2.png'} alt="carousel" className="host-s-img"/>
             <Gallery />
             <Contact />
         </div>

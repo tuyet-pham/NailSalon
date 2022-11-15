@@ -1,6 +1,7 @@
 /************ LOOK BOOK ************/
 .lb {
     background-color: var(--white);
+    min-height: 80vh;
 
 }
 
@@ -123,6 +124,40 @@
     opacity: 1;
 }
 
+.collection-ul {
+    box-sizing: border-box;
+    justify-content: space-around;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin:0;
+    padding:0;
+    width: 100%;
+}
+
+.collection-ul li {
+    list-style-type: none;
+    color: white;
+}
+
+.collection-ul a {
+    margin: 3px 0;
+    font-size: 14px;
+    box-sizing: border-box;
+    background-color: rgb(233, 217, 209);
+    height: 50px;
+    width: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 18px;
+}
+
+
+.collection-ul .active {
+    background-color: rgb(231, 234, 248);
+}
+
 
 
 @media screen and (max-width: 500px) {
@@ -135,5 +170,14 @@
     }
     .lb-title {
         width: 80%;
+    }
+    .collection-ul {
+        flex-direction: row;
+        flex-wrap: wrap;
+
+    }
+    .collection-ul a {
+        margin: 3px 0;
+        width: 200px
     }
 }
