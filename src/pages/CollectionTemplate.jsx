@@ -79,7 +79,7 @@ const CollectionTemplate = ({collections}) => {
     },[show_]);
 
     return (
-        <div className="look-section" onLoad={()=>setLoading(true)}>
+        <div className="look-section">
             <Loading show={loading} src="/images/loading.svg"/>
 
             <p style={{width:"100%", textAlign:'center'}}>
