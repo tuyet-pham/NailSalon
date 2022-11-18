@@ -19,7 +19,7 @@ function LookBook ({collections}) {
     },[]);
     
     return (
-        <div onLoad={()=>{window.scrollTo(0, 0)}} className="lb">
+        <div className="lb">
             <div className="lb-body">
                 <p style={{width:"100%", textAlign:'center'}}>
                     Pick a collection
