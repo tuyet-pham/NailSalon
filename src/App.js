@@ -11,6 +11,8 @@ import Promotion from './pages/Promotion';
 import CollectionTemplate from './pages/CollectionTemplate'
 
 import lbfall from './pages/json/lb-fall.json'
+import lbwinter from './pages/json/lb-winter.json'
+
 import lblong from './pages/json/lb-long.json'
 import lbshort from './pages/json/lb-short.json'
 import lbluxury from './pages/json/lb-luxury.json'
@@ -19,11 +21,13 @@ import lbunique from './pages/json/lb-unique.json'
 /** Main Routes */
 function App() {
 	const collections = [
-		{ id: '0', collectionName: 'Fall', content:lbfall},
+		{ id: '0', collectionName: 'Winter', content:lbwinter},
 		{ id: '1', collectionName: 'Long', content:lblong},
 		{ id: '2', collectionName: 'Short', content:lbshort},
 		{ id: '3', collectionName: 'Luxury', content:lbluxury},
 		{ id: '4', collectionName: 'Unique', content:lbunique},
+		{ id: '5', collectionName: 'Fall', content:lbfall},
+
 	]
 
 	return (

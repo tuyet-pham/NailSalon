@@ -1,7 +1,7 @@
 [
     {"id": 1, "src": "/images/54.png", "caption":"Vivian"},
     {"id": 2, "src": "/images/75.png", "caption":"Silva"},
-    {"id": 3, "src": "/images/58.png", "caption":"Vivian"},
+    {"id": 3, "src": "/images/83.png", "caption":"Holly"},
     {"id": 4, "src": "/images/57.png", "caption":"Silva"},
     {"id": 5, "src": "/images/51.png", "caption":"Judy"},
     {"id": 6, "src": "/images/61.png", "caption":"Holly"},
@@ -18,5 +18,4 @@
     {"id": 19, "src": "/images/67.png", "caption":"Anna"},
     {"id": 20, "src": "/images/73.png", "caption":"Holly"},
     {"id": 21, "src": "/images/24.png", "caption":"Silva"}
-
 ]

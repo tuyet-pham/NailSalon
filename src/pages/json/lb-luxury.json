@@ -5,14 +5,13 @@
     {"id": 4, "src": "/images/50.png", "caption":"Jennifer"},
     {"id": 5, "src": "/images/60.png", "caption":"Jennifer"},
     {"id": 6, "src": "/images/15.png", "caption":"Silva"},
-    {"id": 7, "src": "/images/49.png", "caption":"Anna"},
     {"id": 9, "src": "/images/55.png", "caption":"Tony"},
     {"id": 10, "src": "/images/32.png", "caption":"Silva"},
-    {"id": 11, "src": "/images/59.png", "caption":"Holly"},
     {"id": 12, "src": "/images/36.png", "caption":"Silva"},
     {"id": 13, "src": "/images/38.png", "caption":"Amy"},
     {"id": 14, "src": "/images/41.png", "caption":"Vivian"},
     {"id": 15, "src": "/images/44.png", "caption":"Tony"},
-    {"id": 16, "src": "/images/29.png", "caption":"Jennifer"}
-
-]    
+    {"id": 16, "src": "/images/29.png", "caption":"Jennifer"},
+    {"id": 17, "src": "/images/81.png", "caption":""},
+    {"id": 18, "src": "/images/82.png", "caption":"Holly"}
+]

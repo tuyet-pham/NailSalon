@@ -49,22 +49,7 @@ const CollectionTemplate = ({collections}) => {
 
 
     const show_ = () => {
-        if (collectionId === '0'){
-            setTitle(collections[collectionId].collectionName)
-        }
-        else if ( collectionId === '1' ){
-            setTitle(collections[collectionId].collectionName)
-        }
-        else if ( collectionId === '2' ){
-            setTitle(collections[collectionId].collectionName)
-
-        }
-        else if ( collectionId === '3' ){
-            setTitle(collections[collectionId].collectionName)
-        }
-        else if ( collectionId === '4' ){
-            setTitle(collections[collectionId].collectionName)
-        }
+        setTitle(collections[collectionId].collectionName)
     }
 
     useEffect(()=>{

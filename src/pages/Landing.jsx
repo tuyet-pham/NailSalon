@@ -154,13 +154,13 @@ function Gallery() {
                         {galleryList.slice(4,6).map((image) => <Images key={image.id} classname="gallery-img" src={image.src}/>)}
                     </div>
                     <div className='gallery-sec'>
-                        {galleryList.slice(31,33).map((image) => <Images key={image.id} classname="gallery-img" src={image.src}/>)}
+                        {galleryList.slice(6,8).map((image) => <Images key={image.id} classname="gallery-img" src={image.src}/>)}
                     </div>
                     <div className='gallery-sec'>
-                        {galleryList.slice(9,11).map((image) => <Images key={image.id} classname="gallery-img" src={image.src}/>)}
+                        {galleryList.slice(8,10).map((image) => <Images key={image.id} classname="gallery-img" src={image.src}/>)}
                     </div>
                     <div className='gallery-sec'>
-                        {galleryList.slice(60,62).map((image) => <Images key={image.id} classname="gallery-img" src={image.src}/>)}
+                        {galleryList.slice(10,12).map((image) => <Images key={image.id} classname="gallery-img" src={image.src}/>)}
                     </div>
             </Carousel>
             <div style={{width:"100%", textAlign:"center"}}>
@@ -230,11 +230,15 @@ function Landing() {
     return (
         <div className="landing-body">
             <AboutUs/>
+            <div>
+                <img src={'/images/l-winter.png'} alt="carousel" className="host-img"/>
+                <img src={'/images/l-winter-square.png'} alt="carousel" className="host-s-img"/>
+            </div>
             <Header/>
             <Carousel>
                  <div>
-                    <img src={'/images/l-fall.png'} alt="carousel" className="host-img"/>
-                    <img src={'/images/l-fall-square.png'} alt="carousel" className="host-s-img"/>
+                    <img src={'/images/l-winter(2).png'} alt="carousel" className="host-img"/>
+                    <img src={'/images/l-winter-square(2).png'} alt="carousel" className="host-s-img"/>
                  </div>
                  <div>
                     <img src={'/images/l-volcano.png'} alt="carousel" className="host-img"/>
