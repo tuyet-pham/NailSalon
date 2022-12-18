@@ -44,14 +44,40 @@
     border: none !important;
     text-decoration: none;
     width: 100%;
-    font-size: 35px;
     text-align: left;
-    padding-bottom: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 50px;
+}
+
+.ham-btn > div {
+    width: 30px;
+    height: 2px;
+    background: rgb(100, 96, 95);
+    margin: 4px;
+    margin-left: 10px;
+    transition: .5s;
 }
 
 
 .ham-btn:hover:not(.active){
     color: var(--active);
+}
+
+.ham-active > .div1 {
+    position: absolute;
+    transform: rotate(45deg);
+}
+
+.ham-active > .div2 {
+    position: absolute;
+    opacity: 0;
+}
+
+.ham-active > .div3 {
+    position: absolute;
+    transform: rotate(-45deg);
 }
 
 #hamburger {
