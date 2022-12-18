@@ -54,10 +54,10 @@
 .ham-btn > div {
     width: 30px;
     height: 2px;
-    background: rgb(100, 96, 95);
+    background: rgb(93, 80, 77);
     margin: 4px;
     margin-left: 10px;
-    transition: .5s;
+    transition: .7s;
 }
 
 

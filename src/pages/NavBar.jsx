@@ -70,22 +70,26 @@ const NavBar = () => {
                 
                 <NavLink 
                         to="/service-menu" 
-                        className="nav-item">
+                        className="nav-item"
+                        onClick={()=> setShow(!show)}>
                         Service Menu
                 </NavLink>
                 <NavLink 
                         to="/look-book" 
-                        className="nav-item">
+                        className="nav-item"
+                        onClick={()=> setShow(!show)}>
                         Look Book
                 </NavLink>
                 <NavLink 
                         to="/lashes" 
-                        className="nav-item ">
+                        className="nav-item "
+                        onClick={()=> setShow(!show)}>
                         Lashes By Holly
                 </NavLink>
                 <NavLink 
                         to="/promo" 
-                        className="nav-item">
+                        className="nav-item"
+                        onClick={()=> setShow(!show)}>
                         Promotions
                 </NavLink>
             </ul>
