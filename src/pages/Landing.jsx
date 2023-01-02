@@ -237,10 +237,6 @@ function Landing() {
             <Header/>
             <Carousel>
                  <div>
-                    <img src={'/images/l-winter(2).png'} alt="carousel" className="host-img"/>
-                    <img src={'/images/l-winter-square(2).png'} alt="carousel" className="host-s-img"/>
-                 </div>
-                 <div>
                     <img src={'/images/l-volcano.png'} alt="carousel" className="host-img"/>
                     <img src={'/images/l-volcano-square.png'} alt="carousel" className="host-s-img"/>
                  </div>
