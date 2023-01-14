@@ -22,7 +22,6 @@ function AboutUs() {
                 <div id="contentz">
                     <h1>5 Star Nail Spa</h1>
                 </div>
-                
                 <div id='contentv'>
                     We believe only by enriching the lives of those around us will we enrich our own.
                     All of our amazing professional technicians proudly carry 10+ years of various expertise. We 
@@ -230,12 +229,8 @@ function Landing() {
     return (
         <div className="landing-body">
             <AboutUs/>
-            <div>
-                <img src={'/images/l-winter.png'} alt="carousel" className="host-img"/>
-                <img src={'/images/l-winter-square.png'} alt="carousel" className="host-s-img"/>
-            </div>
             <Header/>
-            <Carousel>
+            <Carousel> 
                  <div>
                     <img src={'/images/l-volcano.png'} alt="carousel" className="host-img"/>
                     <img src={'/images/l-volcano-square.png'} alt="carousel" className="host-s-img"/>
